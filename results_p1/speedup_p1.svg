@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" font-family="Noto Sans CJK SC, sans-serif" font-size="12">
+<rect width="100%" height="100%" fill="white"/>
+<line x1="60" y1="310.0" x2="620" y2="310.0" stroke="#e5e5e5"/>
+<text x="54" y="314.0" text-anchor="end">0</text>
+<line x1="60" y1="259.1" x2="620" y2="259.1" stroke="#e5e5e5"/>
+<text x="54" y="263.1" text-anchor="end">1</text>
+<line x1="60" y1="208.2" x2="620" y2="208.2" stroke="#e5e5e5"/>
+<text x="54" y="212.2" text-anchor="end">2</text>
+<line x1="60" y1="157.3" x2="620" y2="157.3" stroke="#e5e5e5"/>
+<text x="54" y="161.3" text-anchor="end">3</text>
+<line x1="60" y1="106.4" x2="620" y2="106.4" stroke="#e5e5e5"/>
+<text x="54" y="110.4" text-anchor="end">4</text>
+<line x1="60" y1="55.5" x2="620" y2="55.5" stroke="#e5e5e5"/>
+<text x="54" y="59.5" text-anchor="end">5</text>
+<text x="60.0" y="328" text-anchor="middle">1</text>
+<text x="200.0" y="328" text-anchor="middle">2</text>
+<text x="340.0" y="328" text-anchor="middle">3</text>
+<text x="480.0" y="328" text-anchor="middle">4</text>
+<text x="620.0" y="328" text-anchor="middle">5</text>
+<text x="340.0" y="346" text-anchor="middle">核数 K</text>
+<text x="16" y="170.0" transform="rotate(-90 16 170.0)" text-anchor="middle">平均加速比（逐用例加速比的算术平均）</text>
+<line x1="60.0" y1="259.1" x2="620.0" y2="55.5" stroke="#bbbbbb" stroke-dasharray="4 4"/>
+<polyline points="60.0,259.1 200.0,211.3 340.0,174.1 480.0,140.8 620.0,112.3" fill="none" stroke="#1f5fbf" stroke-width="2.2"/>
+<circle cx="60.0" cy="259.1" r="3.5" fill="#1f5fbf"/>
+<text x="60.0" y="251.1" text-anchor="middle" fill="#1f5fbf">1.00</text>
+<circle cx="200.0" cy="211.3" r="3.5" fill="#1f5fbf"/>
+<text x="200.0" y="203.3" text-anchor="middle" fill="#1f5fbf">1.94</text>
+<circle cx="340.0" cy="174.1" r="3.5" fill="#1f5fbf"/>
+<text x="340.0" y="166.1" text-anchor="middle" fill="#1f5fbf">2.67</text>
+<circle cx="480.0" cy="140.8" r="3.5" fill="#1f5fbf"/>
+<text x="480.0" y="132.8" text-anchor="middle" fill="#1f5fbf">3.32</text>
+<circle cx="620.0" cy="112.3" r="3.5" fill="#1f5fbf"/>
+<text x="620.0" y="104.3" text-anchor="middle" fill="#1f5fbf">3.88</text>
+<line x1="60" y1="362" x2="84" y2="362" stroke="#1f5fbf" stroke-width="2.2"/>
+<text x="90" y="366">本文方法（V2 超图/区间候选 + CP-SAT 窗口）</text>
+<polyline points="60.0,259.1 200.0,254.7 340.0,250.0 480.0,242.5 620.0,241.0" fill="none" stroke="#d98c1f" stroke-width="2.2"/>
+<circle cx="60.0" cy="259.1" r="3.5" fill="#d98c1f"/>
+<circle cx="200.0" cy="254.7" r="3.5" fill="#d98c1f"/>
+<circle cx="340.0" cy="250.0" r="3.5" fill="#d98c1f"/>
+<circle cx="480.0" cy="242.5" r="3.5" fill="#d98c1f"/>
+<circle cx="620.0" cy="241.0" r="3.5" fill="#d98c1f"/>
+<line x1="60" y1="379" x2="84" y2="379" stroke="#d98c1f" stroke-width="2.2"/>
+<text x="90" y="383">简单贪心（DFS 拓扑序 K 等分 + 列表调度）</text>
+<polyline points="60.0,259.1 200.0,261.4 340.0,261.2 480.0,260.9 620.0,260.9" fill="none" stroke="#8a8a8a" stroke-width="2.2"/>
+<circle cx="60.0" cy="259.1" r="3.5" fill="#8a8a8a"/>
+<circle cx="200.0" cy="261.4" r="3.5" fill="#8a8a8a"/>
+<circle cx="340.0" cy="261.2" r="3.5" fill="#8a8a8a"/>
+<circle cx="480.0" cy="260.9" r="3.5" fill="#8a8a8a"/>
+<circle cx="620.0" cy="260.9" r="3.5" fill="#8a8a8a"/>
+<line x1="60" y1="396" x2="84" y2="396" stroke="#8a8a8a" stroke-width="2.2"/>
+<text x="90" y="400">官方 stub 随机方案</text>
+<text x="450" y="42" fill="#888">虚线：理想线性加速 y=K</text>
+</svg>

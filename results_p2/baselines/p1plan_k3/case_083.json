@@ -1,0 +1,29 @@
+{
+ "makespan": 344674,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 1438304,
+  "scheduled_copy_bytes": 3744928,
+  "added_copy_bytes": 2306624,
+  "partition_added_copy_bytes": 2216512,
+  "spill_added_copy_bytes": 90112
+ },
+ "num_subgraphs": 46,
+ "cross_core_transfers": 281,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 516608,
+   "UB": 0
+  },
+  "1": {
+   "L1": 166400,
+   "UB": 0
+  },
+  "2": {
+   "L1": 523776,
+   "UB": 0
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=3744928, physical_ddr_bytes=3744928\nOK: problem 2 makespan=344674; result=/tmp/tmp2rx5_qyn/res.json",
+ "eval_seconds": 0.63
+}

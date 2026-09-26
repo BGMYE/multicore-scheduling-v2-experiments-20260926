@@ -1,0 +1,121 @@
+{
+ "summary": {
+  "case": "case_074",
+  "cores": 2,
+  "makespan_eval": 804801,
+  "added_copy_bytes_eval": 14872384,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 3776728,
+   "scheduled_copy_bytes": 18649112,
+   "added_copy_bytes": 14872384,
+   "partition_added_copy_bytes": 14225204,
+   "spill_added_copy_bytes": 647180
+  },
+  "cache": {
+   "hits": 391,
+   "accesses": 2358,
+   "hit_bytes": 2502660,
+   "miss_bytes": 10061750,
+   "hit_rate": 0.19918643215240509
+  },
+  "init_makespan_TC_PB": 805355,
+  "init_added_bytes": 14999356,
+  "init_cache": {
+   "hits": 397,
+   "accesses": 2369,
+   "hit_bytes": 2539524,
+   "miss_bytes": 10114996,
+   "hit_rate": 0.20068117953110826
+  },
+  "num_subgraphs": 2955,
+  "improve_stats": {
+   "evals": 45,
+   "accepted": 2,
+   "accepted_cache_colocate": 1,
+   "decode_cycle": 2,
+   "interval_FEASIBLE": 4,
+   "assign_OPTIMAL": 2,
+   "order_OPTIMAL": 2,
+   "accepted_assign": 1,
+   "rounds": 12,
+   "subgraphs_start": 2955
+  },
+  "reuse_windows": [
+   {
+    "candidates": 21,
+    "evaluated": 7,
+    "exhausted": false,
+    "improved": true
+   },
+   {
+    "candidates": 3,
+    "evaluated": 3,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 789712.0,
+  "total_seconds": 54.86
+ },
+ "log": [
+  "case_074 K=2 P_B: T_C=805355 added=14999356 hit_rate=0.201",
+  "    cache-cluster t=None -> 808711 hit=0.202 (best 805355)",
+  "    cache-stagger t=2803 -> 805355 hit=0.201 (best 805355)",
+  "    cache-stagger2 t=2803 -> 805355 hit=0.201 (best 805355)",
+  "    cache-colocate t=2803 -> 806265 hit=0.201 (best 805355)",
+  "    cache-stagger t=2713 -> 805355 hit=0.201 (best 805355)",
+  "    cache-stagger2 t=2713 -> 805355 hit=0.201 (best 805355)",
+  "    cache-colocate t=2713 -> 805201 hit=0.202 (best 805355)",
+  "    cache-cluster t=None -> 809027 hit=0.203 (best 805201)",
+  "    cache-gather t=1954 -> 805201 hit=0.202 (best 805201)",
+  "    cache-gather t=1951 -> 805201 hit=0.202 (best 805201)",
+  "    cache-cluster t=None -> 809027 hit=0.203 (best 805201)",
+  "    cache-cluster t=None -> 809027 hit=0.203 (best 805201)",
+  "    time-feedback -> 826460 (best 805201)",
+  "    interval[0:16] -> 806132 (best 805201)",
+  "    assign[0:24] moved=3 -> 805560 (best 805201)",
+  "    order core1[0:12] -> 806000 (best 805201)",
+  "    move sg2954->c0 -> 805213 (best 805201)",
+  "    swap sg2953<->sg2954 -> 805201 (best 805201)",
+  "    move sg2953->c0 -> 805213 (best 805201)",
+  "    swap sg2952<->sg2953 -> 805201 (best 805201)",
+  "    move sg2952->c0 -> 805213 (best 805201)",
+  "    swap sg2951<->sg2952 -> 805201 (best 805201)",
+  "    move sg2951->c0 -> 805213 (best 805201)",
+  "    swap sg2950<->sg2951 -> 805201 (best 805201)",
+  "    move sg2950->c0 -> 805213 (best 805201)",
+  "    swap sg2949<->sg2950 -> 805201 (best 805201)",
+  "    move sg2949->c0 -> 805213 (best 805201)",
+  "    swap sg2948<->sg2949 -> 805201 (best 805201)",
+  "    interval[12:28] -> 806625 (best 805201)",
+  "    time-feedback -> 826460 (best 805201)",
+  "    interval[8:24] -> 805805 (best 805201)",
+  "    assign[12:36] moved=3 -> 804801 (best 805201)",
+  "    order core1[6:18] -> 804801 (best 804801)",
+  "    move sg2948->c0 -> 804813 (best 804801)",
+  "    swap sg2947<->sg2948 -> 804801 (best 804801)",
+  "    move sg2947->c0 -> 804813 (best 804801)",
+  "    swap sg2946<->sg2947 -> 804801 (best 804801)",
+  "    move sg2946->c0 -> 804813 (best 804801)",
+  "    swap sg2945<->sg2946 -> 804801 (best 804801)",
+  "    move sg2945->c0 -> 804813 (best 804801)",
+  "    swap sg2944<->sg2945 -> 804801 (best 804801)",
+  "    move sg2944->c0 -> 804813 (best 804801)",
+  "    swap sg2943<->sg2944 -> 804801 (best 804801)",
+  "    move sg2943->c0 -> 804813 (best 804801)",
+  "    swap sg2942<->sg2943 -> 804801 (best 804801)",
+  "final: T_C=804801 added=14872384 hit_rate=0.199 subgraphs=2955 time=54.9s"
+ ]
+}

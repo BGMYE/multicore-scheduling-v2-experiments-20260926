@@ -1,0 +1,81 @@
+{
+ "summary": {
+  "case": "case_062",
+  "cores": 5,
+  "makespan_eval": 604983,
+  "added_copy_bytes_eval": 2617344,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 13401600,
+   "scheduled_copy_bytes": 16018944,
+   "added_copy_bytes": 2617344,
+   "partition_added_copy_bytes": 2617344,
+   "spill_added_copy_bytes": 0
+  },
+  "cache": {
+   "hits": 4,
+   "accesses": 5212,
+   "hit_bytes": 18432,
+   "miss_bytes": 14699520,
+   "hit_rate": 0.0012523481527864746
+  },
+  "init_makespan_TC_PB": 604983,
+  "init_added_bytes": 2617344,
+  "init_cache": {
+   "hits": 4,
+   "accesses": 5212,
+   "hit_bytes": 18432,
+   "miss_bytes": 14699520,
+   "hit_rate": 0.0012523481527864746
+  },
+  "num_subgraphs": 1095,
+  "improve_stats": {
+   "evals": 32,
+   "decode_cycle": 2,
+   "interval_FEASIBLE": 3,
+   "assign_FEASIBLE": 1,
+   "order_OPTIMAL": 2,
+   "assign_OPTIMAL": 1,
+   "rounds": 11,
+   "subgraphs_start": 1095
+  },
+  "reuse_windows": [],
+  "lower_bound_LB0": 523680.0,
+  "total_seconds": 160.58
+ },
+ "log": [
+  "case_062 K=5 P_B: T_C=604983 added=2617344 hit_rate=0.001",
+  "    time-feedback -> 604983 (best 604983)",
+  "    interval[0:16] -> 605319 (best 604983)",
+  "    assign[0:24] moved=7 -> 606891 (best 604983)",
+  "    move sg1077->c2 -> 605194 (best 604983)",
+  "    swap sg1076<->sg1077 -> 604983 (best 604983)",
+  "    move sg1076->c2 -> 605746 (best 604983)",
+  "    swap sg1075<->sg1076 -> 604983 (best 604983)",
+  "    move sg1075->c2 -> 609279 (best 604983)",
+  "    swap sg1074<->sg1075 -> 607276 (best 604983)",
+  "    move sg1074->c2 -> 606103 (best 604983)",
+  "    swap sg1073<->sg1074 -> 606437 (best 604983)",
+  "    move sg1073->c2 -> 611804 (best 604983)",
+  "    swap sg1072<->sg1073 -> 604983 (best 604983)",
+  "    move sg1072->c2 -> 613476 (best 604983)",
+  "    swap sg1071<->sg1072 -> 604983 (best 604983)",
+  "    interval[12:28] -> 606707 (best 604983)",
+  "    time-feedback -> 604983 (best 604983)",
+  "    interval[8:24] -> 607910 (best 604983)",
+  "    assign[12:36] moved=7 -> 607005 (best 604983)",
+  "    order core4[6:18] -> 604983 (best 604983)",
+  "    move sg1071->c2 -> 614713 (best 604983)",
+  "    swap sg1070<->sg1071 -> 604983 (best 604983)",
+  "    move sg1070->c2 -> 614729 (best 604983)",
+  "    swap sg1069<->sg1070 -> 604983 (best 604983)",
+  "    move sg1069->c2 -> 614774 (best 604983)",
+  "    swap sg1068<->sg1069 -> 604983 (best 604983)",
+  "    move sg1068->c2 -> 617240 (best 604983)",
+  "    swap sg1067<->sg1068 -> 604983 (best 604983)",
+  "    move sg1067->c2 -> 617338 (best 604983)",
+  "    swap sg1066<->sg1067 -> 604983 (best 604983)",
+  "    move sg1066->c2 -> 617364 (best 604983)",
+  "    swap sg1065<->sg1066 -> 604983 (best 604983)",
+  "final: T_C=604983 added=2617344 hit_rate=0.001 subgraphs=1095 time=160.6s"
+ ]
+}

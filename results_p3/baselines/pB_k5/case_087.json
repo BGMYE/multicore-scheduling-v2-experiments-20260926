@@ -1,0 +1,26 @@
+{
+ "makespan": 807096,
+ "num_cores": 5,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 5919098,
+  "scheduled_copy_bytes": 15379326,
+  "added_copy_bytes": 9460228,
+  "partition_added_copy_bytes": 5815300,
+  "spill_added_copy_bytes": 3644928
+ },
+ "cache_stats": {
+  "hits": 785,
+  "accesses": 2934,
+  "hit_bytes": 3617280,
+  "miss_bytes": 11655646,
+  "hit_rate": 0.2368426325119365,
+  "copy_in_hits": 785,
+  "copy_in_misses": 2149
+ },
+ "cache_inserts": 2128,
+ "cache_evictions": 1900,
+ "num_subgraphs": 85,
+ "cross_core_transfers": 22,
+ "stdout": "data movement: scheduled_copy_bytes=15379326, physical_ddr_bytes=15379326, cache_hits=785/2934, cache_hit_bytes=3617280\nOK: problem 3 makespan=807096; result=/tmp/tmpucf_76gb/res.json",
+ "eval_seconds": 6.93
+}

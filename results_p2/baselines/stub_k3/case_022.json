@@ -1,0 +1,29 @@
+{
+ "makespan": 55193,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 213686,
+  "scheduled_copy_bytes": 1904610,
+  "added_copy_bytes": 1690924,
+  "partition_added_copy_bytes": 1671464,
+  "spill_added_copy_bytes": 19460
+ },
+ "num_subgraphs": 18,
+ "cross_core_transfers": 486,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 39424,
+   "UB": 127008
+  },
+  "1": {
+   "L1": 6912,
+   "UB": 71244
+  },
+  "2": {
+   "L1": 18688,
+   "UB": 125002
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=1904610, physical_ddr_bytes=1904610\nOK: problem 2 makespan=55193; result=/tmp/tmpwoofi7by/res.json",
+ "eval_seconds": 0.34
+}

@@ -1,0 +1,106 @@
+{
+ "summary": {
+  "case": "case_053",
+  "cores": 2,
+  "makespan_eval": 704144,
+  "added_copy_bytes_eval": 10380914,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 2995288,
+   "scheduled_copy_bytes": 13376202,
+   "added_copy_bytes": 10380914,
+   "partition_added_copy_bytes": 10380914,
+   "spill_added_copy_bytes": 0
+  },
+  "cache": {
+   "hits": 99,
+   "accesses": 3862,
+   "hit_bytes": 920598,
+   "miss_bytes": 7931060,
+   "hit_rate": 0.10400288849840335
+  },
+  "init_makespan_TC_PB": 704390,
+  "init_added_bytes": 10380850,
+  "init_cache": {
+   "hits": 99,
+   "accesses": 3862,
+   "hit_bytes": 920598,
+   "miss_bytes": 7931028,
+   "hit_rate": 0.10400326448496582
+  },
+  "num_subgraphs": 7079,
+  "improve_stats": {
+   "evals": 29,
+   "accepted": 3,
+   "accepted_cache_stagger": 1,
+   "decode_cycle": 2,
+   "interval_FEASIBLE": 3,
+   "assign_OPTIMAL": 2,
+   "order_OPTIMAL": 2,
+   "accepted_move": 2,
+   "eval_errors": 2,
+   "rounds": 11,
+   "subgraphs_start": 7079
+  },
+  "reuse_windows": [
+   {
+    "candidates": 37,
+    "evaluated": 5,
+    "exhausted": false,
+    "improved": true
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 606363.0,
+  "total_seconds": 109.85
+ },
+ "log": [
+  "case_053 K=2 P_B: T_C=704390 added=10380850 hit_rate=0.104",
+  "    cache-cluster t=None -> 705912 hit=0.104 (best 704390)",
+  "    cache-stagger t=1000000401 -> 704390 hit=0.104 (best 704390)",
+  "    cache-stagger2 t=1000000401 -> 704390 hit=0.104 (best 704390)",
+  "    cache-colocate t=1000000401 -> 705554 hit=0.104 (best 704390)",
+  "    cache-stagger t=1000000399 -> 704169 hit=0.104 (best 704390)",
+  "    cache-cluster t=None -> 705910 hit=0.104 (best 704169)",
+  "    cache-cluster t=None -> 705910 hit=0.104 (best 704169)",
+  "    cache-cluster t=None -> 705910 hit=0.104 (best 704169)",
+  "    time-feedback -> 752619 (best 704169)",
+  "    interval[0:16] -> 704169 (best 704169)",
+  "    order core1[0:12] -> 704169 (best 704169)",
+  "    move sg7078->c0 -> 704362 (best 704169)",
+  "    swap sg7077<->sg7078 -> 704169 (best 704169)",
+  "    move sg7077->c0 -> 704453 (best 704169)",
+  "    swap sg7076<->sg7077 -> 704169 (best 704169)",
+  "    move sg7076->c0 -> 704388 (best 704169)",
+  "    swap sg7075<->sg7076 -> 704169 (best 704169)",
+  "    move sg7075->c0 -> 704375 (best 704169)",
+  "    swap sg7074<->sg7075 -> 704169 (best 704169)",
+  "    move sg7074->c0 -> 704155 (best 704169)",
+  "    swap sg7073<->sg7074 -> 704169 (best 704155)",
+  "    move sg7073->c0 -> 704158 (best 704155)",
+  "    swap sg7072<->sg7073 -> 704169 (best 704155)",
+  "    [invalid] contracted subgraph graph contains a cycle",
+  "    time-feedback -> 752605 (best 704155)",
+  "    [invalid] contracted subgraph graph contains a cycle",
+  "    order core1[6:18] -> 704155 (best 704155)",
+  "    move sg7072->c0 -> 704144 (best 704155)",
+  "    swap sg7071<->sg7072 -> 704155 (best 704144)",
+  "final: T_C=704144 added=10380914 hit_rate=0.104 subgraphs=7079 time=109.8s"
+ ]
+}

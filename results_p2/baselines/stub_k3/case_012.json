@@ -1,0 +1,29 @@
+{
+ "makespan": 53437,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 554898,
+  "scheduled_copy_bytes": 1734950,
+  "added_copy_bytes": 1180052,
+  "partition_added_copy_bytes": 1180052,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 15,
+ "cross_core_transfers": 461,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 56320,
+   "UB": 54320
+  },
+  "1": {
+   "L1": 19200,
+   "UB": 49172
+  },
+  "2": {
+   "L1": 83264,
+   "UB": 65030
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=1734950, physical_ddr_bytes=1734950\nOK: problem 2 makespan=53437; result=/tmp/tmpffraxz82/res.json",
+ "eval_seconds": 0.35
+}

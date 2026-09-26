@@ -1,0 +1,33 @@
+{
+ "makespan": 101545,
+ "num_cores": 4,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 625810,
+  "scheduled_copy_bytes": 2980608,
+  "added_copy_bytes": 2354798,
+  "partition_added_copy_bytes": 2245214,
+  "spill_added_copy_bytes": 109584
+ },
+ "num_subgraphs": 16,
+ "cross_core_transfers": 485,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 107008,
+   "UB": 129028
+  },
+  "1": {
+   "L1": 77312,
+   "UB": 129054
+  },
+  "2": {
+   "L1": 10240,
+   "UB": 16394
+  },
+  "3": {
+   "L1": 71680,
+   "UB": 54300
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=2980608, physical_ddr_bytes=2980608\nOK: problem 2 makespan=101545; result=/tmp/tmplur41eta/res.json",
+ "eval_seconds": 0.31
+}

@@ -1,0 +1,72 @@
+{
+ "summary": {
+  "case": "case_061",
+  "cores": 4,
+  "makespan_eval": 23376,
+  "added_copy_bytes_eval": 48640,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 544188,
+   "scheduled_copy_bytes": 592828,
+   "added_copy_bytes": 48640,
+   "partition_added_copy_bytes": 48640,
+   "spill_added_copy_bytes": 0
+  },
+  "cache": {
+   "hits": 15,
+   "accesses": 275,
+   "hit_bytes": 44544,
+   "miss_bytes": 546084,
+   "hit_rate": 0.07541802962270668
+  },
+  "init_makespan_TC_PB": 23376,
+  "init_added_bytes": 48640,
+  "init_cache": {
+   "hits": 15,
+   "accesses": 275,
+   "hit_bytes": 44544,
+   "miss_bytes": 546084,
+   "hit_rate": 0.07541802962270668
+  },
+  "num_subgraphs": 10,
+  "improve_stats": {
+   "evals": 26,
+   "interval_FEASIBLE": 5,
+   "assign_OPTIMAL": 3,
+   "rounds": 15,
+   "subgraphs_start": 10
+  },
+  "reuse_windows": [],
+  "lower_bound_LB0": 17864.0,
+  "total_seconds": 19.26
+ },
+ "log": [
+  "case_061 K=4 P_B: T_C=23376 added=48640 hit_rate=0.075",
+  "    time-feedback -> 23376 (best 23376)",
+  "    merge -> 23376 (best 23376)",
+  "    interval[0:10] -> 23376 (best 23376)",
+  "    assign[0:10] moved=1 -> 24983 (best 23376)",
+  "    move sg0->c1 -> 41434 (best 23376)",
+  "    move sg0->c1 -> 41434 (best 23376)",
+  "    move sg0->c1 -> 41434 (best 23376)",
+  "    move sg0->c1 -> 41434 (best 23376)",
+  "    move sg0->c1 -> 41434 (best 23376)",
+  "    move sg0->c1 -> 41434 (best 23376)",
+  "    interval[7:17] -> 23376 (best 23376)",
+  "    time-feedback -> 23376 (best 23376)",
+  "    merge -> 23376 (best 23376)",
+  "    interval[5:15] -> 23376 (best 23376)",
+  "    assign[0:10] moved=1 -> 24983 (best 23376)",
+  "    move sg0->c1 -> 41434 (best 23376)",
+  "    move sg0->c1 -> 41434 (best 23376)",
+  "    move sg0->c1 -> 41434 (best 23376)",
+  "    move sg0->c1 -> 41434 (best 23376)",
+  "    move sg0->c1 -> 41434 (best 23376)",
+  "    move sg0->c1 -> 41434 (best 23376)",
+  "    interval[2:12] -> 23376 (best 23376)",
+  "    time-feedback -> 23376 (best 23376)",
+  "    merge -> 23376 (best 23376)",
+  "    interval[0:10] -> 23376 (best 23376)",
+  "    assign[0:10] moved=1 -> 24983 (best 23376)",
+  "final: T_C=23376 added=48640 hit_rate=0.075 subgraphs=10 time=19.3s"
+ ]
+}

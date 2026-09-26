@@ -1,0 +1,37 @@
+{
+ "makespan": 200001,
+ "num_cores": 5,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 1431122,
+  "scheduled_copy_bytes": 6936434,
+  "added_copy_bytes": 5505312,
+  "partition_added_copy_bytes": 5505312,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 778,
+ "cross_core_transfers": 1169,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 158976,
+   "UB": 40970
+  },
+  "1": {
+   "L1": 109824,
+   "UB": 40972
+  },
+  "2": {
+   "L1": 160048,
+   "UB": 68624
+  },
+  "3": {
+   "L1": 217136,
+   "UB": 36868
+  },
+  "4": {
+   "L1": 212736,
+   "UB": 41738
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=6936434, physical_ddr_bytes=6936434\nOK: problem 2 makespan=200001; result=/tmp/tmp03naeom1/res.json",
+ "eval_seconds": 2.73
+}

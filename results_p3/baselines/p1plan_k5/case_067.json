@@ -1,0 +1,26 @@
+{
+ "makespan": 11969522,
+ "num_cores": 5,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 6048128,
+  "scheduled_copy_bytes": 91587456,
+  "added_copy_bytes": 85539328,
+  "partition_added_copy_bytes": 82568704,
+  "spill_added_copy_bytes": 2970624
+ },
+ "cache_stats": {
+  "hits": 740,
+  "accesses": 5847,
+  "hit_bytes": 15801600,
+  "miss_bytes": 40201856,
+  "hit_rate": 0.28215401563789205,
+  "copy_in_hits": 740,
+  "copy_in_misses": 5107
+ },
+ "cache_inserts": 5093,
+ "cache_evictions": 5029,
+ "num_subgraphs": 3934,
+ "cross_core_transfers": 5455,
+ "stdout": "data movement: scheduled_copy_bytes=91587456, physical_ddr_bytes=91587456, cache_hits=740/5847, cache_hit_bytes=15801600\nOK: problem 3 makespan=11969522; result=/tmp/tmpj5_ilogm/res.json",
+ "eval_seconds": 3.99
+}

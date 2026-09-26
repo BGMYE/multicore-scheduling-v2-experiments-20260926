@@ -1,0 +1,103 @@
+{
+ "summary": {
+  "case": "case_003",
+  "cores": 5,
+  "makespan_eval": 174202,
+  "added_copy_bytes_eval": 4402364,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 1284264,
+   "scheduled_copy_bytes": 5686628,
+   "added_copy_bytes": 4402364,
+   "partition_added_copy_bytes": 4402364,
+   "spill_added_copy_bytes": 0
+  },
+  "cache": {
+   "hits": 835,
+   "accesses": 1830,
+   "hit_bytes": 2172946,
+   "miss_bytes": 2112350,
+   "hit_rate": 0.5070702233871359
+  },
+  "init_makespan_TC_PB": 174202,
+  "init_added_bytes": 4402364,
+  "init_cache": {
+   "hits": 835,
+   "accesses": 1830,
+   "hit_bytes": 2172946,
+   "miss_bytes": 2112350,
+   "hit_rate": 0.5070702233871359
+  },
+  "num_subgraphs": 725,
+  "improve_stats": {
+   "evals": 48,
+   "decode_cycle": 1,
+   "interval_FEASIBLE": 2,
+   "assign_FEASIBLE": 1,
+   "order_OPTIMAL": 1,
+   "rounds": 6,
+   "subgraphs_start": 725
+  },
+  "reuse_windows": [
+   {
+    "candidates": 37,
+    "evaluated": 32,
+    "exhausted": false,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 87758.4,
+  "total_seconds": 120.31
+ },
+ "log": [
+  "case_003 K=5 P_B: T_C=174202 added=4402364 hit_rate=0.507",
+  "    cache-cluster t=None -> 174202 hit=0.507 (best 174202)",
+  "    cache-stagger t=1000013714 -> 177553 hit=0.507 (best 174202)",
+  "    cache-stagger2 t=1000013714 -> 177553 hit=0.507 (best 174202)",
+  "    cache-colocate t=1000013714 -> 174205 hit=0.506 (best 174202)",
+  "    cache-stagger t=1000011269 -> 174257 hit=0.507 (best 174202)",
+  "    cache-stagger2 t=1000011269 -> 174435 hit=0.507 (best 174202)",
+  "    cache-colocate t=1000011269 -> 175041 hit=0.501 (best 174202)",
+  "    cache-stagger t=1000009024 -> 174389 hit=0.507 (best 174202)",
+  "    cache-stagger2 t=1000009024 -> 174576 hit=0.507 (best 174202)",
+  "    cache-colocate t=1000009024 -> 175303 hit=0.507 (best 174202)",
+  "    cache-stagger t=1000006779 -> 174389 hit=0.507 (best 174202)",
+  "    cache-stagger2 t=1000006779 -> 174576 hit=0.507 (best 174202)",
+  "    cache-colocate t=1000006779 -> 175303 hit=0.507 (best 174202)",
+  "    cache-stagger t=1000004534 -> 174389 hit=0.507 (best 174202)",
+  "    cache-stagger2 t=1000004534 -> 174576 hit=0.507 (best 174202)",
+  "    cache-colocate t=1000004534 -> 175303 hit=0.507 (best 174202)",
+  "    cache-stagger t=1000002289 -> 174389 hit=0.507 (best 174202)",
+  "    cache-stagger2 t=1000002289 -> 174576 hit=0.507 (best 174202)",
+  "    cache-colocate t=1000002289 -> 175303 hit=0.507 (best 174202)",
+  "    cache-stagger t=1000000044 -> 174277 hit=0.508 (best 174202)",
+  "    cache-stagger2 t=1000000044 -> 174226 hit=0.508 (best 174202)",
+  "    cache-colocate t=1000000044 -> 174568 hit=0.509 (best 174202)",
+  "    cache-stagger t=1000009030 -> 174202 hit=0.507 (best 174202)",
+  "    cache-stagger2 t=1000009030 -> 174202 hit=0.507 (best 174202)",
+  "    cache-colocate t=1000009030 -> 175338 hit=0.508 (best 174202)",
+  "    cache-stagger t=1000006785 -> 174202 hit=0.507 (best 174202)",
+  "    cache-stagger2 t=1000006785 -> 174202 hit=0.507 (best 174202)",
+  "    cache-colocate t=1000006785 -> 175338 hit=0.508 (best 174202)",
+  "    cache-stagger t=1000004540 -> 174202 hit=0.507 (best 174202)",
+  "    cache-stagger2 t=1000004540 -> 174202 hit=0.507 (best 174202)",
+  "    cache-colocate t=1000004540 -> 175338 hit=0.508 (best 174202)",
+  "    cache-stagger t=1000002295 -> 174202 hit=0.507 (best 174202)",
+  "    time-feedback -> 186139 (best 174202)",
+  "    interval[0:16] -> 175210 (best 174202)",
+  "    assign[0:24] moved=15 -> 176401 (best 174202)",
+  "    order core1[0:12] -> 175889 (best 174202)",
+  "    move sg303->c3 -> 174704 (best 174202)",
+  "    swap sg302<->sg303 -> 174202 (best 174202)",
+  "    move sg302->c3 -> 175268 (best 174202)",
+  "    swap sg301<->sg302 -> 174202 (best 174202)",
+  "    move sg301->c3 -> 174804 (best 174202)",
+  "    swap sg300<->sg301 -> 174202 (best 174202)",
+  "    move sg300->c3 -> 177146 (best 174202)",
+  "    swap sg299<->sg300 -> 174202 (best 174202)",
+  "    move sg299->c3 -> 179261 (best 174202)",
+  "    swap sg298<->sg299 -> 174202 (best 174202)",
+  "    move sg298->c3 -> 177658 (best 174202)",
+  "    swap sg297<->sg298 -> 174202 (best 174202)",
+  "final: T_C=174202 added=4402364 hit_rate=0.507 subgraphs=725 time=120.3s"
+ ]
+}

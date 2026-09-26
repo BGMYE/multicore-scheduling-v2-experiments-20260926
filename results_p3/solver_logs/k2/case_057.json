@@ -1,0 +1,75 @@
+{
+ "summary": {
+  "case": "case_057",
+  "cores": 2,
+  "makespan_eval": 29738,
+  "added_copy_bytes_eval": 4096,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 342460,
+   "scheduled_copy_bytes": 346556,
+   "added_copy_bytes": 4096,
+   "partition_added_copy_bytes": 0,
+   "spill_added_copy_bytes": 4096
+  },
+  "cache": {
+   "hits": 1,
+   "accesses": 128,
+   "hit_bytes": 4096,
+   "miss_bytes": 336588,
+   "hit_rate": 0.012022871634711345
+  },
+  "init_makespan_TC_PB": 29738,
+  "init_added_bytes": 4096,
+  "init_cache": {
+   "hits": 1,
+   "accesses": 128,
+   "hit_bytes": 4096,
+   "miss_bytes": 336588,
+   "hit_rate": 0.012022871634711345
+  },
+  "num_subgraphs": 3,
+  "improve_stats": {
+   "evals": 29,
+   "interval_OPTIMAL": 5,
+   "assign_OPTIMAL": 3,
+   "rounds": 15,
+   "subgraphs_start": 3
+  },
+  "reuse_windows": [],
+  "lower_bound_LB0": 23782.5,
+  "total_seconds": 3.15
+ },
+ "log": [
+  "case_057 K=2 P_B: T_C=29738 added=4096 hit_rate=0.012",
+  "    time-feedback -> 29738 (best 29738)",
+  "    interval[0:3] -> 30754 (best 29738)",
+  "    assign[0:3] moved=1 -> 33112 (best 29738)",
+  "    move sg2->c0 -> 33112 (best 29738)",
+  "    swap sg1<->sg2 -> 29825 (best 29738)",
+  "    move sg1->c0 -> 55581 (best 29738)",
+  "    move sg2->c0 -> 33112 (best 29738)",
+  "    swap sg1<->sg2 -> 29825 (best 29738)",
+  "    move sg1->c0 -> 55581 (best 29738)",
+  "    move sg2->c0 -> 33112 (best 29738)",
+  "    swap sg1<->sg2 -> 29825 (best 29738)",
+  "    move sg1->c0 -> 55581 (best 29738)",
+  "    interval[1:4] -> 30754 (best 29738)",
+  "    time-feedback -> 29738 (best 29738)",
+  "    interval[1:4] -> 30754 (best 29738)",
+  "    assign[0:3] moved=1 -> 33112 (best 29738)",
+  "    move sg2->c0 -> 33112 (best 29738)",
+  "    swap sg1<->sg2 -> 29825 (best 29738)",
+  "    move sg1->c0 -> 55581 (best 29738)",
+  "    move sg2->c0 -> 33112 (best 29738)",
+  "    swap sg1<->sg2 -> 29825 (best 29738)",
+  "    move sg1->c0 -> 55581 (best 29738)",
+  "    move sg2->c0 -> 33112 (best 29738)",
+  "    swap sg1<->sg2 -> 29825 (best 29738)",
+  "    move sg1->c0 -> 55581 (best 29738)",
+  "    interval[0:3] -> 30754 (best 29738)",
+  "    time-feedback -> 29738 (best 29738)",
+  "    interval[0:3] -> 30754 (best 29738)",
+  "    assign[0:3] moved=1 -> 33112 (best 29738)",
+  "final: T_C=29738 added=4096 hit_rate=0.012 subgraphs=3 time=3.1s"
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "summary": {
+  "case": "case_085",
+  "cores": 2,
+  "makespan_eval": 1623338,
+  "added_copy_bytes_eval": 22091822,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 1689734,
+   "scheduled_copy_bytes": 23781556,
+   "added_copy_bytes": 22091822,
+   "partition_added_copy_bytes": 21080582,
+   "spill_added_copy_bytes": 1011240
+  },
+  "cache": {
+   "hits": 291,
+   "accesses": 8588,
+   "hit_bytes": 608822,
+   "miss_bytes": 12390910,
+   "hit_rate": 0.046833427027572566
+  },
+  "init_makespan_TC_PB": 1623338,
+  "init_added_bytes": 22091822,
+  "init_cache": {
+   "hits": 291,
+   "accesses": 8588,
+   "hit_bytes": 608822,
+   "miss_bytes": 12390910,
+   "hit_rate": 0.046833427027572566
+  },
+  "num_subgraphs": 14741,
+  "improve_stats": {
+   "evals": 20,
+   "decode_cycle": 1,
+   "interval_FEASIBLE": 1,
+   "eval_errors": 1,
+   "assign_OPTIMAL": 1,
+   "order_OPTIMAL": 1,
+   "rounds": 5,
+   "subgraphs_start": 14741
+  },
+  "reuse_windows": [
+   {
+    "candidates": 15,
+    "evaluated": 12,
+    "exhausted": false,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 1282608.0,
+  "total_seconds": 161.81
+ },
+ "log": [
+  "case_085 K=2 P_B: T_C=1623338 added=22091822 hit_rate=0.047",
+  "    cache-cluster t=None -> 1623344 hit=0.047 (best 1623338)",
+  "    cache-stagger t=1000018014 -> 1623338 hit=0.047 (best 1623338)",
+  "    cache-stagger2 t=1000018014 -> 1623338 hit=0.047 (best 1623338)",
+  "    cache-colocate t=1000018014 -> 1625931 hit=0.048 (best 1623338)",
+  "    cache-gather t=1000017852 -> 1623340 hit=0.047 (best 1623338)",
+  "    cache-gather t=1000017833 -> 1623338 hit=0.047 (best 1623338)",
+  "    cache-gather t=1000015607 -> 1623344 hit=0.047 (best 1623338)",
+  "    cache-gather t=1000015588 -> 1623338 hit=0.047 (best 1623338)",
+  "    cache-gather t=1000013362 -> 1623344 hit=0.047 (best 1623338)",
+  "    cache-gather t=1000013343 -> 1623338 hit=0.047 (best 1623338)",
+  "    cache-gather t=1000011117 -> 1623344 hit=0.047 (best 1623338)",
+  "    cache-gather t=1000011098 -> 1623338 hit=0.047 (best 1623338)",
+  "    time-feedback -> 1734257 (best 1623338)",
+  "    [invalid] dependency order violation on core 0: 3 -> 14730",
+  "    assign[0:24] moved=1 -> 1623379 (best 1623338)",
+  "    order core1[0:12] -> 1623450 (best 1623338)",
+  "    move sg14740->c0 -> 1623908 (best 1623338)",
+  "    swap sg14739<->sg14740 -> 1623338 (best 1623338)",
+  "    move sg14739->c0 -> 1624463 (best 1623338)",
+  "    swap sg14738<->sg14739 -> 1623338 (best 1623338)",
+  "final: T_C=1623338 added=22091822 hit_rate=0.047 subgraphs=14741 time=161.8s"
+ ]
+}

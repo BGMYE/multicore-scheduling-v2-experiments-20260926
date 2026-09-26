@@ -1,0 +1,26 @@
+{
+ "makespan": 182220,
+ "num_cores": 5,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 1284264,
+  "scheduled_copy_bytes": 5749040,
+  "added_copy_bytes": 4464776,
+  "partition_added_copy_bytes": 4464776,
+  "spill_added_copy_bytes": 0
+ },
+ "cache_stats": {
+  "hits": 874,
+  "accesses": 1830,
+  "hit_bytes": 1995668,
+  "miss_bytes": 2440770,
+  "hit_rate": 0.44983565644329976,
+  "copy_in_hits": 874,
+  "copy_in_misses": 956
+ },
+ "cache_inserts": 863,
+ "cache_evictions": 398,
+ "num_subgraphs": 506,
+ "cross_core_transfers": 1390,
+ "stdout": "data movement: scheduled_copy_bytes=5749040, physical_ddr_bytes=5749040, cache_hits=874/1830, cache_hit_bytes=1995668\nOK: problem 3 makespan=182220; result=/tmp/tmpf658ntxr/res.json",
+ "eval_seconds": 2.64
+}

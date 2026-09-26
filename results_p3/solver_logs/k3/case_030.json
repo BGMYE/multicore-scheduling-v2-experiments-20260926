@@ -1,0 +1,124 @@
+{
+ "summary": {
+  "case": "case_030",
+  "cores": 3,
+  "makespan_eval": 941995,
+  "added_copy_bytes_eval": 2201600,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 2394060,
+   "scheduled_copy_bytes": 4595660,
+   "added_copy_bytes": 2201600,
+   "partition_added_copy_bytes": 1810432,
+   "spill_added_copy_bytes": 391168
+  },
+  "cache": {
+   "hits": 726,
+   "accesses": 1521,
+   "hit_bytes": 1948672,
+   "miss_bytes": 2646016,
+   "hit_rate": 0.42411410742143973
+  },
+  "init_makespan_TC_PB": 941995,
+  "init_added_bytes": 2366464,
+  "init_cache": {
+   "hits": 699,
+   "accesses": 1600,
+   "hit_bytes": 1835008,
+   "miss_bytes": 2924544,
+   "hit_rate": 0.3855421686746988
+  },
+  "num_subgraphs": 12,
+  "improve_stats": {
+   "evals": 50,
+   "accepted": 1,
+   "accepted_cache_cluster": 1,
+   "interval_FEASIBLE": 4,
+   "assign_OPTIMAL": 2,
+   "order_OPTIMAL": 2,
+   "rounds": 12,
+   "subgraphs_start": 12
+  },
+  "reuse_windows": [
+   {
+    "candidates": 20,
+    "evaluated": 1,
+    "exhausted": false,
+    "improved": true
+   },
+   {
+    "candidates": 19,
+    "evaluated": 19,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 925493.3333333334,
+  "total_seconds": 98.53
+ },
+ "log": [
+  "case_030 K=3 P_B: T_C=941995 added=2366464 hit_rate=0.386",
+  "    cache-cluster t=None -> 941995 hit=0.424 (best 941995)",
+  "    cache-cluster t=None -> 941995 hit=0.423 (best 941995)",
+  "    cache-stagger t=1000000687 -> 941995 hit=0.413 (best 941995)",
+  "    cache-stagger2 t=1000000687 -> 941995 hit=0.413 (best 941995)",
+  "    cache-colocate t=1000000687 -> 1179967 hit=0.408 (best 941995)",
+  "    cache-gather t=1000000685 -> 941995 hit=0.408 (best 941995)",
+  "    cache-gather t=1000000677 -> 941995 hit=0.367 (best 941995)",
+  "    cache-colocate t=1000000677 -> 1141157 hit=0.410 (best 941995)",
+  "    cache-gather t=1000000673 -> 941995 hit=0.408 (best 941995)",
+  "    cache-gather t=1000000669 -> 941995 hit=0.408 (best 941995)",
+  "    cache-gather t=1000000665 -> 941995 hit=0.408 (best 941995)",
+  "    cache-gather t=1000000657 -> 941995 hit=0.367 (best 941995)",
+  "    cache-colocate t=1000000657 -> 1141157 hit=0.410 (best 941995)",
+  "    cache-gather t=1000000653 -> 941995 hit=0.408 (best 941995)",
+  "    cache-gather t=1000000645 -> 941995 hit=0.408 (best 941995)",
+  "    cache-gather t=1000000637 -> 941995 hit=0.367 (best 941995)",
+  "    cache-colocate t=1000000637 -> 1141157 hit=0.410 (best 941995)",
+  "    cache-gather t=1000000633 -> 941995 hit=0.371 (best 941995)",
+  "    cache-colocate t=1000000633 -> 1141589 hit=0.417 (best 941995)",
+  "    cache-gather t=1000000625 -> 941995 hit=0.408 (best 941995)",
+  "    cache-cluster t=None -> 941995 hit=0.423 (best 941995)",
+  "    cache-cluster t=None -> 941995 hit=0.423 (best 941995)",
+  "    time-feedback -> 941995 (best 941995)",
+  "    interval[0:12] -> 944139 (best 941995)",
+  "    order core1[0:4] -> 946217 (best 941995)",
+  "    move sg7->c0 -> 1143477 (best 941995)",
+  "    swap sg6<->sg7 -> 946237 (best 941995)",
+  "    move sg6->c0 -> 1145652 (best 941995)",
+  "    swap sg5<->sg6 -> 942147 (best 941995)",
+  "    move sg5->c0 -> 1143450 (best 941995)",
+  "    swap sg4<->sg5 -> 943675 (best 941995)",
+  "    move sg4->c0 -> 1142690 (best 941995)",
+  "    move sg7->c0 -> 1143477 (best 941995)",
+  "    swap sg6<->sg7 -> 946237 (best 941995)",
+  "    move sg6->c0 -> 1145652 (best 941995)",
+  "    swap sg5<->sg6 -> 942147 (best 941995)",
+  "    interval[9:21] -> 944139 (best 941995)",
+  "    time-feedback -> 941995 (best 941995)",
+  "    interval[6:18] -> 944139 (best 941995)",
+  "    order core1[0:4] -> 946217 (best 941995)",
+  "    move sg5->c0 -> 1143450 (best 941995)",
+  "    swap sg4<->sg5 -> 943675 (best 941995)",
+  "    move sg4->c0 -> 1142690 (best 941995)",
+  "    move sg7->c0 -> 1143477 (best 941995)",
+  "    swap sg6<->sg7 -> 946237 (best 941995)",
+  "    move sg6->c0 -> 1145652 (best 941995)",
+  "    swap sg5<->sg6 -> 942147 (best 941995)",
+  "    move sg5->c0 -> 1143450 (best 941995)",
+  "    swap sg4<->sg5 -> 943675 (best 941995)",
+  "    move sg4->c0 -> 1142690 (best 941995)",
+  "final: T_C=941995 added=2201600 hit_rate=0.424 subgraphs=12 time=98.5s"
+ ]
+}

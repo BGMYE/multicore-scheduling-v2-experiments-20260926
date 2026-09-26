@@ -1,0 +1,29 @@
+{
+ "makespan": 1434907,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 3256928,
+  "scheduled_copy_bytes": 22376096,
+  "added_copy_bytes": 19119168,
+  "partition_added_copy_bytes": 18594880,
+  "spill_added_copy_bytes": 524288
+ },
+ "num_subgraphs": 138,
+ "cross_core_transfers": 2693,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 523520,
+   "UB": 0
+  },
+  "1": {
+   "L1": 402272,
+   "UB": 0
+  },
+  "2": {
+   "L1": 518656,
+   "UB": 0
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=22376096, physical_ddr_bytes=22376096\nOK: problem 2 makespan=1434907; result=/tmp/tmpozy90mlq/res.json",
+ "eval_seconds": 6.73
+}

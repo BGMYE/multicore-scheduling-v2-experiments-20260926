@@ -1,0 +1,25 @@
+{
+ "makespan": 700900,
+ "num_cores": 2,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 2185040,
+  "scheduled_copy_bytes": 6025044,
+  "added_copy_bytes": 3840004,
+  "partition_added_copy_bytes": 1554436,
+  "spill_added_copy_bytes": 2285568
+ },
+ "num_subgraphs": 23,
+ "cross_core_transfers": 1,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 524288,
+   "UB": 40960
+  },
+  "1": {
+   "L1": 524288,
+   "UB": 57344
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=6025044, physical_ddr_bytes=6025044\nOK: problem 2 makespan=700900; result=/tmp/tmp42eglcr6/res.json",
+ "eval_seconds": 1.23
+}

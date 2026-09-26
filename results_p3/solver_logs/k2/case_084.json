@@ -1,0 +1,70 @@
+{
+ "summary": {
+  "case": "case_084",
+  "cores": 2,
+  "makespan_eval": 686504,
+  "added_copy_bytes_eval": 9427968,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 13236330,
+   "scheduled_copy_bytes": 22664298,
+   "added_copy_bytes": 9427968,
+   "partition_added_copy_bytes": 9216,
+   "spill_added_copy_bytes": 9418752
+  },
+  "cache": {
+   "hits": 0,
+   "accesses": 5331,
+   "hit_bytes": 0,
+   "miss_bytes": 14641770,
+   "hit_rate": 0.0
+  },
+  "init_makespan_TC_PB": 686504,
+  "init_added_bytes": 9427968,
+  "init_cache": {
+   "hits": 0,
+   "accesses": 5331,
+   "hit_bytes": 0,
+   "miss_bytes": 14641770,
+   "hit_rate": 0.0
+  },
+  "num_subgraphs": 5,
+  "improve_stats": {
+   "evals": 24,
+   "interval_FEASIBLE": 4,
+   "assign_OPTIMAL": 2,
+   "rounds": 12,
+   "subgraphs_start": 5
+  },
+  "reuse_windows": [],
+  "lower_bound_LB0": 633276.0,
+  "total_seconds": 86.52
+ },
+ "log": [
+  "case_084 K=2 P_B: T_C=686504 added=9427968 hit_rate=0.000",
+  "    time-feedback -> 686504 (best 686504)",
+  "    interval[0:5] -> 686504 (best 686504)",
+  "    move sg3->c1 -> 1371428 (best 686504)",
+  "    swap sg0<->sg3 -> 686504 (best 686504)",
+  "    move sg0->c1 -> 1002480 (best 686504)",
+  "    move sg3->c1 -> 1371428 (best 686504)",
+  "    swap sg0<->sg3 -> 686504 (best 686504)",
+  "    move sg0->c1 -> 1002480 (best 686504)",
+  "    move sg3->c1 -> 1371428 (best 686504)",
+  "    swap sg0<->sg3 -> 686504 (best 686504)",
+  "    move sg0->c1 -> 1002480 (best 686504)",
+  "    interval[3:8] -> 686504 (best 686504)",
+  "    time-feedback -> 686504 (best 686504)",
+  "    interval[2:7] -> 686504 (best 686504)",
+  "    move sg3->c1 -> 1371428 (best 686504)",
+  "    swap sg0<->sg3 -> 686504 (best 686504)",
+  "    move sg0->c1 -> 1002480 (best 686504)",
+  "    move sg3->c1 -> 1371428 (best 686504)",
+  "    swap sg0<->sg3 -> 686504 (best 686504)",
+  "    move sg0->c1 -> 1002480 (best 686504)",
+  "    move sg3->c1 -> 1371428 (best 686504)",
+  "    swap sg0<->sg3 -> 686504 (best 686504)",
+  "    move sg0->c1 -> 1002480 (best 686504)",
+  "    interval[1:6] -> 686504 (best 686504)",
+  "final: T_C=686504 added=9427968 hit_rate=0.000 subgraphs=5 time=86.5s"
+ ]
+}

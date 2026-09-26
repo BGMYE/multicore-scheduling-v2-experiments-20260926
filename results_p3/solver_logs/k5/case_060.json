@@ -1,0 +1,119 @@
+{
+ "summary": {
+  "case": "case_060",
+  "cores": 5,
+  "makespan_eval": 172541,
+  "added_copy_bytes_eval": 2856960,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 2099006,
+   "scheduled_copy_bytes": 4955966,
+   "added_copy_bytes": 2856960,
+   "partition_added_copy_bytes": 2734080,
+   "spill_added_copy_bytes": 122880
+  },
+  "cache": {
+   "hits": 954,
+   "accesses": 1844,
+   "hit_bytes": 2284544,
+   "miss_bytes": 2671144,
+   "hit_rate": 0.46099431602635194
+  },
+  "init_makespan_TC_PB": 172541,
+  "init_added_bytes": 2856960,
+  "init_cache": {
+   "hits": 954,
+   "accesses": 1844,
+   "hit_bytes": 2284544,
+   "miss_bytes": 2671144,
+   "hit_rate": 0.46099431602635194
+  },
+  "num_subgraphs": 8,
+  "improve_stats": {
+   "evals": 54,
+   "interval_OPTIMAL": 5,
+   "assign_OPTIMAL": 3,
+   "rounds": 15,
+   "subgraphs_start": 8
+  },
+  "reuse_windows": [
+   {
+    "candidates": 29,
+    "evaluated": 29,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 144046.4,
+  "total_seconds": 48.04
+ },
+ "log": [
+  "case_060 K=5 P_B: T_C=172541 added=2856960 hit_rate=0.461",
+  "    cache-cluster t=None -> 172541 hit=0.461 (best 172541)",
+  "    cache-gather t=1000002021 -> 172541 hit=0.461 (best 172541)",
+  "    cache-colocate t=1000002021 -> 515398 hit=0.335 (best 172541)",
+  "    cache-gather t=1000001991 -> 172541 hit=0.461 (best 172541)",
+  "    cache-colocate t=1000001991 -> 522530 hit=0.313 (best 172541)",
+  "    cache-gather t=1000001981 -> 172541 hit=0.461 (best 172541)",
+  "    cache-colocate t=1000001981 -> 522530 hit=0.313 (best 172541)",
+  "    cache-gather t=1000001961 -> 172541 hit=0.461 (best 172541)",
+  "    cache-colocate t=1000001961 -> 522530 hit=0.313 (best 172541)",
+  "    cache-gather t=1000001931 -> 172541 hit=0.461 (best 172541)",
+  "    cache-colocate t=1000001931 -> 522530 hit=0.313 (best 172541)",
+  "    cache-gather t=1000001901 -> 172541 hit=0.461 (best 172541)",
+  "    cache-colocate t=1000001901 -> 522530 hit=0.313 (best 172541)",
+  "    cache-gather t=1000001881 -> 172541 hit=0.461 (best 172541)",
+  "    cache-colocate t=1000001881 -> 515398 hit=0.335 (best 172541)",
+  "    cache-gather t=1000001811 -> 172541 hit=0.461 (best 172541)",
+  "    cache-stagger t=1000001811 -> 172541 hit=0.461 (best 172541)",
+  "    cache-stagger2 t=1000001811 -> 172541 hit=0.461 (best 172541)",
+  "    cache-colocate t=1000001811 -> 479369 hit=0.388 (best 172541)",
+  "    cache-gather t=1000001781 -> 172541 hit=0.461 (best 172541)",
+  "    cache-stagger t=1000001781 -> 172541 hit=0.461 (best 172541)",
+  "    cache-stagger2 t=1000001781 -> 172541 hit=0.461 (best 172541)",
+  "    cache-colocate t=1000001781 -> 479369 hit=0.388 (best 172541)",
+  "    cache-gather t=1000001771 -> 172541 hit=0.461 (best 172541)",
+  "    cache-stagger t=1000001771 -> 172541 hit=0.461 (best 172541)",
+  "    cache-stagger2 t=1000001771 -> 172541 hit=0.461 (best 172541)",
+  "    cache-colocate t=1000001771 -> 479369 hit=0.388 (best 172541)",
+  "    cache-gather t=1000002033 -> 172541 hit=0.461 (best 172541)",
+  "    cache-colocate t=1000002033 -> 327420 hit=0.402 (best 172541)",
+  "    cache-cluster t=None -> 172541 hit=0.461 (best 172541)",
+  "    cache-cluster t=None -> 172541 hit=0.461 (best 172541)",
+  "    time-feedback -> 172541 (best 172541)",
+  "    interval[0:8] -> 176903 (best 172541)",
+  "    assign[0:8] moved=1 -> 191145 (best 172541)",
+  "    move sg0->c2 -> 342130 (best 172541)",
+  "    move sg0->c2 -> 342130 (best 172541)",
+  "    move sg0->c2 -> 342130 (best 172541)",
+  "    move sg0->c2 -> 342130 (best 172541)",
+  "    move sg0->c2 -> 342130 (best 172541)",
+  "    move sg0->c2 -> 342130 (best 172541)",
+  "    interval[6:14] -> 176903 (best 172541)",
+  "    time-feedback -> 172541 (best 172541)",
+  "    interval[4:12] -> 176903 (best 172541)",
+  "    assign[0:8] moved=1 -> 191145 (best 172541)",
+  "    move sg0->c2 -> 342130 (best 172541)",
+  "    move sg0->c2 -> 342130 (best 172541)",
+  "    move sg0->c2 -> 342130 (best 172541)",
+  "    move sg0->c2 -> 342130 (best 172541)",
+  "    move sg0->c2 -> 342130 (best 172541)",
+  "    move sg0->c2 -> 342130 (best 172541)",
+  "    interval[2:10] -> 176903 (best 172541)",
+  "    time-feedback -> 172541 (best 172541)",
+  "    interval[0:8] -> 176903 (best 172541)",
+  "    assign[0:8] moved=1 -> 191145 (best 172541)",
+  "final: T_C=172541 added=2856960 hit_rate=0.461 subgraphs=8 time=48.0s"
+ ]
+}

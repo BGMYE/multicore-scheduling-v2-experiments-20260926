@@ -1,0 +1,33 @@
+{
+ "makespan": 559196,
+ "num_cores": 4,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 2039808,
+  "scheduled_copy_bytes": 4251648,
+  "added_copy_bytes": 2211840,
+  "partition_added_copy_bytes": 2211840,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 4,
+ "cross_core_transfers": 0,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 333824,
+   "UB": 0
+  },
+  "1": {
+   "L1": 333824,
+   "UB": 0
+  },
+  "2": {
+   "L1": 333824,
+   "UB": 0
+  },
+  "3": {
+   "L1": 333824,
+   "UB": 0
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=4251648, physical_ddr_bytes=4251648\nOK: problem 2 makespan=559196; result=/tmp/tmpf_ndibou/res.json",
+ "eval_seconds": 0.29
+}

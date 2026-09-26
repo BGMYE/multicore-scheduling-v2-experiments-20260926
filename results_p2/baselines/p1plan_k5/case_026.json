@@ -1,0 +1,37 @@
+{
+ "makespan": 41449,
+ "num_cores": 5,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 528854,
+  "scheduled_copy_bytes": 656362,
+  "added_copy_bytes": 127508,
+  "partition_added_copy_bytes": 127508,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 17,
+ "cross_core_transfers": 10,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 163840,
+   "UB": 32776
+  },
+  "1": {
+   "L1": 16384,
+   "UB": 40962
+  },
+  "2": {
+   "L1": 19200,
+   "UB": 40960
+  },
+  "3": {
+   "L1": 16000,
+   "UB": 57344
+  },
+  "4": {
+   "L1": 113664,
+   "UB": 57348
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=656362, physical_ddr_bytes=656362\nOK: problem 2 makespan=41449; result=/tmp/tmpcdim50tv/res.json",
+ "eval_seconds": 0.16
+}

@@ -1,0 +1,33 @@
+{
+ "makespan": 70887,
+ "num_cores": 4,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 186984,
+  "scheduled_copy_bytes": 1194160,
+  "added_copy_bytes": 1007176,
+  "partition_added_copy_bytes": 1007176,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 10,
+ "cross_core_transfers": 174,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 65824,
+   "UB": 70784
+  },
+  "1": {
+   "L1": 68096,
+   "UB": 130176
+  },
+  "2": {
+   "L1": 6144,
+   "UB": 43010
+  },
+  "3": {
+   "L1": 0,
+   "UB": 0
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=1194160, physical_ddr_bytes=1194160\nOK: problem 2 makespan=70887; result=/tmp/tmpbtspp46i/res.json",
+ "eval_seconds": 0.15
+}

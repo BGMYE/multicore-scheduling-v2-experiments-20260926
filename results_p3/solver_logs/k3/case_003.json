@@ -1,0 +1,128 @@
+{
+ "summary": {
+  "case": "case_003",
+  "cores": 3,
+  "makespan_eval": 234008,
+  "added_copy_bytes_eval": 2625320,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 1284264,
+   "scheduled_copy_bytes": 3909584,
+   "added_copy_bytes": 2625320,
+   "partition_added_copy_bytes": 2625320,
+   "spill_added_copy_bytes": 0
+  },
+  "cache": {
+   "hits": 390,
+   "accesses": 1221,
+   "hit_bytes": 1185548,
+   "miss_bytes": 1888660,
+   "hit_rate": 0.38564339172886153
+  },
+  "init_makespan_TC_PB": 235919,
+  "init_added_bytes": 2609832,
+  "init_cache": {
+   "hits": 385,
+   "accesses": 1216,
+   "hit_bytes": 1134346,
+   "miss_bytes": 1933142,
+   "hit_rate": 0.36979639366152367
+  },
+  "num_subgraphs": 390,
+  "improve_stats": {
+   "evals": 49,
+   "accepted": 4,
+   "accepted_cache_colocate": 1,
+   "decode_cycle": 2,
+   "interval_FEASIBLE": 3,
+   "accepted_interval": 1,
+   "assign_FEASIBLE": 1,
+   "order_OPTIMAL": 2,
+   "accepted_order": 2,
+   "eval_errors": 2,
+   "assign_OPTIMAL": 1,
+   "rounds": 11,
+   "subgraphs_start": 387
+  },
+  "reuse_windows": [
+   {
+    "candidates": 37,
+    "evaluated": 7,
+    "exhausted": false,
+    "improved": true
+   },
+   {
+    "candidates": 7,
+    "evaluated": 7,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 146264.0,
+  "total_seconds": 119.75
+ },
+ "log": [
+  "case_003 K=3 P_B: T_C=235919 added=2609832 hit_rate=0.370",
+  "    cache-cluster t=None -> 236062 hit=0.370 (best 235919)",
+  "    cache-stagger t=1000013714 -> 235919 hit=0.370 (best 235919)",
+  "    cache-stagger2 t=1000013714 -> 235919 hit=0.359 (best 235919)",
+  "    cache-colocate t=1000013714 -> 242239 hit=0.370 (best 235919)",
+  "    cache-stagger t=1000011279 -> 235919 hit=0.370 (best 235919)",
+  "    cache-stagger2 t=1000011279 -> 235919 hit=0.370 (best 235919)",
+  "    cache-colocate t=1000011279 -> 234606 hit=0.385 (best 235919)",
+  "    cache-cluster t=None -> 234749 hit=0.385 (best 234606)",
+  "    cache-stagger t=1000007883 -> 234606 hit=0.385 (best 234606)",
+  "    cache-stagger2 t=1000007883 -> 234606 hit=0.385 (best 234606)",
+  "    cache-colocate t=1000007883 -> 238030 hit=0.395 (best 234606)",
+  "    cache-stagger t=1000005650 -> 234606 hit=0.385 (best 234606)",
+  "    cache-stagger2 t=1000005650 -> 234606 hit=0.385 (best 234606)",
+  "    cache-colocate t=1000005650 -> 240015 hit=0.384 (best 234606)",
+  "    cache-cluster t=None -> 234749 hit=0.385 (best 234606)",
+  "    cache-cluster t=None -> 234749 hit=0.385 (best 234606)",
+  "    time-feedback -> 259413 (best 234606)",
+  "    interval[0:16] -> 234158 (best 234606)",
+  "    assign[0:24] moved=13 -> 235562 (best 234158)",
+  "    order core0[0:12] -> 234022 (best 234158)",
+  "    move sg139->c2 -> 234524 (best 234022)",
+  "    swap sg138<->sg139 -> 234022 (best 234022)",
+  "    move sg138->c2 -> 235094 (best 234022)",
+  "    swap sg137<->sg138 -> 234022 (best 234022)",
+  "    move sg137->c2 -> 238631 (best 234022)",
+  "    swap sg136<->sg137 -> 234022 (best 234022)",
+  "    move sg136->c2 -> 239131 (best 234022)",
+  "    swap sg135<->sg136 -> 237610 (best 234022)",
+  "    move sg135->c2 -> 236197 (best 234022)",
+  "    swap sg134<->sg135 -> 236169 (best 234022)",
+  "    move sg134->c2 -> 236419 (best 234022)",
+  "    swap sg133<->sg134 -> 234022 (best 234022)",
+  "    [invalid] dependency order violation on core 0: 389 -> 4",
+  "    time-feedback -> 258987 (best 234022)",
+  "    [invalid] dependency order violation on core 0: 2 -> 383",
+  "    assign[12:36] moved=4 -> 234927 (best 234022)",
+  "    order core0[6:18] -> 234008 (best 234022)",
+  "    move sg133->c2 -> 238591 (best 234008)",
+  "    swap sg132<->sg133 -> 234440 (best 234008)",
+  "    move sg132->c2 -> 234008 (best 234008)",
+  "    swap sg131<->sg132 -> 234008 (best 234008)",
+  "    move sg131->c2 -> 234008 (best 234008)",
+  "    swap sg130<->sg131 -> 234008 (best 234008)",
+  "    move sg130->c2 -> 234008 (best 234008)",
+  "    swap sg129<->sg130 -> 234008 (best 234008)",
+  "    move sg129->c2 -> 239567 (best 234008)",
+  "    swap sg128<->sg129 -> 238745 (best 234008)",
+  "    move sg128->c2 -> 234008 (best 234008)",
+  "    swap sg127<->sg128 -> 234008 (best 234008)",
+  "final: T_C=234008 added=2625320 hit_rate=0.386 subgraphs=390 time=119.8s"
+ ]
+}

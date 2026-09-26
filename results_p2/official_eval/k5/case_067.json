@@ -1,0 +1,37 @@
+{
+ "makespan": 11980245,
+ "num_cores": 5,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 6048128,
+  "scheduled_copy_bytes": 89302912,
+  "added_copy_bytes": 83254784,
+  "partition_added_copy_bytes": 83025408,
+  "spill_added_copy_bytes": 229376
+ },
+ "num_subgraphs": 5868,
+ "cross_core_transfers": 5441,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 420096,
+   "UB": 0
+  },
+  "1": {
+   "L1": 491520,
+   "UB": 0
+  },
+  "2": {
+   "L1": 513024,
+   "UB": 0
+  },
+  "3": {
+   "L1": 429056,
+   "UB": 0
+  },
+  "4": {
+   "L1": 514048,
+   "UB": 0
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=89302912, physical_ddr_bytes=89302912\nOK: problem 2 makespan=11980245; result=/tmp/tmpa3eblyx1/res.json",
+ "eval_seconds": 4.27
+}

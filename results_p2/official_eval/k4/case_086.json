@@ -1,0 +1,33 @@
+{
+ "makespan": 48045,
+ "num_cores": 4,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 338022,
+  "scheduled_copy_bytes": 1763448,
+  "added_copy_bytes": 1425426,
+  "partition_added_copy_bytes": 1425426,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 227,
+ "cross_core_transfers": 500,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 53280,
+   "UB": 20118
+  },
+  "1": {
+   "L1": 47712,
+   "UB": 15126
+  },
+  "2": {
+   "L1": 62784,
+   "UB": 15894
+  },
+  "3": {
+   "L1": 48576,
+   "UB": 18964
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=1763448, physical_ddr_bytes=1763448\nOK: problem 2 makespan=48045; result=/tmp/tmpzoelocde/res.json",
+ "eval_seconds": 0.82
+}

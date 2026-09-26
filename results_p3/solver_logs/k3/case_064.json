@@ -1,0 +1,118 @@
+{
+ "summary": {
+  "case": "case_064",
+  "cores": 3,
+  "makespan_eval": 9405,
+  "added_copy_bytes_eval": 90188,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 37414,
+   "scheduled_copy_bytes": 127602,
+   "added_copy_bytes": 90188,
+   "partition_added_copy_bytes": 90188,
+   "spill_added_copy_bytes": 0
+  },
+  "cache": {
+   "hits": 58,
+   "accesses": 211,
+   "hit_bytes": 30602,
+   "miss_bytes": 60648,
+   "hit_rate": 0.33536438356164383
+  },
+  "init_makespan_TC_PB": 9405,
+  "init_added_bytes": 90188,
+  "init_cache": {
+   "hits": 58,
+   "accesses": 211,
+   "hit_bytes": 30602,
+   "miss_bytes": 60648,
+   "hit_rate": 0.33536438356164383
+  },
+  "num_subgraphs": 54,
+  "improve_stats": {
+   "evals": 49,
+   "decode_cycle": 3,
+   "interval_FEASIBLE": 5,
+   "assign_FEASIBLE": 2,
+   "order_OPTIMAL": 2,
+   "eval_errors": 1,
+   "assign_OPTIMAL": 1,
+   "rounds": 15,
+   "subgraphs_start": 54
+  },
+  "reuse_windows": [
+   {
+    "candidates": 10,
+    "evaluated": 10,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 5248.0,
+  "total_seconds": 27.55
+ },
+ "log": [
+  "case_064 K=3 P_B: T_C=9405 added=90188 hit_rate=0.335",
+  "    cache-cluster t=None -> 9405 hit=0.335 (best 9405)",
+  "    cache-stagger t=1000000443 -> 9405 hit=0.335 (best 9405)",
+  "    cache-stagger2 t=1000000443 -> 9405 hit=0.335 (best 9405)",
+  "    cache-colocate t=1000000443 -> 9799 hit=0.337 (best 9405)",
+  "    cache-stagger t=1000000108 -> 9405 hit=0.335 (best 9405)",
+  "    cache-stagger2 t=1000000108 -> 9405 hit=0.335 (best 9405)",
+  "    cache-colocate t=1000000108 -> 9821 hit=0.332 (best 9405)",
+  "    cache-stagger t=1000000011 -> 10730 hit=0.341 (best 9405)",
+  "    cache-stagger2 t=1000000011 -> 10730 hit=0.341 (best 9405)",
+  "    cache-colocate t=1000000011 -> 9556 hit=0.341 (best 9405)",
+  "    cache-cluster t=None -> 9405 hit=0.335 (best 9405)",
+  "    cache-cluster t=None -> 9405 hit=0.335 (best 9405)",
+  "    time-feedback -> 10588 (best 9405)",
+  "    interval[0:16] -> 10190 (best 9405)",
+  "    assign[0:24] moved=13 -> 13209 (best 9405)",
+  "    order core0[0:12] -> 10632 (best 9405)",
+  "    move sg16->c1 -> 9916 (best 9405)",
+  "    swap sg15<->sg16 -> 9405 (best 9405)",
+  "    move sg15->c1 -> 9908 (best 9405)",
+  "    swap sg14<->sg15 -> 9405 (best 9405)",
+  "    move sg14->c1 -> 10236 (best 9405)",
+  "    swap sg13<->sg14 -> 9405 (best 9405)",
+  "    move sg13->c1 -> 10414 (best 9405)",
+  "    swap sg12<->sg13 -> 9405 (best 9405)",
+  "    move sg12->c1 -> 10017 (best 9405)",
+  "    swap sg11<->sg12 -> 9405 (best 9405)",
+  "    move sg11->c1 -> 9942 (best 9405)",
+  "    swap sg10<->sg11 -> 10108 (best 9405)",
+  "    interval[12:28] -> 10422 (best 9405)",
+  "    time-feedback -> 10588 (best 9405)",
+  "    [invalid] contracted subgraph graph contains a cycle",
+  "    assign[12:36] moved=11 -> 14711 (best 9405)",
+  "    order core0[0:12] -> 10632 (best 9405)",
+  "    move sg10->c1 -> 10126 (best 9405)",
+  "    swap sg9<->sg10 -> 9890 (best 9405)",
+  "    move sg9->c1 -> 10338 (best 9405)",
+  "    swap sg8<->sg9 -> 9405 (best 9405)",
+  "    move sg8->c1 -> 9405 (best 9405)",
+  "    swap sg7<->sg8 -> 9431 (best 9405)",
+  "    move sg7->c1 -> 9439 (best 9405)",
+  "    swap sg6<->sg7 -> 9405 (best 9405)",
+  "    move sg6->c1 -> 10301 (best 9405)",
+  "    swap sg5<->sg6 -> 9405 (best 9405)",
+  "    move sg5->c1 -> 11027 (best 9405)",
+  "    swap sg4<->sg5 -> 10042 (best 9405)",
+  "    interval[20:36] -> 10924 (best 9405)",
+  "    time-feedback -> 10588 (best 9405)",
+  "    interval[16:32] -> 10296 (best 9405)",
+  "    assign[24:48] moved=13 -> 13135 (best 9405)",
+  "final: T_C=9405 added=90188 hit_rate=0.335 subgraphs=54 time=27.6s"
+ ]
+}

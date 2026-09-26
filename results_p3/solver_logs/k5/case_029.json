@@ -1,0 +1,72 @@
+{
+ "summary": {
+  "case": "case_029",
+  "cores": 5,
+  "makespan_eval": 8321,
+  "added_copy_bytes_eval": 16406,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 430164,
+   "scheduled_copy_bytes": 446570,
+   "added_copy_bytes": 16406,
+   "partition_added_copy_bytes": 16406,
+   "spill_added_copy_bytes": 0
+  },
+  "cache": {
+   "hits": 7,
+   "accesses": 181,
+   "hit_bytes": 12290,
+   "miss_bytes": 260190,
+   "hit_rate": 0.045104227833235463
+  },
+  "init_makespan_TC_PB": 8321,
+  "init_added_bytes": 16406,
+  "init_cache": {
+   "hits": 7,
+   "accesses": 181,
+   "hit_bytes": 12290,
+   "miss_bytes": 260190,
+   "hit_rate": 0.045104227833235463
+  },
+  "num_subgraphs": 9,
+  "improve_stats": {
+   "evals": 26,
+   "interval_FEASIBLE": 5,
+   "assign_OPTIMAL": 3,
+   "rounds": 15,
+   "subgraphs_start": 9
+  },
+  "reuse_windows": [],
+  "lower_bound_LB0": 7497.0,
+  "total_seconds": 18.59
+ },
+ "log": [
+  "case_029 K=5 P_B: T_C=8321 added=16406 hit_rate=0.045",
+  "    time-feedback -> 8321 (best 8321)",
+  "    interval[0:9] -> 9207 (best 8321)",
+  "    move sg7->c0 -> 14738 (best 8321)",
+  "    swap sg0<->sg7 -> 12867 (best 8321)",
+  "    move sg0->c0 -> 8321 (best 8321)",
+  "    move sg7->c0 -> 14738 (best 8321)",
+  "    swap sg0<->sg7 -> 12867 (best 8321)",
+  "    move sg0->c0 -> 8321 (best 8321)",
+  "    move sg7->c0 -> 14738 (best 8321)",
+  "    swap sg0<->sg7 -> 12867 (best 8321)",
+  "    move sg0->c0 -> 8321 (best 8321)",
+  "    interval[6:15] -> 9207 (best 8321)",
+  "    time-feedback -> 8321 (best 8321)",
+  "    interval[4:13] -> 9207 (best 8321)",
+  "    move sg7->c0 -> 14738 (best 8321)",
+  "    swap sg0<->sg7 -> 12867 (best 8321)",
+  "    move sg0->c0 -> 8321 (best 8321)",
+  "    move sg7->c0 -> 14738 (best 8321)",
+  "    swap sg0<->sg7 -> 12867 (best 8321)",
+  "    move sg0->c0 -> 8321 (best 8321)",
+  "    move sg7->c0 -> 14738 (best 8321)",
+  "    swap sg0<->sg7 -> 12867 (best 8321)",
+  "    move sg0->c0 -> 8321 (best 8321)",
+  "    interval[2:11] -> 9207 (best 8321)",
+  "    time-feedback -> 8321 (best 8321)",
+  "    interval[0:9] -> 9207 (best 8321)",
+  "final: T_C=8321 added=16406 hit_rate=0.045 subgraphs=9 time=18.6s"
+ ]
+}

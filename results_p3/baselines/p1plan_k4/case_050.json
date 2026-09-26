@@ -1,0 +1,26 @@
+{
+ "makespan": 53673,
+ "num_cores": 4,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 319376,
+  "scheduled_copy_bytes": 891046,
+  "added_copy_bytes": 571670,
+  "partition_added_copy_bytes": 571670,
+  "spill_added_copy_bytes": 0
+ },
+ "cache_stats": {
+  "hits": 212,
+  "accesses": 739,
+  "hit_bytes": 195602,
+  "miss_bytes": 473910,
+  "hit_rate": 0.29215607785969483,
+  "copy_in_hits": 212,
+  "copy_in_misses": 527
+ },
+ "cache_inserts": 509,
+ "cache_evictions": 0,
+ "num_subgraphs": 166,
+ "cross_core_transfers": 458,
+ "stdout": "data movement: scheduled_copy_bytes=891046, physical_ddr_bytes=891046, cache_hits=212/739, cache_hit_bytes=195602\nOK: problem 3 makespan=53673; result=/tmp/tmpdnlasnef/res.json",
+ "eval_seconds": 0.69
+}

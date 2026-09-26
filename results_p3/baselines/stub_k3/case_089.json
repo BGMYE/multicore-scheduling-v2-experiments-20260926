@@ -1,0 +1,26 @@
+{
+ "makespan": 599901,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 566400,
+  "scheduled_copy_bytes": 6871792,
+  "added_copy_bytes": 6305392,
+  "partition_added_copy_bytes": 6305392,
+  "spill_added_copy_bytes": 0
+ },
+ "cache_stats": {
+  "hits": 180,
+  "accesses": 2178,
+  "hit_bytes": 560496,
+  "miss_bytes": 3233408,
+  "hit_rate": 0.14773594692960074,
+  "copy_in_hits": 180,
+  "copy_in_misses": 1998
+ },
+ "cache_inserts": 1998,
+ "cache_evictions": 1568,
+ "num_subgraphs": 68,
+ "cross_core_transfers": 1978,
+ "stdout": "data movement: scheduled_copy_bytes=6871792, physical_ddr_bytes=6871792, cache_hits=180/2178, cache_hit_bytes=560496\nOK: problem 3 makespan=599901; result=/tmp/tmp_pski5ux/res.json",
+ "eval_seconds": 1.43
+}

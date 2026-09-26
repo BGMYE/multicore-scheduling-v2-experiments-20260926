@@ -1,0 +1,26 @@
+{
+ "makespan": 9219559,
+ "num_cores": 5,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 9932740,
+  "scheduled_copy_bytes": 437040284,
+  "added_copy_bytes": 427107544,
+  "partition_added_copy_bytes": 308186680,
+  "spill_added_copy_bytes": 118920864
+ },
+ "cache_stats": {
+  "hits": 1826,
+  "accesses": 52852,
+  "hit_bytes": 11288112,
+  "miss_bytes": 268303808,
+  "hit_rate": 0.040373527246424006,
+  "copy_in_hits": 1826,
+  "copy_in_misses": 51026
+ },
+ "cache_inserts": 51015,
+ "cache_evictions": 50953,
+ "num_subgraphs": 480,
+ "cross_core_transfers": 26728,
+ "stdout": "data movement: scheduled_copy_bytes=437040284, physical_ddr_bytes=437040284, cache_hits=1826/52852, cache_hit_bytes=11288112\nOK: problem 3 makespan=9219559; result=/tmp/tmpm383ccli/res.json",
+ "eval_seconds": 37.26
+}

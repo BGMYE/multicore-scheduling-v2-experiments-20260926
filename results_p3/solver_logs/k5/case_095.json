@@ -1,0 +1,75 @@
+{
+ "summary": {
+  "case": "case_095",
+  "cores": 5,
+  "makespan_eval": 410945,
+  "added_copy_bytes_eval": 12791808,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 11355036,
+   "scheduled_copy_bytes": 11428764,
+   "added_copy_bytes": 73728,
+   "partition_added_copy_bytes": 73728,
+   "spill_added_copy_bytes": 0
+  },
+  "cache": {
+   "hits": 0,
+   "accesses": 1850,
+   "hit_bytes": 0,
+   "miss_bytes": 8553372,
+   "hit_rate": 0.0
+  },
+  "init_makespan_TC_PB": 417954,
+  "init_added_bytes": 73728,
+  "init_cache": {
+   "hits": 0,
+   "accesses": 1850,
+   "hit_bytes": 0,
+   "miss_bytes": 8553372,
+   "hit_rate": 0.0
+  },
+  "num_subgraphs": 9,
+  "improve_stats": {
+   "evals": 26,
+   "interval_FEASIBLE": 5,
+   "assign_OPTIMAL": 3,
+   "rounds": 15,
+   "subgraphs_start": 9
+  },
+  "reuse_windows": [],
+  "lower_bound_LB0": 213998.4,
+  "total_seconds": 36.54,
+  "own_makespan_eval": 417954,
+  "own_added_copy_bytes_eval": 73728,
+  "inherited_from_cores": 4
+ },
+ "log": [
+  "case_095 K=5 P_B: T_C=417954 added=73728 hit_rate=0.000",
+  "    time-feedback -> 417954 (best 417954)",
+  "    interval[0:9] -> 417954 (best 417954)",
+  "    move sg1->c4 -> 553211 (best 417954)",
+  "    swap sg0<->sg1 -> 562925 (best 417954)",
+  "    move sg0->c4 -> 695981 (best 417954)",
+  "    move sg1->c4 -> 553211 (best 417954)",
+  "    swap sg0<->sg1 -> 562925 (best 417954)",
+  "    move sg0->c4 -> 695981 (best 417954)",
+  "    move sg1->c4 -> 553211 (best 417954)",
+  "    swap sg0<->sg1 -> 562925 (best 417954)",
+  "    move sg0->c4 -> 695981 (best 417954)",
+  "    interval[6:15] -> 417954 (best 417954)",
+  "    time-feedback -> 417954 (best 417954)",
+  "    interval[4:13] -> 417954 (best 417954)",
+  "    move sg1->c4 -> 553211 (best 417954)",
+  "    swap sg0<->sg1 -> 562925 (best 417954)",
+  "    move sg0->c4 -> 695981 (best 417954)",
+  "    move sg1->c4 -> 553211 (best 417954)",
+  "    swap sg0<->sg1 -> 562925 (best 417954)",
+  "    move sg0->c4 -> 695981 (best 417954)",
+  "    move sg1->c4 -> 553211 (best 417954)",
+  "    swap sg0<->sg1 -> 562925 (best 417954)",
+  "    move sg0->c4 -> 695981 (best 417954)",
+  "    interval[2:11] -> 417954 (best 417954)",
+  "    time-feedback -> 417954 (best 417954)",
+  "    interval[0:9] -> 417954 (best 417954)",
+  "final: T_C=417954 added=73728 hit_rate=0.000 subgraphs=9 time=36.5s"
+ ]
+}

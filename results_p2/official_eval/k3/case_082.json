@@ -1,0 +1,29 @@
+{
+ "makespan": 277071,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 592006,
+  "scheduled_copy_bytes": 2159698,
+  "added_copy_bytes": 1567692,
+  "partition_added_copy_bytes": 1567692,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 224,
+ "cross_core_transfers": 350,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 81024,
+   "UB": 39108
+  },
+  "1": {
+   "L1": 119808,
+   "UB": 34950
+  },
+  "2": {
+   "L1": 78848,
+   "UB": 28804
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=2159698, physical_ddr_bytes=2159698\nOK: problem 2 makespan=277071; result=/tmp/tmpinbrinya/res.json",
+ "eval_seconds": 0.68
+}

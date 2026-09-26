@@ -1,0 +1,113 @@
+{
+ "summary": {
+  "case": "case_089",
+  "cores": 3,
+  "makespan_eval": 218760,
+  "added_copy_bytes_eval": 5136640,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 566400,
+   "scheduled_copy_bytes": 5703040,
+   "added_copy_bytes": 5136640,
+   "partition_added_copy_bytes": 5136640,
+   "spill_added_copy_bytes": 0
+  },
+  "cache": {
+   "hits": 143,
+   "accesses": 1910,
+   "hit_bytes": 472104,
+   "miss_bytes": 2737496,
+   "hit_rate": 0.14709122632103688
+  },
+  "init_makespan_TC_PB": 218760,
+  "init_added_bytes": 5136640,
+  "init_cache": {
+   "hits": 143,
+   "accesses": 1910,
+   "hit_bytes": 472104,
+   "miss_bytes": 2737496,
+   "hit_rate": 0.14709122632103688
+  },
+  "num_subgraphs": 2764,
+  "improve_stats": {
+   "evals": 46,
+   "decode_cycle": 2,
+   "interval_FEASIBLE": 3,
+   "assign_OPTIMAL": 2,
+   "order_OPTIMAL": 2,
+   "rounds": 11,
+   "subgraphs_start": 2764
+  },
+  "reuse_windows": [
+   {
+    "candidates": 13,
+    "evaluated": 13,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 196373.33333333334,
+  "total_seconds": 63.99
+ },
+ "log": [
+  "case_089 K=3 P_B: T_C=218760 added=5136640 hit_rate=0.147",
+  "    cache-cluster t=None -> 218760 hit=0.147 (best 218760)",
+  "    cache-stagger t=1000000059 -> 218760 hit=0.153 (best 218760)",
+  "    cache-stagger2 t=1000000059 -> 218760 hit=0.153 (best 218760)",
+  "    cache-colocate t=1000000059 -> 219544 hit=0.153 (best 218760)",
+  "    cache-stagger t=1000000049 -> 218760 hit=0.147 (best 218760)",
+  "    cache-stagger2 t=1000000049 -> 218760 hit=0.147 (best 218760)",
+  "    cache-colocate t=1000000049 -> 219296 hit=0.130 (best 218760)",
+  "    cache-stagger t=1000000001 -> 218760 hit=0.147 (best 218760)",
+  "    cache-stagger2 t=1000000001 -> 218760 hit=0.147 (best 218760)",
+  "    cache-colocate t=1000000001 -> 220001 hit=0.147 (best 218760)",
+  "    cache-stagger t=1000000003 -> 218760 hit=0.147 (best 218760)",
+  "    cache-stagger2 t=1000000003 -> 218760 hit=0.147 (best 218760)",
+  "    cache-colocate t=1000000003 -> 219848 hit=0.147 (best 218760)",
+  "    cache-cluster t=None -> 218760 hit=0.147 (best 218760)",
+  "    cache-cluster t=None -> 218760 hit=0.147 (best 218760)",
+  "    time-feedback -> 222428 (best 218760)",
+  "    interval[0:16] -> 219117 (best 218760)",
+  "    order core1[0:12] -> 218760 (best 218760)",
+  "    move sg1904->c0 -> 219026 (best 218760)",
+  "    swap sg1903<->sg1904 -> 218760 (best 218760)",
+  "    move sg1903->c0 -> 219026 (best 218760)",
+  "    swap sg1902<->sg1903 -> 218760 (best 218760)",
+  "    move sg1902->c0 -> 219026 (best 218760)",
+  "    swap sg1901<->sg1902 -> 218760 (best 218760)",
+  "    move sg1901->c0 -> 218977 (best 218760)",
+  "    swap sg1900<->sg1901 -> 218760 (best 218760)",
+  "    move sg1900->c0 -> 218977 (best 218760)",
+  "    swap sg1899<->sg1900 -> 218760 (best 218760)",
+  "    move sg1899->c0 -> 218977 (best 218760)",
+  "    swap sg1898<->sg1899 -> 218760 (best 218760)",
+  "    interval[12:28] -> 220236 (best 218760)",
+  "    time-feedback -> 222428 (best 218760)",
+  "    interval[8:24] -> 218760 (best 218760)",
+  "    order core1[6:18] -> 218760 (best 218760)",
+  "    move sg1898->c0 -> 218977 (best 218760)",
+  "    swap sg1897<->sg1898 -> 218760 (best 218760)",
+  "    move sg1897->c0 -> 218973 (best 218760)",
+  "    swap sg1896<->sg1897 -> 218760 (best 218760)",
+  "    move sg1896->c0 -> 218963 (best 218760)",
+  "    swap sg1895<->sg1896 -> 218760 (best 218760)",
+  "    move sg1895->c0 -> 218952 (best 218760)",
+  "    swap sg1894<->sg1895 -> 218760 (best 218760)",
+  "    move sg1894->c0 -> 218945 (best 218760)",
+  "    swap sg1893<->sg1894 -> 218760 (best 218760)",
+  "    move sg1893->c0 -> 218926 (best 218760)",
+  "    swap sg1892<->sg1893 -> 218760 (best 218760)",
+  "final: T_C=218760 added=5136640 hit_rate=0.147 subgraphs=2764 time=64.0s"
+ ]
+}

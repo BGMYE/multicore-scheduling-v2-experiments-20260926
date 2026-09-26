@@ -1,0 +1,26 @@
+{
+ "makespan": 25447,
+ "num_cores": 5,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 625810,
+  "scheduled_copy_bytes": 857234,
+  "added_copy_bytes": 231424,
+  "partition_added_copy_bytes": 231424,
+  "spill_added_copy_bytes": 0
+ },
+ "cache_stats": {
+  "hits": 19,
+  "accesses": 193,
+  "hit_bytes": 217600,
+  "miss_bytes": 639516,
+  "hit_rate": 0.253874621404804,
+  "copy_in_hits": 19,
+  "copy_in_misses": 174
+ },
+ "cache_inserts": 173,
+ "cache_evictions": 0,
+ "num_subgraphs": 24,
+ "cross_core_transfers": 0,
+ "stdout": "data movement: scheduled_copy_bytes=857234, physical_ddr_bytes=857234, cache_hits=19/193, cache_hit_bytes=217600\nOK: problem 3 makespan=25447; result=/tmp/tmps0fgdeb2/res.json",
+ "eval_seconds": 0.16
+}

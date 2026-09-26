@@ -1,0 +1,105 @@
+{
+ "summary": {
+  "case": "case_003",
+  "cores": 2,
+  "makespan_eval": 308247,
+  "added_copy_bytes_eval": 6608170,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 1284264,
+   "scheduled_copy_bytes": 7892434,
+   "added_copy_bytes": 6608170,
+   "partition_added_copy_bytes": 6608170,
+   "spill_added_copy_bytes": 0
+  },
+  "cache": {
+   "hits": 51,
+   "accesses": 4903,
+   "hit_bytes": 372870,
+   "miss_bytes": 4426456,
+   "hit_rate": 0.07769215927403139
+  },
+  "init_makespan_TC_PB": 308747,
+  "init_added_bytes": 6608170,
+  "init_cache": {
+   "hits": 50,
+   "accesses": 4903,
+   "hit_bytes": 372742,
+   "miss_bytes": 4426584,
+   "hit_rate": 0.07766548886239442
+  },
+  "num_subgraphs": 8124,
+  "improve_stats": {
+   "evals": 28,
+   "accepted": 1,
+   "accepted_cache_cluster": 1,
+   "decode_cycle": 2,
+   "interval_OPTIMAL": 2,
+   "eval_errors": 3,
+   "assign_OPTIMAL": 2,
+   "order_OPTIMAL": 2,
+   "interval_FEASIBLE": 1,
+   "rounds": 11,
+   "subgraphs_start": 8124
+  },
+  "reuse_windows": [
+   {
+    "candidates": 9,
+    "evaluated": 1,
+    "exhausted": false,
+    "improved": true
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 219396.0,
+  "total_seconds": 119.91
+ },
+ "log": [
+  "case_003 K=2 P_B: T_C=308747 added=6608170 hit_rate=0.078",
+  "    cache-cluster t=None -> 308247 hit=0.078 (best 308747)",
+  "    cache-cluster t=None -> 308247 hit=0.078 (best 308247)",
+  "    cache-cluster t=None -> 308247 hit=0.078 (best 308247)",
+  "    cache-cluster t=None -> 308247 hit=0.078 (best 308247)",
+  "    time-feedback -> 328190 (best 308247)",
+  "    [invalid] dependency order violation on core 0: 2 -> 8110",
+  "    assign[0:24] moved=3 -> 308529 (best 308247)",
+  "    order core0[0:12] -> 308247 (best 308247)",
+  "    move sg4011->c1 -> 308629 (best 308247)",
+  "    swap sg4010<->sg4011 -> 308247 (best 308247)",
+  "    move sg4010->c1 -> 308588 (best 308247)",
+  "    swap sg4009<->sg4010 -> 308247 (best 308247)",
+  "    move sg4009->c1 -> 308699 (best 308247)",
+  "    swap sg4008<->sg4009 -> 308247 (best 308247)",
+  "    move sg4008->c1 -> 308655 (best 308247)",
+  "    swap sg4007<->sg4008 -> 308247 (best 308247)",
+  "    move sg4007->c1 -> 308616 (best 308247)",
+  "    swap sg4006<->sg4007 -> 308247 (best 308247)",
+  "    move sg4006->c1 -> 308510 (best 308247)",
+  "    swap sg4005<->sg4006 -> 308247 (best 308247)",
+  "    [invalid] dependency order violation on core 0: 7 -> 8",
+  "    time-feedback -> 328190 (best 308247)",
+  "    [invalid] dependency order violation on core 1: 4012 -> 8111",
+  "    move sg4005->c1 -> 308466 (best 308247)",
+  "    swap sg4004<->sg4005 -> 308247 (best 308247)",
+  "    move sg4004->c1 -> 308422 (best 308247)",
+  "    swap sg4003<->sg4004 -> 308247 (best 308247)",
+  "    move sg4003->c1 -> 309159 (best 308247)",
+  "final: T_C=308247 added=6608170 hit_rate=0.078 subgraphs=8124 time=119.9s"
+ ]
+}

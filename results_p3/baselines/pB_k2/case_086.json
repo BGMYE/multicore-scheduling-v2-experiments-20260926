@@ -1,0 +1,26 @@
+{
+ "makespan": 65069,
+ "num_cores": 2,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 338022,
+  "scheduled_copy_bytes": 868716,
+  "added_copy_bytes": 530694,
+  "partition_added_copy_bytes": 530694,
+  "spill_added_copy_bytes": 0
+ },
+ "cache_stats": {
+  "hits": 39,
+  "accesses": 312,
+  "hit_bytes": 134502,
+  "miss_bytes": 519222,
+  "hit_rate": 0.20574737962809994,
+  "copy_in_hits": 39,
+  "copy_in_misses": 273
+ },
+ "cache_inserts": 273,
+ "cache_evictions": 0,
+ "num_subgraphs": 94,
+ "cross_core_transfers": 183,
+ "stdout": "data movement: scheduled_copy_bytes=868716, physical_ddr_bytes=868716, cache_hits=39/312, cache_hit_bytes=134502\nOK: problem 3 makespan=65069; result=/tmp/tmp3_1guiw_/res.json",
+ "eval_seconds": 0.8
+}

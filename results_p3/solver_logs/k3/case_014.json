@@ -1,0 +1,69 @@
+{
+ "summary": {
+  "case": "case_014",
+  "cores": 3,
+  "makespan_eval": 5932257,
+  "added_copy_bytes_eval": 53581560,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 9932740,
+   "scheduled_copy_bytes": 63514300,
+   "added_copy_bytes": 53581560,
+   "partition_added_copy_bytes": 14233944,
+   "spill_added_copy_bytes": 39347616
+  },
+  "cache": {
+   "hits": 2722,
+   "accesses": 11116,
+   "hit_bytes": 12696576,
+   "miss_bytes": 50686032,
+   "hit_rate": 0.20031640225343836
+  },
+  "init_makespan_TC_PB": 5932257,
+  "init_added_bytes": 53581560,
+  "init_cache": {
+   "hits": 2722,
+   "accesses": 11116,
+   "hit_bytes": 12696576,
+   "miss_bytes": 50686032,
+   "hit_rate": 0.20031640225343836
+  },
+  "num_subgraphs": 77,
+  "improve_stats": {
+   "evals": 16,
+   "assign_FEASIBLE": 1,
+   "order_OPTIMAL": 1,
+   "rounds": 5,
+   "subgraphs_start": 77
+  },
+  "reuse_windows": [
+   {
+    "candidates": 25,
+    "evaluated": 11,
+    "exhausted": false,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 5741916.0,
+  "total_seconds": 182.28
+ },
+ "log": [
+  "case_014 K=3 P_B: T_C=5932257 added=53581560 hit_rate=0.200",
+  "    cache-cluster t=None -> 5988060 hit=0.203 (best 5932257)",
+  "    cache-gather t=1000000059 -> 5988060 hit=0.203 (best 5932257)",
+  "    cache-colocate t=1000000059 -> 6204248 hit=0.192 (best 5932257)",
+  "    cache-gather t=1000000057 -> 5988060 hit=0.203 (best 5932257)",
+  "    cache-colocate t=1000000057 -> 6204248 hit=0.192 (best 5932257)",
+  "    cache-gather t=1000000055 -> 5988060 hit=0.203 (best 5932257)",
+  "    cache-colocate t=1000000055 -> 6204248 hit=0.192 (best 5932257)",
+  "    cache-gather t=1000000053 -> 5988060 hit=0.203 (best 5932257)",
+  "    cache-colocate t=1000000053 -> 6204248 hit=0.192 (best 5932257)",
+  "    cache-gather t=1000000051 -> 5988060 hit=0.203 (best 5932257)",
+  "    cache-colocate t=1000000051 -> 6204248 hit=0.192 (best 5932257)",
+  "    time-feedback -> 5932257 (best 5932257)",
+  "    merge -> 5932339 (best 5932257)",
+  "    assign[0:24] moved=5 -> 6056088 (best 5932257)",
+  "    order core2[0:12] -> 6291177 (best 5932257)",
+  "    move sg76->c1 -> 6015753 (best 5932257)",
+  "final: T_C=5932257 added=53581560 hit_rate=0.200 subgraphs=77 time=182.3s"
+ ]
+}

@@ -1,0 +1,112 @@
+{
+ "summary": {
+  "case": "case_030",
+  "cores": 4,
+  "makespan_eval": 706838,
+  "added_copy_bytes_eval": 2580480,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 2394060,
+   "scheduled_copy_bytes": 4974540,
+   "added_copy_bytes": 2580480,
+   "partition_added_copy_bytes": 1239040,
+   "spill_added_copy_bytes": 1341440
+  },
+  "cache": {
+   "hits": 537,
+   "accesses": 1673,
+   "hit_bytes": 1329152,
+   "miss_bytes": 3644416,
+   "hit_rate": 0.26724315421041794
+  },
+  "init_makespan_TC_PB": 706838,
+  "init_added_bytes": 2580480,
+  "init_cache": {
+   "hits": 537,
+   "accesses": 1673,
+   "hit_bytes": 1329152,
+   "miss_bytes": 3644416,
+   "hit_rate": 0.26724315421041794
+  },
+  "num_subgraphs": 4,
+  "improve_stats": {
+   "evals": 47,
+   "interval_OPTIMAL": 5,
+   "assign_OPTIMAL": 3,
+   "rounds": 15,
+   "subgraphs_start": 4
+  },
+  "reuse_windows": [
+   {
+    "candidates": 25,
+    "evaluated": 25,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 694120.0,
+  "total_seconds": 74.21
+ },
+ "log": [
+  "case_030 K=4 P_B: T_C=706838 added=2580480 hit_rate=0.267",
+  "    cache-cluster t=None -> 706838 hit=0.267 (best 706838)",
+  "    cache-gather t=1000000679 -> 706838 hit=0.267 (best 706838)",
+  "    cache-colocate t=1000000679 -> 1410292 hit=0.316 (best 706838)",
+  "    cache-gather t=1000000659 -> 706838 hit=0.267 (best 706838)",
+  "    cache-colocate t=1000000659 -> 1410292 hit=0.316 (best 706838)",
+  "    cache-gather t=1000000639 -> 706838 hit=0.267 (best 706838)",
+  "    cache-colocate t=1000000639 -> 1410292 hit=0.316 (best 706838)",
+  "    cache-gather t=1000000619 -> 706838 hit=0.267 (best 706838)",
+  "    cache-colocate t=1000000619 -> 1410292 hit=0.316 (best 706838)",
+  "    cache-gather t=1000000599 -> 706838 hit=0.267 (best 706838)",
+  "    cache-colocate t=1000000599 -> 1410292 hit=0.316 (best 706838)",
+  "    cache-gather t=1000000579 -> 706838 hit=0.267 (best 706838)",
+  "    cache-colocate t=1000000579 -> 1410292 hit=0.316 (best 706838)",
+  "    cache-gather t=1000000559 -> 706838 hit=0.267 (best 706838)",
+  "    cache-colocate t=1000000559 -> 1410292 hit=0.316 (best 706838)",
+  "    cache-gather t=1000000539 -> 706838 hit=0.267 (best 706838)",
+  "    cache-colocate t=1000000539 -> 1410292 hit=0.316 (best 706838)",
+  "    cache-gather t=1000000519 -> 706838 hit=0.267 (best 706838)",
+  "    cache-colocate t=1000000519 -> 1410292 hit=0.316 (best 706838)",
+  "    cache-gather t=1000000499 -> 706838 hit=0.267 (best 706838)",
+  "    cache-colocate t=1000000499 -> 1410292 hit=0.316 (best 706838)",
+  "    cache-gather t=1000000479 -> 706838 hit=0.267 (best 706838)",
+  "    cache-colocate t=1000000479 -> 1410292 hit=0.316 (best 706838)",
+  "    cache-gather t=1000000459 -> 706838 hit=0.267 (best 706838)",
+  "    cache-colocate t=1000000459 -> 1410292 hit=0.316 (best 706838)",
+  "    cache-cluster t=None -> 706838 hit=0.267 (best 706838)",
+  "    cache-cluster t=None -> 706838 hit=0.267 (best 706838)",
+  "    time-feedback -> 706838 (best 706838)",
+  "    interval[0:4] -> 706838 (best 706838)",
+  "    move sg1->c2 -> 1394994 (best 706838)",
+  "    move sg1->c2 -> 1394994 (best 706838)",
+  "    move sg1->c2 -> 1394994 (best 706838)",
+  "    move sg1->c2 -> 1394994 (best 706838)",
+  "    move sg1->c2 -> 1394994 (best 706838)",
+  "    move sg1->c2 -> 1394994 (best 706838)",
+  "    interval[3:7] -> 706838 (best 706838)",
+  "    time-feedback -> 706838 (best 706838)",
+  "    interval[2:6] -> 706838 (best 706838)",
+  "    move sg1->c2 -> 1394994 (best 706838)",
+  "    move sg1->c2 -> 1394994 (best 706838)",
+  "    move sg1->c2 -> 1394994 (best 706838)",
+  "    move sg1->c2 -> 1394994 (best 706838)",
+  "    move sg1->c2 -> 1394994 (best 706838)",
+  "    move sg1->c2 -> 1394994 (best 706838)",
+  "    interval[1:5] -> 706838 (best 706838)",
+  "    time-feedback -> 706838 (best 706838)",
+  "    interval[0:4] -> 706838 (best 706838)",
+  "final: T_C=706838 added=2580480 hit_rate=0.267 subgraphs=4 time=74.2s"
+ ]
+}

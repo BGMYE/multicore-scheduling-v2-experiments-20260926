@@ -1,0 +1,126 @@
+{
+ "summary": {
+  "case": "case_040",
+  "cores": 5,
+  "makespan_eval": 103588,
+  "added_copy_bytes_eval": 2993818,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 911238,
+   "scheduled_copy_bytes": 3905056,
+   "added_copy_bytes": 2993818,
+   "partition_added_copy_bytes": 2756240,
+   "spill_added_copy_bytes": 237578
+  },
+  "cache": {
+   "hits": 134,
+   "accesses": 963,
+   "hit_bytes": 584678,
+   "miss_bytes": 2119964,
+   "hit_rate": 0.2161757452557492
+  },
+  "init_makespan_TC_PB": 103614,
+  "init_added_bytes": 2992794,
+  "init_cache": {
+   "hits": 134,
+   "accesses": 963,
+   "hit_bytes": 584678,
+   "miss_bytes": 2120476,
+   "hit_rate": 0.2161348300318577
+  },
+  "num_subgraphs": 1790,
+  "improve_stats": {
+   "evals": 49,
+   "accepted": 1,
+   "accepted_cache_colocate": 1,
+   "decode_cycle": 3,
+   "interval_OPTIMAL": 5,
+   "eval_errors": 5,
+   "assign_OPTIMAL": 2,
+   "order_OPTIMAL": 2,
+   "assign_FEASIBLE": 1,
+   "rounds": 15,
+   "subgraphs_start": 1790
+  },
+  "reuse_windows": [
+   {
+    "candidates": 32,
+    "evaluated": 11,
+    "exhausted": false,
+    "improved": true
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 37150.2,
+  "total_seconds": 27.53
+ },
+ "log": [
+  "case_040 K=5 P_B: T_C=103614 added=2992794 hit_rate=0.216",
+  "    cache-cluster t=None -> 103783 hit=0.224 (best 103614)",
+  "    cache-gather t=5965 -> 103687 hit=0.222 (best 103614)",
+  "    cache-colocate t=5965 -> 104131 hit=0.216 (best 103614)",
+  "    cache-gather t=5944 -> 103738 hit=0.216 (best 103614)",
+  "    cache-colocate t=5944 -> 104525 hit=0.222 (best 103614)",
+  "    cache-stagger t=1075 -> 103844 hit=0.217 (best 103614)",
+  "    cache-stagger2 t=1075 -> 103844 hit=0.217 (best 103614)",
+  "    cache-colocate t=1075 -> 104114 hit=0.218 (best 103614)",
+  "    cache-stagger t=2930 -> 103614 hit=0.216 (best 103614)",
+  "    cache-stagger2 t=2930 -> 103614 hit=0.216 (best 103614)",
+  "    cache-colocate t=2930 -> 103588 hit=0.216 (best 103614)",
+  "    cache-cluster t=None -> 103828 hit=0.226 (best 103588)",
+  "    cache-cluster t=None -> 103828 hit=0.226 (best 103588)",
+  "    cache-cluster t=None -> 103828 hit=0.226 (best 103588)",
+  "    time-feedback -> 106403 (best 103588)",
+  "    [invalid] dependency order violation on core 1: 364 -> 1776",
+  "    assign[0:24] moved=13 -> 105997 (best 103588)",
+  "    move sg365->c3 -> 103950 (best 103588)",
+  "    swap sg364<->sg365 -> 103588 (best 103588)",
+  "    move sg364->c3 -> 104194 (best 103588)",
+  "    swap sg363<->sg364 -> 103588 (best 103588)",
+  "    move sg363->c3 -> 104150 (best 103588)",
+  "    swap sg362<->sg363 -> 103588 (best 103588)",
+  "    move sg362->c3 -> 104146 (best 103588)",
+  "    swap sg361<->sg362 -> 103588 (best 103588)",
+  "    move sg361->c3 -> 103941 (best 103588)",
+  "    swap sg360<->sg361 -> 103588 (best 103588)",
+  "    move sg360->c3 -> 103910 (best 103588)",
+  "    swap sg359<->sg360 -> 103588 (best 103588)",
+  "    [invalid] dependency order violation on core 0: 2 -> 1773",
+  "    time-feedback -> 106403 (best 103588)",
+  "    [invalid] dependency order violation on core 0: 1 -> 1775",
+  "    order core0[6:18] -> 103671 (best 103588)",
+  "    move sg359->c3 -> 103880 (best 103588)",
+  "    swap sg358<->sg359 -> 103588 (best 103588)",
+  "    move sg358->c3 -> 104166 (best 103588)",
+  "    swap sg357<->sg358 -> 103588 (best 103588)",
+  "    move sg357->c3 -> 104166 (best 103588)",
+  "    swap sg356<->sg357 -> 103588 (best 103588)",
+  "    move sg356->c3 -> 104175 (best 103588)",
+  "    swap sg355<->sg356 -> 103588 (best 103588)",
+  "    move sg355->c3 -> 104122 (best 103588)",
+  "    swap sg354<->sg355 -> 103588 (best 103588)",
+  "    move sg354->c3 -> 103981 (best 103588)",
+  "    swap sg353<->sg354 -> 103588 (best 103588)",
+  "    [invalid] dependency order violation on core 0: 1782 -> 2",
+  "    time-feedback -> 106403 (best 103588)",
+  "    [invalid] dependency order violation on core 1: 1775 -> 365",
+  "    assign[24:48] moved=1 -> 104389 (best 103588)",
+  "final: T_C=103588 added=2993818 hit_rate=0.216 subgraphs=1790 time=27.5s"
+ ]
+}

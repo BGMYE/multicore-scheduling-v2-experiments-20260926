@@ -1,0 +1,26 @@
+{
+ "makespan": 1169726,
+ "num_cores": 4,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 7667712,
+  "scheduled_copy_bytes": 41373696,
+  "added_copy_bytes": 33705984,
+  "partition_added_copy_bytes": 11624448,
+  "spill_added_copy_bytes": 22081536
+ },
+ "cache_stats": {
+  "hits": 1651,
+  "accesses": 8460,
+  "hit_bytes": 6897664,
+  "miss_bytes": 33431552,
+  "hit_rate": 0.1710339224050376,
+  "copy_in_hits": 1651,
+  "copy_in_misses": 6809
+ },
+ "cache_inserts": 6618,
+ "cache_evictions": 6363,
+ "num_subgraphs": 13,
+ "cross_core_transfers": 0,
+ "stdout": "data movement: scheduled_copy_bytes=41373696, physical_ddr_bytes=41373696, cache_hits=1651/8460, cache_hit_bytes=6897664\nOK: problem 3 makespan=1169726; result=/tmp/tmphoan6f6e/res.json",
+ "eval_seconds": 3.86
+}

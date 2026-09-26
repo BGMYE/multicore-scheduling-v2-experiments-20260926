@@ -1,0 +1,29 @@
+{
+ "makespan": 23898222,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 11103184,
+  "scheduled_copy_bytes": 127858016,
+  "added_copy_bytes": 116754832,
+  "partition_added_copy_bytes": 753664,
+  "spill_added_copy_bytes": 116001168
+ },
+ "num_subgraphs": 4,
+ "cross_core_transfers": 0,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 524288,
+   "UB": 30198
+  },
+  "1": {
+   "L1": 49152,
+   "UB": 132
+  },
+  "2": {
+   "L1": 0,
+   "UB": 0
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=127858016, physical_ddr_bytes=127858016\nOK: problem 2 makespan=23898222; result=/tmp/tmp_gm79bmx/res.json",
+ "eval_seconds": 16.67
+}

@@ -1,0 +1,29 @@
+{
+ "makespan": 2828376,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 4041088,
+  "scheduled_copy_bytes": 11623552,
+  "added_copy_bytes": 7582464,
+  "partition_added_copy_bytes": 7582464,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 4827,
+ "cross_core_transfers": 17,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 464128,
+   "UB": 0
+  },
+  "1": {
+   "L1": 464128,
+   "UB": 0
+  },
+  "2": {
+   "L1": 464128,
+   "UB": 0
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=11623552, physical_ddr_bytes=11623552\nOK: problem 2 makespan=2828376; result=/tmp/tmpht4gps3g/res.json",
+ "eval_seconds": 1.12
+}

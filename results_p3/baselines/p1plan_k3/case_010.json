@@ -1,0 +1,26 @@
+{
+ "makespan": 32424,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 384150,
+  "scheduled_copy_bytes": 422166,
+  "added_copy_bytes": 38016,
+  "partition_added_copy_bytes": 38016,
+  "spill_added_copy_bytes": 0
+ },
+ "cache_stats": {
+  "hits": 4,
+  "accesses": 99,
+  "hit_bytes": 19584,
+  "miss_bytes": 402510,
+  "hit_rate": 0.04639724800636825,
+  "copy_in_hits": 4,
+  "copy_in_misses": 95
+ },
+ "cache_inserts": 93,
+ "cache_evictions": 0,
+ "num_subgraphs": 14,
+ "cross_core_transfers": 0,
+ "stdout": "data movement: scheduled_copy_bytes=422166, physical_ddr_bytes=422166, cache_hits=4/99, cache_hit_bytes=19584\nOK: problem 3 makespan=32424; result=/tmp/tmpdf8a1ib3/res.json",
+ "eval_seconds": 0.14
+}

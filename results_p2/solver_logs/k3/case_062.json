@@ -1,0 +1,147 @@
+{
+ "summary": {
+  "case": "case_062",
+  "cores": 3,
+  "makespan_eval": 954913,
+  "added_copy_bytes_eval": 1769472,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 13401600,
+   "scheduled_copy_bytes": 15171072,
+   "added_copy_bytes": 1769472,
+   "partition_added_copy_bytes": 1769472,
+   "spill_added_copy_bytes": 0
+  },
+  "num_subgraphs": 757,
+  "initial_constructor": "tals-dfs/cf1/ob6000",
+  "initial_makespan": 957493,
+  "initial_added_bytes": 1754112,
+  "portfolio": [
+   {
+    "tag": "tals-dfs/cf1/ob6000",
+    "makespan": 957493,
+    "added": 1754112
+   },
+   {
+    "tag": "p1-final",
+    "makespan": 957536,
+    "added": 1771008
+   },
+   {
+    "tag": "tals-dfs/cf4/ob3000",
+    "makespan": 1053395,
+    "added": 2946048
+   },
+   {
+    "tag": "tals-dfs/cf1/ob1000",
+    "makespan": 1071098,
+    "added": 3357696
+   },
+   {
+    "tag": "tals-dfs/cf4/ob1000",
+    "makespan": 1243414,
+    "added": 5253120
+   },
+   {
+    "tag": "tals-bl/cf1/ob0",
+    "makespan": 1286040,
+    "added": 27122688
+   },
+   {
+    "tag": "tals-bl/cf4/ob1000",
+    "makespan": 1310176,
+    "added": 24814080
+   },
+   {
+    "tag": "hyper/x0",
+    "makespan": 1555203,
+    "added": 53156352
+   },
+   {
+    "tag": "hyper/x1000",
+    "makespan": 1565889,
+    "added": 53202432
+   },
+   {
+    "tag": "lsB/x0/runmax",
+    "makespan": 1652220,
+    "added": 54812160
+   },
+   {
+    "tag": "lsB/x0/run8",
+    "makespan": 1652220,
+    "added": 54812160
+   },
+   {
+    "tag": "lsB/x1000/runmax",
+    "makespan": 1662602,
+    "added": 54713856
+   },
+   {
+    "tag": "lsB/x1000/run8",
+    "makespan": 1662602,
+    "added": 54713856
+   },
+   {
+    "tag": "band/4x1",
+    "makespan": 3198557,
+    "added": 5673984
+   }
+  ],
+  "lower_bound_LB0": 872800.0,
+  "critical_path": 3120,
+  "improve_stats": {
+   "evals": 20,
+   "interval_FEASIBLE": 3,
+   "assign_OPTIMAL": 1,
+   "order_OPTIMAL": 1,
+   "accepted": 1,
+   "accepted_move": 1,
+   "assign_FEASIBLE": 1,
+   "rounds": 9,
+   "subgraphs_start": 757
+  },
+  "construct_seconds": 122.15,
+  "total_seconds": 240.58
+ },
+ "log": [
+  "case_062 K=3 compute=19636 LB0=872800 CP=3120 W_M=2618400 W_V=392688",
+  "  [p1-final] makespan=957536 added=1771008",
+  "  [lsB/x0/runmax] makespan=1652220 added=54812160 subgraphs=16656 (10.3s)",
+  "  [lsB/x0/run8] makespan=1652220 added=54812160 subgraphs=16657 (10.7s)",
+  "   hyper: comm 9.31MB -> 5.79MB",
+  "  [hyper/x0] makespan=1555203 added=53156352 subgraphs=16660 (11.2s)",
+  "  [lsB/x1000/runmax] makespan=1662602 added=54713856 subgraphs=16610 (10.6s)",
+  "  [lsB/x1000/run8] makespan=1662602 added=54713856 subgraphs=16610 (11.2s)",
+  "   hyper: comm 9.21MB -> 5.84MB",
+  "  [hyper/x1000] makespan=1565889 added=53202432 subgraphs=16666 (10.9s)",
+  "  [tals-dfs/cf1/ob1000] makespan=1071098 added=3357696 subgraphs=2176 (5.2s)",
+  "  [tals-dfs/cf4/ob1000] makespan=1243414 added=5253120 subgraphs=2666 (6.0s)",
+  "  [tals-dfs/cf4/ob3000] makespan=1053395 added=2946048 subgraphs=1327 (5.8s)",
+  "  [tals-dfs/cf1/ob6000] makespan=957493 added=1754112 subgraphs=757 (5.1s)",
+  "  [tals-bl/cf4/ob1000] makespan=1310176 added=24814080 subgraphs=38 (8.0s)",
+  "  [tals-bl/cf1/ob0] makespan=1286040 added=27122688 subgraphs=51 (9.1s)",
+  "  [band/4x1] makespan=3198557 added=5673984 subgraphs=6 (6.2s)",
+  "initial best: tals-dfs/cf1/ob6000 (957493, 1754112)",
+  "    time-feedback -> 957493 (best 957493)",
+  "    interval[0:16] -> 958722 (best 957493)",
+  "    assign[0:24] moved=1 -> 957499 (best 957493)",
+  "    order core0[0:12] -> 987237 (best 957493)",
+  "    move sg247->c1 -> 958071 (best 957493)",
+  "    swap sg246<->sg247 -> 957493 (best 957493)",
+  "    move sg246->c1 -> 958824 (best 957493)",
+  "    swap sg245<->sg246 -> 957493 (best 957493)",
+  "    move sg245->c1 -> 954913 (best 957493)",
+  "    swap sg244<->sg245 -> 957493 (best 954913)",
+  "    move sg244->c1 -> 962890 (best 954913)",
+  "    swap sg243<->sg244 -> 962296 (best 954913)",
+  "    move sg243->c1 -> 958362 (best 954913)",
+  "    swap sg242<->sg243 -> 958362 (best 954913)",
+  "    move sg242->c1 -> 957329 (best 954913)",
+  "    swap sg241<->sg242 -> 957493 (best 954913)",
+  "    interval[12:28] -> 956890 (best 954913)",
+  "    time-feedback -> 954913 (best 954913)",
+  "    interval[8:24] -> 960264 (best 954913)",
+  "    assign[12:36] moved=2 -> 966957 (best 954913)",
+  "final: makespan=954913 added=1769472 subgraphs=757 time=240.6s"
+ ]
+}

@@ -1,0 +1,211 @@
+{
+ "summary": {
+  "case": "case_019",
+  "cores": 4,
+  "makespan_eval": 17026,
+  "added_copy_bytes_eval": 577912,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 186984,
+   "scheduled_copy_bytes": 764896,
+   "added_copy_bytes": 577912,
+   "partition_added_copy_bytes": 577912,
+   "spill_added_copy_bytes": 0
+  },
+  "num_subgraphs": 528,
+  "initial_constructor": "hyper/x1000",
+  "initial_makespan": 17174,
+  "initial_added_bytes": 577916,
+  "portfolio": [
+   {
+    "tag": "hyper/x1000",
+    "makespan": 17174,
+    "added": 577916
+   },
+   {
+    "tag": "lsB/x1000/runmax",
+    "makespan": 18560,
+    "added": 761628
+   },
+   {
+    "tag": "lsB/x1000/run8",
+    "makespan": 18560,
+    "added": 761628
+   },
+   {
+    "tag": "heft-cut/P1500",
+    "makespan": 21845,
+    "added": 939092
+   },
+   {
+    "tag": "tals-dfs/cf4/ob1000",
+    "makespan": 23009,
+    "added": 106772
+   },
+   {
+    "tag": "hyper/x0",
+    "makespan": 23151,
+    "added": 949440
+   },
+   {
+    "tag": "tals-bl/cf4/ob1000",
+    "makespan": 23623,
+    "added": 495184
+   },
+   {
+    "tag": "p1-final",
+    "makespan": 24099,
+    "added": 49152
+   },
+   {
+    "tag": "comp-pack/4",
+    "makespan": 24099,
+    "added": 49152
+   },
+   {
+    "tag": "tals-dfs/cf1/ob1000",
+    "makespan": 25438,
+    "added": 116752
+   },
+   {
+    "tag": "lsB/x0/run8",
+    "makespan": 25788,
+    "added": 1273312
+   },
+   {
+    "tag": "lsB/x0/runmax",
+    "makespan": 25856,
+    "added": 1273312
+   },
+   {
+    "tag": "tals-bl/cf1/ob0",
+    "makespan": 27025,
+    "added": 648848
+   },
+   {
+    "tag": "tals-dfs/cf4/ob3000",
+    "makespan": 27680,
+    "added": 101196
+   },
+   {
+    "tag": "tals-dfs/cf1/ob6000",
+    "makespan": 28095,
+    "added": 109832
+   },
+   {
+    "tag": "comp-pack/1",
+    "makespan": 29731,
+    "added": 24576
+   },
+   {
+    "tag": "band/16x4",
+    "makespan": 60110,
+    "added": 296964
+   },
+   {
+    "tag": "band/4x4",
+    "makespan": 77398,
+    "added": 69636
+   },
+   {
+    "tag": "band/4x1",
+    "makespan": 80747,
+    "added": 0
+   }
+  ],
+  "lower_bound_LB0": 12234,
+  "critical_path": 12234,
+  "improve_stats": {
+   "evals": 51,
+   "accepted": 5,
+   "accepted_time-feedback": 1,
+   "interval_OPTIMAL": 3,
+   "assign_OPTIMAL": 3,
+   "order_OPTIMAL": 3,
+   "accepted_move": 3,
+   "accepted_swap": 1,
+   "eval_errors": 3,
+   "interval_FEASIBLE": 4,
+   "rounds": 20,
+   "subgraphs_start": 528
+  },
+  "construct_seconds": 1.87,
+  "total_seconds": 19.53
+ },
+ "log": [
+  "case_019 K=4 compute=647 LB0=12234 CP=12234 W_M=48436 W_V=40276",
+  "  [p1-final] makespan=24099 added=49152",
+  "  [lsB/x0/runmax] makespan=25856 added=1273312 subgraphs=532 (0.1s)",
+  "  [lsB/x0/run8] makespan=25788 added=1273312 subgraphs=533 (0.1s)",
+  "   hyper: comm 1.27MB -> 0.95MB",
+  "  [hyper/x0] makespan=23151 added=949440 subgraphs=428 (0.1s)",
+  "  [lsB/x1000/runmax] makespan=18560 added=761628 subgraphs=544 (0.1s)",
+  "  [lsB/x1000/run8] makespan=18560 added=761628 subgraphs=544 (0.1s)",
+  "   hyper: comm 0.76MB -> 0.58MB",
+  "  [hyper/x1000] makespan=17174 added=577916 subgraphs=528 (0.1s)",
+  "  [comp-pack/1] makespan=29731 added=24576 subgraphs=5 (0.1s)",
+  "  [comp-pack/4] makespan=24099 added=49152 subgraphs=14 (0.1s)",
+  "  [tals-dfs/cf1/ob1000] makespan=25438 added=116752 subgraphs=24 (0.1s)",
+  "  [tals-dfs/cf4/ob1000] makespan=23009 added=106772 subgraphs=26 (0.1s)",
+  "  [tals-dfs/cf4/ob3000] makespan=27680 added=101196 subgraphs=18 (0.1s)",
+  "  [tals-dfs/cf1/ob6000] makespan=28095 added=109832 subgraphs=20 (0.1s)",
+  "  [tals-bl/cf4/ob1000] makespan=23623 added=495184 subgraphs=28 (0.1s)",
+  "  [tals-bl/cf1/ob0] makespan=27025 added=648848 subgraphs=34 (0.1s)",
+  "  [band/4x1] makespan=80747 added=0 subgraphs=5 (0.1s)",
+  "  [band/4x4] makespan=77398 added=69636 subgraphs=16 (0.1s)",
+  "  [band/16x4] makespan=60110 added=296964 subgraphs=54 (0.1s)",
+  "  [heft-cut/P1500] makespan=21845 added=939092 subgraphs=124 (0.1s)",
+  "initial best: hyper/x1000 (17174, 577916)",
+  "    time-feedback -> 17058 (best 17174)",
+  "    interval[0:16] -> 28588 (best 17058)",
+  "    assign[0:24] moved=7 -> 19124 (best 17058)",
+  "    order core2[0:12] -> 17852 (best 17058)",
+  "    move sg383->c3 -> 17051 (best 17058)",
+  "    swap sg382<->sg383 -> 17058 (best 17051)",
+  "    move sg382->c3 -> 17045 (best 17051)",
+  "    swap sg381<->sg382 -> 17045 (best 17045)",
+  "    move sg381->c3 -> 17026 (best 17045)",
+  "    swap sg380<->sg381 -> 17084 (best 17026)",
+  "    move sg380->c3 -> 17058 (best 17026)",
+  "    swap sg379<->sg380 -> 17058 (best 17026)",
+  "    move sg379->c3 -> 17059 (best 17026)",
+  "    swap sg378<->sg379 -> 17058 (best 17026)",
+  "    move sg378->c3 -> 17058 (best 17026)",
+  "    swap sg377<->sg378 -> 17058 (best 17026)",
+  "    [invalid] dependency order violation on core 1: 160 -> 512",
+  "    time-feedback -> 17535 (best 17026)",
+  "    interval[8:24] -> 28934 (best 17026)",
+  "    assign[12:36] moved=12 -> 20952 (best 17026)",
+  "    move sg93->c3 -> 17741 (best 17026)",
+  "    swap sg92<->sg93 -> 17026 (best 17026)",
+  "    move sg92->c3 -> 17313 (best 17026)",
+  "    swap sg91<->sg92 -> 17026 (best 17026)",
+  "    move sg89->c3 -> 17060 (best 17026)",
+  "    swap sg88<->sg89 -> 17061 (best 17026)",
+  "    move sg91->c3 -> 17287 (best 17026)",
+  "    swap sg90<->sg91 -> 17026 (best 17026)",
+  "    move sg90->c3 -> 17313 (best 17026)",
+  "    swap sg89<->sg90 -> 17026 (best 17026)",
+  "    move sg88->c3 -> 17419 (best 17026)",
+  "    swap sg87<->sg88 -> 17026 (best 17026)",
+  "    interval[20:36] -> 26486 (best 17026)",
+  "    time-feedback -> 17535 (best 17026)",
+  "    interval[16:32] -> 29736 (best 17026)",
+  "    assign[24:48] moved=4 -> 17713 (best 17026)",
+  "    move sg87->c3 -> 17129 (best 17026)",
+  "    swap sg86<->sg87 -> 17026 (best 17026)",
+  "    move sg86->c3 -> 17064 (best 17026)",
+  "    swap sg85<->sg86 -> 17026 (best 17026)",
+  "    move sg85->c3 -> 17042 (best 17026)",
+  "    swap sg84<->sg85 -> 17026 (best 17026)",
+  "    move sg84->c3 -> 17027 (best 17026)",
+  "    swap sg83<->sg84 -> 17026 (best 17026)",
+  "    move sg83->c3 -> 17240 (best 17026)",
+  "    swap sg82<->sg83 -> 17027 (best 17026)",
+  "    move sg80->c3 -> 17230 (best 17026)",
+  "    swap sg79<->sg80 -> 17027 (best 17026)",
+  "    [invalid] contracted subgraph graph contains a cycle",
+  "    time-feedback -> 17535 (best 17026)",
+  "    [invalid] dependency order violation on core 2: 232 -> 517",
+  "final: makespan=17026 added=577912 subgraphs=528 time=19.5s"
+ ]
+}

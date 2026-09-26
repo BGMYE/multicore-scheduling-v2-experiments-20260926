@@ -1,0 +1,203 @@
+{
+ "summary": {
+  "case": "case_072",
+  "cores": 5,
+  "makespan_fast_eval": 4687700,
+  "added_copy_bytes_fast_eval": 105435188,
+  "num_subgraphs": 111,
+  "initial_constructor": "comp-pack/32",
+  "initial_makespan": 4692414,
+  "initial_added_bytes": 106844208,
+  "portfolio": [
+   {
+    "tag": "comp-pack/32",
+    "makespan": 4692414,
+    "added": 106844208
+   },
+   {
+    "tag": "comp-pack/16",
+    "makespan": 4819500,
+    "added": 96604208
+   },
+   {
+    "tag": "comp-pack/2",
+    "makespan": 4833914,
+    "added": 96464944
+   },
+   {
+    "tag": "comp-pack/1",
+    "makespan": 4999290,
+    "added": 98816048
+   },
+   {
+    "tag": "comp-pack/4",
+    "makespan": 5051698,
+    "added": 94933040
+   },
+   {
+    "tag": "comp-pack/8",
+    "makespan": 5090182,
+    "added": 96440368
+   },
+   {
+    "tag": "band/32x10",
+    "makespan": 23396194,
+    "added": 108254848
+   },
+   {
+    "tag": "band/8x10",
+    "makespan": 23422839,
+    "added": 114640018
+   },
+   {
+    "tag": "band/16x10",
+    "makespan": 23486881,
+    "added": 115834724
+   },
+   {
+    "tag": "band/4x10",
+    "makespan": 23510290,
+    "added": 112866908
+   },
+   {
+    "tag": "band/8x5",
+    "makespan": 23528523,
+    "added": 111346100
+   },
+   {
+    "tag": "band/32x5",
+    "makespan": 23576438,
+    "added": 93638428
+   },
+   {
+    "tag": "band/16x5",
+    "makespan": 23607191,
+    "added": 112115690
+   },
+   {
+    "tag": "band/4x5",
+    "makespan": 23634974,
+    "added": 110560058
+   },
+   {
+    "tag": "band/2x10",
+    "makespan": 23640843,
+    "added": 112460688
+   },
+   {
+    "tag": "band/2x5",
+    "makespan": 23765324,
+    "added": 110600604
+   },
+   {
+    "tag": "band/16x1",
+    "makespan": 23814190,
+    "added": 108697882
+   },
+   {
+    "tag": "band/4x1",
+    "makespan": 23831250,
+    "added": 108172194
+   },
+   {
+    "tag": "band/8x1",
+    "makespan": 23843910,
+    "added": 108433022
+   },
+   {
+    "tag": "band/2x1",
+    "makespan": 23855549,
+    "added": 108901996
+   },
+   {
+    "tag": "interval-dfs/1",
+    "makespan": 23877018,
+    "added": 110568372
+   },
+   {
+    "tag": "band/32x1",
+    "makespan": 25370484,
+    "added": 88233642
+   }
+  ],
+  "lower_bound_LB0": 4585618.8,
+  "critical_path": 31968,
+  "window_stats": {
+   "windows": 33,
+   "improved": 3,
+   "optimal": 0,
+   "feasible": 33,
+   "unknown": 0,
+   "infeasible": 0,
+   "candidates": 4587,
+   "evals": 33
+  },
+  "construct_seconds": 145.32,
+  "total_seconds": 299.95,
+  "task_cache": {
+   "entries": 2389,
+   "hits": 9115,
+   "misses": 2389
+  }
+ },
+ "log": [
+  "case_072 K=5 ops=31387 compute=29666 LB0=4585619 CP=31968 W_M=22928094 W_V=1708199",
+  "  [comp-pack/1] makespan=4999290 added=98816048 tasks=5 (0.3s)",
+  "  [comp-pack/2] makespan=4833914 added=96464944 tasks=10 (0.3s)",
+  "  [comp-pack/4] makespan=5051698 added=94933040 tasks=20 (0.3s)",
+  "  [comp-pack/8] makespan=5090182 added=96440368 tasks=38 (0.3s)",
+  "  [comp-pack/16] makespan=4819500 added=96604208 tasks=69 (0.3s)",
+  "  [comp-pack/32] makespan=4692414 added=106844208 tasks=121 (0.4s)",
+  "  [band/2x1] makespan=23855549 added=108901996 tasks=4 (0.3s)",
+  "  [band/2x5] makespan=23765324 added=110600604 tasks=11 (0.3s)",
+  "  [band/2x10] makespan=23640843 added=112460688 tasks=21 (0.3s)",
+  "  [band/4x1] makespan=23831250 added=108172194 tasks=8 (0.3s)",
+  "  [band/4x5] makespan=23634974 added=110560058 tasks=21 (0.3s)",
+  "  [band/4x10] makespan=23510290 added=112866908 tasks=41 (0.3s)",
+  "  [band/8x1] makespan=23843910 added=108433022 tasks=12 (0.3s)",
+  "  [band/8x5] makespan=23528523 added=111346100 tasks=41 (0.3s)",
+  "  [band/8x10] makespan=23422839 added=114640018 tasks=81 (0.3s)",
+  "  [band/16x1] makespan=23814190 added=108697882 tasks=20 (0.3s)",
+  "  [band/16x5] makespan=23607191 added=112115690 tasks=81 (0.4s)",
+  "  [band/16x10] makespan=23486881 added=115834724 tasks=160 (0.4s)",
+  "  [band/32x1] makespan=25370484 added=88233642 tasks=36 (0.3s)",
+  "  [band/32x5] makespan=23576438 added=93638428 tasks=160 (0.4s)",
+  "  [band/32x10] makespan=23396194 added=108254848 tasks=300 (0.4s)",
+  "  [interval-dfs/1] makespan=23877018 added=110568372 tasks=6 (0.3s)",
+  "initial best: comp-pack/32 (4692414, 106844208)",
+  "    window[0,622664) tasks=16 cand=135 FEASIBLE obj=4833777 -> exact 4711557 (best 4692414)",
+  "    window[0,796211) tasks=20 cand=175 FEASIBLE obj=4878571 -> exact 4690611 (best 4692414)",
+  "    window[0,876628) tasks=16 cand=135 FEASIBLE obj=4868396 -> exact 4714259 (best 4690611)",
+  "    window[192403,1066983) tasks=16 cand=135 FEASIBLE obj=4866669 -> exact 4717082 (best 4690611)",
+  "    window[685599,1382861) tasks=16 cand=135 FEASIBLE obj=4802247 -> exact 4697389 (best 4690611)",
+  "    window[880174,1573216) tasks=16 cand=135 FEASIBLE obj=4800247 -> exact 4691314 (best 4690611)",
+  "    window[1070930,1763571) tasks=16 cand=135 FEASIBLE obj=4805170 -> exact 4692404 (best 4690611)",
+  "    window[1261767,1954207) tasks=16 cand=135 FEASIBLE obj=4800981 -> exact 4692170 (best 4690611)",
+  "    window[1452391,2144686) tasks=16 cand=135 FEASIBLE obj=4795845 -> exact 4691900 (best 4690611)",
+  "    window[1643288,2335028) tasks=16 cand=135 FEASIBLE obj=4797676 -> exact 4704165 (best 4690611)",
+  "    window[1834154,2525370) tasks=16 cand=135 FEASIBLE obj=4799908 -> exact 4692008 (best 4690611)",
+  "    window[2024932,2715699) tasks=16 cand=135 FEASIBLE obj=4801896 -> exact 4698879 (best 4690611)",
+  "    window[2215549,2906028) tasks=16 cand=135 FEASIBLE obj=4792603 -> exact 4703896 (best 4690611)",
+  "    window[2405904,3096357) tasks=16 cand=135 FEASIBLE obj=4788106 -> exact 4694878 (best 4690611)",
+  "    window[2596367,3286686) tasks=16 cand=135 FEASIBLE obj=4786220 -> exact 4689713 (best 4690611)",
+  "    window[0,876628) tasks=16 cand=135 FEASIBLE obj=4856519 -> exact 4698965 (best 4689713)",
+  "    window[192403,1066983) tasks=16 cand=135 FEASIBLE obj=4874013 -> exact 4687700 (best 4689713)",
+  "    window[0,679154) tasks=16 cand=138 FEASIBLE obj=4856911 -> exact 4718698 (best 4687700)",
+  "    window[0,793989) tasks=17 cand=151 FEASIBLE obj=4851656 -> exact 4731690 (best 4687700)",
+  "    window[0,858486) tasks=20 cand=181 FEASIBLE obj=4869952 -> exact 4707710 (best 4687700)",
+  "    window[239607,1004815) tasks=16 cand=144 FEASIBLE obj=4884016 -> exact 4738756 (best 4687700)",
+  "    window[574389,1180936) tasks=16 cand=144 FEASIBLE obj=4791190 -> exact 4692192 (best 4687700)",
+  "    window[814198,1367453) tasks=16 cand=141 FEASIBLE obj=4789958 -> exact 4688143 (best 4687700)",
+  "    window[986756,1449681) tasks=16 cand=138 FEASIBLE obj=4783886 -> exact 4687863 (best 4687700)",
+  "    window[1155222,1726597) tasks=16 cand=135 FEASIBLE obj=4787950 -> exact 4700729 (best 4687700)",
+  "    window[1259339,1917077) tasks=16 cand=135 FEASIBLE obj=4795136 -> exact 4691109 (best 4687700)",
+  "    window[1449681,2107556) tasks=16 cand=135 FEASIBLE obj=4808378 -> exact 4703249 (best 4687700)",
+  "    window[1640153,2298036) tasks=16 cand=135 FEASIBLE obj=4793931 -> exact 4700338 (best 4687700)",
+  "    window[1830619,2488379) tasks=16 cand=135 FEASIBLE obj=4802570 -> exact 4691182 (best 4687700)",
+  "    window[2021098,2678913) tasks=16 cand=135 FEASIBLE obj=4796000 -> exact 4689277 (best 4687700)",
+  "    window[2211851,3089785) tasks=16 cand=135 FEASIBLE obj=4839328 -> exact 4701480 (best 4687700)",
+  "    window[2402274,3353327) tasks=16 cand=135 FEASIBLE obj=4825428 -> exact 4700223 (best 4687700)",
+  "    window[2592741,3544032) tasks=16 cand=135 FEASIBLE obj=4824226 -> exact 4687734 (best 4687700)",
+  "final: makespan=4687700 added=105435188 subgraphs=111 time=299.9s"
+ ]
+}

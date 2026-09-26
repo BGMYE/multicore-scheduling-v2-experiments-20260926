@@ -1,0 +1,32 @@
+{
+ "makespan": 11295,
+ "num_cores": 4,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 293088,
+  "scheduled_copy_bytes": 317672,
+  "added_copy_bytes": 24584,
+  "partition_added_copy_bytes": 24584,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 10,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 40960,
+   "UB": 9216
+  },
+  "1": {
+   "L1": 10240,
+   "UB": 36876
+  },
+  "2": {
+   "L1": 2560,
+   "UB": 24584
+  },
+  "3": {
+   "L1": 16384,
+   "UB": 1056
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=317672, physical_ddr_bytes=317672\nOK: problem 1 makespan=11295; result=/tmp/tmp_jvbxi59/res.json",
+ "eval_seconds": 0.24
+}

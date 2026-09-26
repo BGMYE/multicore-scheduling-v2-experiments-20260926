@@ -1,0 +1,25 @@
+{
+ "makespan": 157186,
+ "num_cores": 2,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 221600,
+  "scheduled_copy_bytes": 693346,
+  "added_copy_bytes": 471746,
+  "partition_added_copy_bytes": 471746,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 148,
+ "cross_core_transfers": 330,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 26752,
+   "UB": 30918
+  },
+  "1": {
+   "L1": 26720,
+   "UB": 41992
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=693346, physical_ddr_bytes=693346\nOK: problem 2 makespan=157186; result=/tmp/tmpc_fq724m/res.json",
+ "eval_seconds": 1.44
+}

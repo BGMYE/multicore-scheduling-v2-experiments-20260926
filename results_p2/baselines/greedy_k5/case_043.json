@@ -1,0 +1,37 @@
+{
+ "makespan": 678198,
+ "num_cores": 5,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 1431122,
+  "scheduled_copy_bytes": 1916226,
+  "added_copy_bytes": 485104,
+  "partition_added_copy_bytes": 0,
+  "spill_added_copy_bytes": 485104
+ },
+ "num_subgraphs": 6,
+ "cross_core_transfers": 0,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 523648,
+   "UB": 122900
+  },
+  "1": {
+   "L1": 0,
+   "UB": 0
+  },
+  "2": {
+   "L1": 0,
+   "UB": 0
+  },
+  "3": {
+   "L1": 0,
+   "UB": 0
+  },
+  "4": {
+   "L1": 0,
+   "UB": 0
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=1916226, physical_ddr_bytes=1916226\nOK: problem 2 makespan=678198; result=/tmp/tmp737_kcf1/res.json",
+ "eval_seconds": 2.02
+}

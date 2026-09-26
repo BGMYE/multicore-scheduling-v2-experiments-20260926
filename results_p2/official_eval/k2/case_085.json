@@ -1,0 +1,25 @@
+{
+ "makespan": 1623518,
+ "num_cores": 2,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 1689734,
+  "scheduled_copy_bytes": 23781556,
+  "added_copy_bytes": 22091822,
+  "partition_added_copy_bytes": 21080582,
+  "spill_added_copy_bytes": 1011240
+ },
+ "num_subgraphs": 14741,
+ "cross_core_transfers": 7818,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 87168,
+   "UB": 131072
+  },
+  "1": {
+   "L1": 92160,
+   "UB": 131072
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=23781556, physical_ddr_bytes=23781556\nOK: problem 2 makespan=1623518; result=/tmp/tmpadvgh4hd/res.json",
+ "eval_seconds": 10.3
+}

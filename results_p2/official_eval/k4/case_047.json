@@ -1,0 +1,33 @@
+{
+ "makespan": 113414,
+ "num_cores": 4,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 463942,
+  "scheduled_copy_bytes": 2204600,
+  "added_copy_bytes": 1740658,
+  "partition_added_copy_bytes": 1740658,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 737,
+ "cross_core_transfers": 1402,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 19648,
+   "UB": 9094
+  },
+  "1": {
+   "L1": 25600,
+   "UB": 8036
+  },
+  "2": {
+   "L1": 19584,
+   "UB": 7014
+  },
+  "3": {
+   "L1": 19008,
+   "UB": 7746
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=2204600, physical_ddr_bytes=2204600\nOK: problem 2 makespan=113414; result=/tmp/tmp9bitald_/res.json",
+ "eval_seconds": 2.95
+}

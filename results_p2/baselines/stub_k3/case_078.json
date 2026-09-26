@@ -1,0 +1,29 @@
+{
+ "makespan": 1952518,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 2345088,
+  "scheduled_copy_bytes": 11721168,
+  "added_copy_bytes": 9376080,
+  "partition_added_copy_bytes": 4147152,
+  "spill_added_copy_bytes": 5228928
+ },
+ "num_subgraphs": 13,
+ "cross_core_transfers": 149,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 501504,
+   "UB": 0
+  },
+  "1": {
+   "L1": 504576,
+   "UB": 0
+  },
+  "2": {
+   "L1": 506112,
+   "UB": 0
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=11721168, physical_ddr_bytes=11721168\nOK: problem 2 makespan=1952518; result=/tmp/tmp4vp10fps/res.json",
+ "eval_seconds": 0.2
+}

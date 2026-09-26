@@ -1,0 +1,69 @@
+{
+ "summary": {
+  "case": "case_057",
+  "cores": 3,
+  "makespan_eval": 21014,
+  "added_copy_bytes_eval": 14976,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 342460,
+   "scheduled_copy_bytes": 357436,
+   "added_copy_bytes": 14976,
+   "partition_added_copy_bytes": 14976,
+   "spill_added_copy_bytes": 0
+  },
+  "cache": {
+   "hits": 4,
+   "accesses": 132,
+   "hit_bytes": 14208,
+   "miss_bytes": 336972,
+   "hit_rate": 0.04045788484537844
+  },
+  "init_makespan_TC_PB": 21014,
+  "init_added_bytes": 14976,
+  "init_cache": {
+   "hits": 4,
+   "accesses": 132,
+   "hit_bytes": 14208,
+   "miss_bytes": 336972,
+   "hit_rate": 0.04045788484537844
+  },
+  "num_subgraphs": 5,
+  "improve_stats": {
+   "evals": 23,
+   "interval_OPTIMAL": 5,
+   "assign_OPTIMAL": 3,
+   "rounds": 15,
+   "subgraphs_start": 5
+  },
+  "reuse_windows": [],
+  "lower_bound_LB0": 15855.0,
+  "total_seconds": 2.84
+ },
+ "log": [
+  "case_057 K=3 P_B: T_C=21014 added=14976 hit_rate=0.040",
+  "    time-feedback -> 21014 (best 21014)",
+  "    interval[0:5] -> 21014 (best 21014)",
+  "    assign[0:5] moved=2 -> 24668 (best 21014)",
+  "    move sg0->c2 -> 39929 (best 21014)",
+  "    move sg0->c2 -> 39929 (best 21014)",
+  "    move sg0->c2 -> 39929 (best 21014)",
+  "    move sg0->c2 -> 39929 (best 21014)",
+  "    move sg0->c2 -> 39929 (best 21014)",
+  "    move sg0->c2 -> 39929 (best 21014)",
+  "    interval[3:8] -> 21014 (best 21014)",
+  "    time-feedback -> 21014 (best 21014)",
+  "    interval[2:7] -> 21014 (best 21014)",
+  "    assign[0:5] moved=2 -> 24668 (best 21014)",
+  "    move sg0->c2 -> 39929 (best 21014)",
+  "    move sg0->c2 -> 39929 (best 21014)",
+  "    move sg0->c2 -> 39929 (best 21014)",
+  "    move sg0->c2 -> 39929 (best 21014)",
+  "    move sg0->c2 -> 39929 (best 21014)",
+  "    move sg0->c2 -> 39929 (best 21014)",
+  "    interval[1:6] -> 21014 (best 21014)",
+  "    time-feedback -> 21014 (best 21014)",
+  "    interval[0:5] -> 21014 (best 21014)",
+  "    assign[0:5] moved=2 -> 24668 (best 21014)",
+  "final: T_C=21014 added=14976 hit_rate=0.040 subgraphs=5 time=2.8s"
+ ]
+}

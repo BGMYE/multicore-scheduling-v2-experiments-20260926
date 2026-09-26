@@ -1,0 +1,33 @@
+{
+ "makespan": 809899,
+ "num_cores": 4,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 1606276,
+  "scheduled_copy_bytes": 15263138,
+  "added_copy_bytes": 13656862,
+  "partition_added_copy_bytes": 13656862,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 211,
+ "cross_core_transfers": 9030,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 184768,
+   "UB": 58884
+  },
+  "1": {
+   "L1": 53760,
+   "UB": 45300
+  },
+  "2": {
+   "L1": 174528,
+   "UB": 45332
+  },
+  "3": {
+   "L1": 158016,
+   "UB": 50658
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=15263138, physical_ddr_bytes=15263138\nOK: problem 2 makespan=809899; result=/tmp/tmpe_wda31e/res.json",
+ "eval_seconds": 7.27
+}

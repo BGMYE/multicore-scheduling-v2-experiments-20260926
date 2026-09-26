@@ -1,0 +1,72 @@
+{
+ "summary": {
+  "case": "case_091",
+  "cores": 4,
+  "makespan_eval": 2302433,
+  "added_copy_bytes_eval": 42209248,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 6577656,
+   "scheduled_copy_bytes": 48786904,
+   "added_copy_bytes": 42209248,
+   "partition_added_copy_bytes": 13381120,
+   "spill_added_copy_bytes": 28828128
+  },
+  "cache": {
+   "hits": 3169,
+   "accesses": 13016,
+   "hit_bytes": 10229760,
+   "miss_bytes": 38481376,
+   "hit_rate": 0.21000865182039688
+  },
+  "init_makespan_TC_PB": 2302433,
+  "init_added_bytes": 42209248,
+  "init_cache": {
+   "hits": 3169,
+   "accesses": 13016,
+   "hit_bytes": 10229760,
+   "miss_bytes": 38481376,
+   "hit_rate": 0.21000865182039688
+  },
+  "num_subgraphs": 77,
+  "improve_stats": {
+   "evals": 18,
+   "interval_FEASIBLE": 1,
+   "assign_FEASIBLE": 1,
+   "order_OPTIMAL": 1,
+   "rounds": 5,
+   "subgraphs_start": 77
+  },
+  "reuse_windows": [
+   {
+    "candidates": 25,
+    "evaluated": 12,
+    "exhausted": false,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 2245340.0,
+  "total_seconds": 185.92
+ },
+ "log": [
+  "case_091 K=4 P_B: T_C=2302433 added=42209248 hit_rate=0.210",
+  "    cache-cluster t=None -> 2302433 hit=0.210 (best 2302433)",
+  "    cache-gather t=1000000053 -> 2302433 hit=0.210 (best 2302433)",
+  "    cache-colocate t=1000000053 -> 2742676 hit=0.233 (best 2302433)",
+  "    cache-gather t=1000000051 -> 2302433 hit=0.210 (best 2302433)",
+  "    cache-colocate t=1000000051 -> 2742676 hit=0.233 (best 2302433)",
+  "    cache-gather t=1000000049 -> 2302433 hit=0.210 (best 2302433)",
+  "    cache-colocate t=1000000049 -> 2742676 hit=0.233 (best 2302433)",
+  "    cache-gather t=1000000055 -> 2302433 hit=0.210 (best 2302433)",
+  "    cache-colocate t=1000000055 -> 2742676 hit=0.233 (best 2302433)",
+  "    cache-gather t=1000000047 -> 2302433 hit=0.210 (best 2302433)",
+  "    cache-colocate t=1000000047 -> 2742676 hit=0.233 (best 2302433)",
+  "    cache-gather t=1000000057 -> 2302433 hit=0.210 (best 2302433)",
+  "    time-feedback -> 2302433 (best 2302433)",
+  "    merge -> 2356072 (best 2302433)",
+  "    interval[0:16] -> 2326371 (best 2302433)",
+  "    order core1[0:12] -> 2348403 (best 2302433)",
+  "    move sg38->c2 -> 2368215 (best 2302433)",
+  "    swap sg37<->sg38 -> 2303169 (best 2302433)",
+  "final: T_C=2302433 added=42209248 hit_rate=0.210 subgraphs=77 time=185.9s"
+ ]
+}

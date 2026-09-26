@@ -1,0 +1,126 @@
+{
+ "summary": {
+  "case": "case_028",
+  "cores": 5,
+  "makespan_eval": 8280551,
+  "added_copy_bytes_eval": 124546560,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 5908608,
+   "scheduled_copy_bytes": 130455168,
+   "added_copy_bytes": 124546560,
+   "partition_added_copy_bytes": 123158016,
+   "spill_added_copy_bytes": 1388544
+  },
+  "num_subgraphs": 14296,
+  "initial_constructor": "lsB/x1000/runmax",
+  "initial_makespan": 8280551,
+  "initial_added_bytes": 124546560,
+  "portfolio": [
+   {
+    "tag": "lsB/x1000/runmax",
+    "makespan": 8280551,
+    "added": 124546560
+   },
+   {
+    "tag": "lsB/x1000/run8",
+    "makespan": 8285579,
+    "added": 124546560
+   },
+   {
+    "tag": "lsB/x0/runmax",
+    "makespan": 8382853,
+    "added": 128804352
+   },
+   {
+    "tag": "lsB/x0/run8",
+    "makespan": 8384617,
+    "added": 128804352
+   },
+   {
+    "tag": "hyper/x1000",
+    "makespan": 8524106,
+    "added": 91080672
+   },
+   {
+    "tag": "hyper/x0",
+    "makespan": 8701504,
+    "added": 92530008
+   },
+   {
+    "tag": "p1-final",
+    "makespan": 11294775,
+    "added": 276457776
+   },
+   {
+    "tag": "tals-dfs/cf1/ob1000",
+    "makespan": 11491035,
+    "added": 277818912
+   },
+   {
+    "tag": "tals-dfs/cf4/ob1000",
+    "makespan": 11491035,
+    "added": 277818912
+   },
+   {
+    "tag": "tals-dfs/cf4/ob3000",
+    "makespan": 11491035,
+    "added": 277818912
+   },
+   {
+    "tag": "comp-pack/1",
+    "makespan": 11494072,
+    "added": 277901856
+   },
+   {
+    "tag": "comp-pack/16",
+    "makespan": 11781222,
+    "added": 277737504
+   },
+   {
+    "tag": "comp-pack/4",
+    "makespan": 11791938,
+    "added": 277657632
+   }
+  ],
+  "lower_bound_LB0": 7794921.6,
+  "critical_path": 246816,
+  "improve_stats": {
+   "evals": 8,
+   "interval_FEASIBLE": 1,
+   "assign_OPTIMAL": 1,
+   "order_OPTIMAL": 1,
+   "rounds": 5,
+   "subgraphs_start": 14296
+  },
+  "construct_seconds": 122.29,
+  "total_seconds": 241.85
+ },
+ "log": [
+  "case_028 K=5 compute=19584 LB0=7794922 CP=246816 W_M=38974608 W_V=1975536",
+  "  [p1-final] makespan=11294775 added=276457776",
+  "  [lsB/x0/runmax] makespan=8382853 added=128804352 subgraphs=13408 (13.0s)",
+  "  [lsB/x0/run8] makespan=8384617 added=128804352 subgraphs=13432 (13.4s)",
+  "   hyper: comm 126.48MB -> 88.03MB",
+  "  [hyper/x0] makespan=8701504 added=92530008 subgraphs=10826 (11.2s)",
+  "  [lsB/x1000/runmax] makespan=8280551 added=124546560 subgraphs=14296 (14.3s)",
+  "  [lsB/x1000/run8] makespan=8285579 added=124546560 subgraphs=14318 (13.6s)",
+  "   hyper: comm 123.16MB -> 86.79MB",
+  "  [hyper/x1000] makespan=8524106 added=91080672 subgraphs=10935 (11.4s)",
+  "  [comp-pack/1] makespan=11494072 added=277901856 subgraphs=5 (4.8s)",
+  "  [comp-pack/4] makespan=11791938 added=277657632 subgraphs=20 (5.1s)",
+  "  [comp-pack/16] makespan=11781222 added=277737504 subgraphs=77 (4.7s)",
+  "  [tals-dfs/cf1/ob1000] makespan=11491035 added=277818912 subgraphs=5 (4.8s)",
+  "  [tals-dfs/cf4/ob1000] makespan=11491035 added=277818912 subgraphs=5 (4.9s)",
+  "  [tals-dfs/cf4/ob3000] makespan=11491035 added=277818912 subgraphs=5 (4.6s)",
+  "initial best: lsB/x1000/runmax (8280551, 124546560)",
+  "    time-feedback -> 8286038 (best 8280551)",
+  "    interval[0:16] -> 8288270 (best 8280551)",
+  "    order core3[0:12] -> 8280551 (best 8280551)",
+  "    move sg11699->c0 -> 8280551 (best 8280551)",
+  "    swap sg11698<->sg11699 -> 8280551 (best 8280551)",
+  "    move sg11698->c0 -> 8280551 (best 8280551)",
+  "    swap sg11697<->sg11698 -> 8280551 (best 8280551)",
+  "    move sg11697->c0 -> 8280551 (best 8280551)",
+  "final: makespan=8280551 added=124546560 subgraphs=14296 time=241.8s"
+ ]
+}

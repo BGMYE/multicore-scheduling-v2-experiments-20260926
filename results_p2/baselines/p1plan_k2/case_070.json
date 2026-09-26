@@ -1,0 +1,25 @@
+{
+ "makespan": 59950,
+ "num_cores": 2,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 419964,
+  "scheduled_copy_bytes": 493692,
+  "added_copy_bytes": 73728,
+  "partition_added_copy_bytes": 73728,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 2,
+ "cross_core_transfers": 0,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 130048,
+   "UB": 16392
+  },
+  "1": {
+   "L1": 101888,
+   "UB": 12288
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=493692, physical_ddr_bytes=493692\nOK: problem 2 makespan=59950; result=/tmp/tmpljwf8yqa/res.json",
+ "eval_seconds": 0.21
+}

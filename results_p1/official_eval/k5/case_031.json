@@ -1,0 +1,36 @@
+{
+ "makespan": 282077,
+ "num_cores": 5,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 2185040,
+  "scheduled_copy_bytes": 7430480,
+  "added_copy_bytes": 5245440,
+  "partition_added_copy_bytes": 5245440,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 13,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 425984,
+   "UB": 57344
+  },
+  "1": {
+   "L1": 301056,
+   "UB": 49152
+  },
+  "2": {
+   "L1": 503808,
+   "UB": 49152
+  },
+  "3": {
+   "L1": 231424,
+   "UB": 40960
+  },
+  "4": {
+   "L1": 368640,
+   "UB": 57344
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=7430480, physical_ddr_bytes=7430480\nOK: problem 1 makespan=282077; result=/tmp/tmpyil60g36/res.json",
+ "eval_seconds": 2.93
+}

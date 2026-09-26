@@ -1,0 +1,36 @@
+{
+ "makespan": 1389719,
+ "num_cores": 5,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 393218,
+  "scheduled_copy_bytes": 59188266,
+  "added_copy_bytes": 58795048,
+  "partition_added_copy_bytes": 58795048,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 1410,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 65536,
+   "UB": 65538
+  },
+  "1": {
+   "L1": 65536,
+   "UB": 65538
+  },
+  "2": {
+   "L1": 32768,
+   "UB": 65538
+  },
+  "3": {
+   "L1": 32768,
+   "UB": 65538
+  },
+  "4": {
+   "L1": 65536,
+   "UB": 65538
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=59188266, physical_ddr_bytes=59188266\nOK: problem 1 makespan=1389719; result=/tmp/tmp0t26breu/res.json",
+ "eval_seconds": 4.06
+}

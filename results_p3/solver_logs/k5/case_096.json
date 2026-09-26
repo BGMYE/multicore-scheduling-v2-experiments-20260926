@@ -1,0 +1,117 @@
+{
+ "summary": {
+  "case": "case_096",
+  "cores": 5,
+  "makespan_eval": 21977,
+  "added_copy_bytes_eval": 707224,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 219558,
+   "scheduled_copy_bytes": 926782,
+   "added_copy_bytes": 707224,
+   "partition_added_copy_bytes": 707224,
+   "spill_added_copy_bytes": 0
+  },
+  "cache": {
+   "hits": 66,
+   "accesses": 344,
+   "hit_bytes": 212170,
+   "miss_bytes": 486134,
+   "hit_rate": 0.3038361515901384
+  },
+  "init_makespan_TC_PB": 22017,
+  "init_added_bytes": 707224,
+  "init_cache": {
+   "hits": 66,
+   "accesses": 344,
+   "hit_bytes": 212170,
+   "miss_bytes": 486134,
+   "hit_rate": 0.3038361515901384
+  },
+  "num_subgraphs": 999,
+  "improve_stats": {
+   "evals": 42,
+   "accepted": 1,
+   "accepted_cache_stagger": 1,
+   "decode_cycle": 3,
+   "interval_OPTIMAL": 5,
+   "assign_OPTIMAL": 3,
+   "order_OPTIMAL": 2,
+   "rounds": 15,
+   "subgraphs_start": 999
+  },
+  "reuse_windows": [
+   {
+    "candidates": 10,
+    "evaluated": 2,
+    "exhausted": false,
+    "improved": true
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 10626.0,
+  "total_seconds": 7.78
+ },
+ "log": [
+  "case_096 K=5 P_B: T_C=22017 added=707224 hit_rate=0.304",
+  "    cache-cluster t=None -> 22818 hit=0.304 (best 22017)",
+  "    cache-stagger t=593 -> 21977 hit=0.304 (best 22017)",
+  "    cache-cluster t=None -> 22766 hit=0.304 (best 21977)",
+  "    cache-cluster t=None -> 22766 hit=0.304 (best 21977)",
+  "    cache-cluster t=None -> 22766 hit=0.304 (best 21977)",
+  "    time-feedback -> 23073 (best 21977)",
+  "    interval[0:16] -> 22593 (best 21977)",
+  "    assign[0:24] moved=12 -> 24268 (best 21977)",
+  "    order core3[0:12] -> 21977 (best 21977)",
+  "    move sg998->c4 -> 22308 (best 21977)",
+  "    swap sg997<->sg998 -> 21990 (best 21977)",
+  "    move sg997->c4 -> 22147 (best 21977)",
+  "    swap sg996<->sg997 -> 21977 (best 21977)",
+  "    move sg996->c4 -> 22095 (best 21977)",
+  "    swap sg995<->sg996 -> 21977 (best 21977)",
+  "    move sg995->c4 -> 22073 (best 21977)",
+  "    swap sg994<->sg995 -> 21977 (best 21977)",
+  "    move sg994->c4 -> 22052 (best 21977)",
+  "    swap sg993<->sg994 -> 21977 (best 21977)",
+  "    move sg993->c4 -> 22495 (best 21977)",
+  "    swap sg992<->sg993 -> 21977 (best 21977)",
+  "    interval[12:28] -> 22809 (best 21977)",
+  "    time-feedback -> 23073 (best 21977)",
+  "    interval[8:24] -> 22808 (best 21977)",
+  "    assign[12:36] moved=6 -> 22723 (best 21977)",
+  "    order core3[6:18] -> 21977 (best 21977)",
+  "    move sg992->c4 -> 22100 (best 21977)",
+  "    swap sg991<->sg992 -> 21977 (best 21977)",
+  "    move sg991->c4 -> 22495 (best 21977)",
+  "    swap sg990<->sg991 -> 21977 (best 21977)",
+  "    move sg990->c4 -> 22471 (best 21977)",
+  "    swap sg989<->sg990 -> 21977 (best 21977)",
+  "    move sg989->c4 -> 21977 (best 21977)",
+  "    swap sg988<->sg989 -> 21977 (best 21977)",
+  "    move sg987->c4 -> 21995 (best 21977)",
+  "    swap sg986<->sg987 -> 21977 (best 21977)",
+  "    move sg988->c4 -> 21977 (best 21977)",
+  "    swap sg987<->sg988 -> 21977 (best 21977)",
+  "    interval[20:36] -> 23153 (best 21977)",
+  "    time-feedback -> 23073 (best 21977)",
+  "    interval[16:32] -> 22804 (best 21977)",
+  "    assign[24:48] moved=6 -> 23667 (best 21977)",
+  "final: T_C=21977 added=707224 hit_rate=0.304 subgraphs=999 time=7.8s"
+ ]
+}

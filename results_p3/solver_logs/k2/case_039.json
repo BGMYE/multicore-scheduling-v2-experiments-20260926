@@ -1,0 +1,131 @@
+{
+ "summary": {
+  "case": "case_039",
+  "cores": 2,
+  "makespan_eval": 710155,
+  "added_copy_bytes_eval": 13012992,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 4489216,
+   "scheduled_copy_bytes": 17502208,
+   "added_copy_bytes": 13012992,
+   "partition_added_copy_bytes": 8290304,
+   "spill_added_copy_bytes": 4722688
+  },
+  "cache": {
+   "hits": 838,
+   "accesses": 2932,
+   "hit_bytes": 4972544,
+   "miss_bytes": 10199040,
+   "hit_rate": 0.3277537796976242
+  },
+  "init_makespan_TC_PB": 713410,
+  "init_added_bytes": 13004800,
+  "init_cache": {
+   "hits": 810,
+   "accesses": 2941,
+   "hit_bytes": 4866048,
+   "miss_bytes": 10293248,
+   "hit_rate": 0.32099432585787624
+  },
+  "num_subgraphs": 887,
+  "improve_stats": {
+   "evals": 48,
+   "accepted": 4,
+   "accepted_cache_gather": 2,
+   "decode_cycle": 3,
+   "interval_FEASIBLE": 5,
+   "assign_OPTIMAL": 2,
+   "order_OPTIMAL": 2,
+   "accepted_move": 1,
+   "accepted_interval": 1,
+   "rounds": 14,
+   "subgraphs_start": 892
+  },
+  "reuse_windows": [
+   {
+    "candidates": 25,
+    "evaluated": 4,
+    "exhausted": false,
+    "improved": true
+   },
+   {
+    "candidates": 15,
+    "evaluated": 4,
+    "exhausted": false,
+    "improved": true
+   },
+   {
+    "candidates": 3,
+    "evaluated": 3,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 688940.0,
+  "total_seconds": 67.0
+ },
+ "log": [
+  "case_039 K=2 P_B: T_C=713410 added=13004800 hit_rate=0.321",
+  "    cache-cluster t=None -> 745313 hit=0.286 (best 713410)",
+  "    cache-gather t=1000000349 -> 718014 hit=0.308 (best 713410)",
+  "    cache-colocate t=1000000349 -> 724636 hit=0.329 (best 713410)",
+  "    cache-gather t=1000000223 -> 712478 hit=0.326 (best 713410)",
+  "    cache-cluster t=None -> 728796 hit=0.270 (best 712478)",
+  "    cache-gather t=1000000303 -> 713283 hit=0.326 (best 712478)",
+  "    cache-colocate t=1000000303 -> 717981 hit=0.288 (best 712478)",
+  "    cache-gather t=1000000301 -> 710888 hit=0.327 (best 712478)",
+  "    cache-cluster t=None -> 727038 hit=0.272 (best 710888)",
+  "    cache-gather t=1000000281 -> 714419 hit=0.327 (best 710888)",
+  "    cache-colocate t=1000000281 -> 719917 hit=0.325 (best 710888)",
+  "    cache-cluster t=None -> 727038 hit=0.272 (best 710888)",
+  "    cache-cluster t=None -> 727038 hit=0.272 (best 710888)",
+  "    time-feedback -> 743860 (best 710888)",
+  "    interval[0:16] -> 711308 (best 710888)",
+  "    assign[0:24] moved=11 -> 717628 (best 710888)",
+  "    order core1[0:12] -> 728523 (best 710888)",
+  "    move sg891->c0 -> 711520 (best 710888)",
+  "    swap sg890<->sg891 -> 710888 (best 710888)",
+  "    move sg890->c0 -> 712169 (best 710888)",
+  "    swap sg889<->sg890 -> 710888 (best 710888)",
+  "    move sg889->c0 -> 710827 (best 710888)",
+  "    swap sg888<->sg889 -> 710888 (best 710827)",
+  "    move sg888->c0 -> 712902 (best 710827)",
+  "    swap sg887<->sg888 -> 710888 (best 710827)",
+  "    move sg887->c0 -> 712970 (best 710827)",
+  "    swap sg886<->sg887 -> 710888 (best 710827)",
+  "    move sg886->c0 -> 714894 (best 710827)",
+  "    swap sg885<->sg886 -> 710888 (best 710827)",
+  "    interval[12:28] -> 715160 (best 710827)",
+  "    time-feedback -> 742869 (best 710827)",
+  "    interval[8:24] -> 714134 (best 710827)",
+  "    assign[12:36] moved=11 -> 716536 (best 710827)",
+  "    order core1[6:18] -> 715765 (best 710827)",
+  "    move sg885->c0 -> 718531 (best 710827)",
+  "    swap sg884<->sg885 -> 710827 (best 710827)",
+  "    move sg884->c0 -> 718858 (best 710827)",
+  "    swap sg883<->sg884 -> 710827 (best 710827)",
+  "    move sg883->c0 -> 715847 (best 710827)",
+  "    swap sg882<->sg883 -> 710827 (best 710827)",
+  "    move sg882->c0 -> 720188 (best 710827)",
+  "    swap sg881<->sg882 -> 710827 (best 710827)",
+  "    move sg881->c0 -> 717267 (best 710827)",
+  "    swap sg880<->sg881 -> 710827 (best 710827)",
+  "    move sg880->c0 -> 713424 (best 710827)",
+  "    swap sg879<->sg880 -> 710827 (best 710827)",
+  "    interval[20:36] -> 710155 (best 710827)",
+  "    time-feedback -> 740576 (best 710155)",
+  "final: T_C=710155 added=13012992 hit_rate=0.328 subgraphs=887 time=67.0s"
+ ]
+}

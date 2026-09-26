@@ -1,0 +1,29 @@
+{
+ "makespan": 1672033,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 2039808,
+  "scheduled_copy_bytes": 23037952,
+  "added_copy_bytes": 20998144,
+  "partition_added_copy_bytes": 18206720,
+  "spill_added_copy_bytes": 2791424
+ },
+ "num_subgraphs": 19,
+ "cross_core_transfers": 678,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 524288,
+   "UB": 0
+  },
+  "1": {
+   "L1": 524288,
+   "UB": 0
+  },
+  "2": {
+   "L1": 233472,
+   "UB": 0
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=23037952, physical_ddr_bytes=23037952\nOK: problem 2 makespan=1672033; result=/tmp/tmpx_fluyj5/res.json",
+ "eval_seconds": 0.43
+}

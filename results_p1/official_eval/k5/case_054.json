@@ -1,0 +1,36 @@
+{
+ "makespan": 270530,
+ "num_cores": 5,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 1606276,
+  "scheduled_copy_bytes": 8686596,
+  "added_copy_bytes": 7080320,
+  "partition_added_copy_bytes": 7080320,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 499,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 49152,
+   "UB": 23696
+  },
+  "1": {
+   "L1": 49152,
+   "UB": 12434
+  },
+  "2": {
+   "L1": 49152,
+   "UB": 12434
+  },
+  "3": {
+   "L1": 49152,
+   "UB": 12434
+  },
+  "4": {
+   "L1": 40960,
+   "UB": 12434
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=8686596, physical_ddr_bytes=8686596\nOK: problem 1 makespan=270530; result=/tmp/tmp6vhelha_/res.json",
+ "eval_seconds": 5.9
+}

@@ -1,0 +1,28 @@
+{
+ "makespan": 74024,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 697994,
+  "scheduled_copy_bytes": 2011394,
+  "added_copy_bytes": 1313400,
+  "partition_added_copy_bytes": 1313400,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 13,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 212992,
+   "UB": 32776
+  },
+  "1": {
+   "L1": 16384,
+   "UB": 49282
+  },
+  "2": {
+   "L1": 49152,
+   "UB": 45056
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=2011394, physical_ddr_bytes=2011394\nOK: problem 1 makespan=74024; result=/tmp/tmpy18smli6/res.json",
+ "eval_seconds": 0.38
+}

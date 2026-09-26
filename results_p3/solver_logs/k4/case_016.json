@@ -1,0 +1,82 @@
+{
+ "summary": {
+  "case": "case_016",
+  "cores": 4,
+  "makespan_eval": 2247344,
+  "added_copy_bytes_eval": 605680,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 393218,
+   "scheduled_copy_bytes": 998898,
+   "added_copy_bytes": 605680,
+   "partition_added_copy_bytes": 605680,
+   "spill_added_copy_bytes": 0
+  },
+  "cache": {
+   "hits": 624,
+   "accesses": 3993,
+   "hit_bytes": 525504,
+   "miss_bytes": 432696,
+   "hit_rate": 0.548428303068253
+  },
+  "init_makespan_TC_PB": 2247954,
+  "init_added_bytes": 572912,
+  "init_cache": {
+   "hits": 625,
+   "accesses": 3993,
+   "hit_bytes": 558272,
+   "miss_bytes": 399928,
+   "hit_rate": 0.582625756627009
+  },
+  "num_subgraphs": 15560,
+  "improve_stats": {
+   "evals": 31,
+   "decode_cycle": 2,
+   "interval_FEASIBLE": 2,
+   "assign_OPTIMAL": 2,
+   "accepted": 1,
+   "accepted_assign": 1,
+   "order_FEASIBLE": 2,
+   "interval_OPTIMAL": 1,
+   "rounds": 11,
+   "subgraphs_start": 15560
+  },
+  "reuse_windows": [],
+  "lower_bound_LB0": 1928743.75,
+  "total_seconds": 152.75
+ },
+ "log": [
+  "case_016 K=4 P_B: T_C=2247954 added=572912 hit_rate=0.583",
+  "    time-feedback -> 2247966 (best 2247954)",
+  "    interval[0:16] -> 2258103 (best 2247954)",
+  "    assign[0:24] moved=1 -> 2247344 (best 2247954)",
+  "    order core1[0:12] -> 2247846 (best 2247344)",
+  "    move sg7930->c3 -> 2247344 (best 2247344)",
+  "    swap sg7929<->sg7930 -> 2247344 (best 2247344)",
+  "    move sg7929->c3 -> 2248408 (best 2247344)",
+  "    swap sg7928<->sg7929 -> 2247858 (best 2247344)",
+  "    move sg7928->c3 -> 2248410 (best 2247344)",
+  "    swap sg7927<->sg7928 -> 2247358 (best 2247344)",
+  "    move sg7927->c3 -> 2248955 (best 2247344)",
+  "    swap sg7926<->sg7927 -> 2247344 (best 2247344)",
+  "    move sg7926->c3 -> 2249051 (best 2247344)",
+  "    swap sg7925<->sg7926 -> 2247344 (best 2247344)",
+  "    move sg7925->c3 -> 2249051 (best 2247344)",
+  "    swap sg7924<->sg7925 -> 2247344 (best 2247344)",
+  "    interval[12:28] -> 2253723 (best 2247344)",
+  "    time-feedback -> 2247344 (best 2247344)",
+  "    interval[8:24] -> 2251766 (best 2247344)",
+  "    order core1[6:18] -> 2247344 (best 2247344)",
+  "    move sg7924->c3 -> 2249049 (best 2247344)",
+  "    swap sg7923<->sg7924 -> 2247344 (best 2247344)",
+  "    move sg7923->c3 -> 2249046 (best 2247344)",
+  "    swap sg7922<->sg7923 -> 2247344 (best 2247344)",
+  "    move sg7922->c3 -> 2249044 (best 2247344)",
+  "    swap sg7921<->sg7922 -> 2247344 (best 2247344)",
+  "    move sg7921->c3 -> 2249044 (best 2247344)",
+  "    swap sg7920<->sg7921 -> 2247344 (best 2247344)",
+  "    move sg7920->c3 -> 2248404 (best 2247344)",
+  "    swap sg7919<->sg7920 -> 2247344 (best 2247344)",
+  "    move sg7919->c3 -> 2247880 (best 2247344)",
+  "final: T_C=2247344 added=605680 hit_rate=0.548 subgraphs=15560 time=152.8s"
+ ]
+}

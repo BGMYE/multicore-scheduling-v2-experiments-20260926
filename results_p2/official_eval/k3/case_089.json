@@ -1,0 +1,29 @@
+{
+ "makespan": 218795,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 566400,
+  "scheduled_copy_bytes": 5703040,
+  "added_copy_bytes": 5136640,
+  "partition_added_copy_bytes": 5136640,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 2764,
+ "cross_core_transfers": 1708,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 128768,
+   "UB": 0
+  },
+  "1": {
+   "L1": 123024,
+   "UB": 0
+  },
+  "2": {
+   "L1": 122952,
+   "UB": 0
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=5703040, physical_ddr_bytes=5703040\nOK: problem 2 makespan=218795; result=/tmp/tmptbhgcsi1/res.json",
+ "eval_seconds": 1.46
+}

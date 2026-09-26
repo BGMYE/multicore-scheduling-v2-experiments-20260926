@@ -1,0 +1,26 @@
+{
+ "makespan": 68689,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 186984,
+  "scheduled_copy_bytes": 1008924,
+  "added_copy_bytes": 821940,
+  "partition_added_copy_bytes": 821940,
+  "spill_added_copy_bytes": 0
+ },
+ "cache_stats": {
+  "hits": 26,
+  "accesses": 248,
+  "hit_bytes": 82720,
+  "miss_bytes": 549886,
+  "hit_rate": 0.1307606946503827,
+  "copy_in_hits": 26,
+  "copy_in_misses": 222
+ },
+ "cache_inserts": 221,
+ "cache_evictions": 0,
+ "num_subgraphs": 10,
+ "cross_core_transfers": 133,
+ "stdout": "data movement: scheduled_copy_bytes=1008924, physical_ddr_bytes=1008924, cache_hits=26/248, cache_hit_bytes=82720\nOK: problem 3 makespan=68689; result=/tmp/tmp_cieltip/res.json",
+ "eval_seconds": 0.21
+}

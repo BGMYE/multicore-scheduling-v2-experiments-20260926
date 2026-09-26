@@ -1,0 +1,116 @@
+{
+ "summary": {
+  "case": "case_039",
+  "cores": 4,
+  "makespan_eval": 363921,
+  "added_copy_bytes_eval": 15212544,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 4489216,
+   "scheduled_copy_bytes": 19701760,
+   "added_copy_bytes": 15212544,
+   "partition_added_copy_bytes": 10158080,
+   "spill_added_copy_bytes": 5054464
+  },
+  "cache": {
+   "hits": 1084,
+   "accesses": 3360,
+   "hit_bytes": 6299648,
+   "miss_bytes": 13094912,
+   "hit_rate": 0.3248152059134108
+  },
+  "init_makespan_TC_PB": 370849,
+  "init_added_bytes": 15843328,
+  "init_cache": {
+   "hits": 803,
+   "accesses": 3437,
+   "hit_bytes": 5042176,
+   "miss_bytes": 15003648,
+   "hit_rate": 0.2515324887617491
+  },
+  "num_subgraphs": 8,
+  "improve_stats": {
+   "evals": 48,
+   "interval_FEASIBLE": 3,
+   "accepted": 1,
+   "accepted_interval": 1,
+   "assign_OPTIMAL": 2,
+   "order_OPTIMAL": 2,
+   "rounds": 11,
+   "subgraphs_start": 12
+  },
+  "reuse_windows": [
+   {
+    "candidates": 25,
+    "evaluated": 25,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 344470.0,
+  "total_seconds": 65.27
+ },
+ "log": [
+  "case_039 K=4 P_B: T_C=370849 added=15843328 hit_rate=0.252",
+  "    cache-cluster t=None -> 383939 hit=0.257 (best 370849)",
+  "    cache-gather t=1000000225 -> 383939 hit=0.257 (best 370849)",
+  "    cache-colocate t=1000000225 -> 845808 hit=0.117 (best 370849)",
+  "    cache-gather t=1000000211 -> 383939 hit=0.257 (best 370849)",
+  "    cache-colocate t=1000000211 -> 845808 hit=0.117 (best 370849)",
+  "    cache-gather t=1000000197 -> 383939 hit=0.257 (best 370849)",
+  "    cache-colocate t=1000000197 -> 845808 hit=0.117 (best 370849)",
+  "    cache-gather t=1000000183 -> 383939 hit=0.257 (best 370849)",
+  "    cache-colocate t=1000000183 -> 845808 hit=0.117 (best 370849)",
+  "    cache-gather t=1000000169 -> 383939 hit=0.257 (best 370849)",
+  "    cache-colocate t=1000000169 -> 845808 hit=0.117 (best 370849)",
+  "    cache-gather t=1000000519 -> 383939 hit=0.257 (best 370849)",
+  "    cache-colocate t=1000000519 -> 845808 hit=0.117 (best 370849)",
+  "    cache-gather t=1000000505 -> 383939 hit=0.257 (best 370849)",
+  "    cache-colocate t=1000000505 -> 845808 hit=0.117 (best 370849)",
+  "    cache-gather t=1000000491 -> 383939 hit=0.257 (best 370849)",
+  "    cache-colocate t=1000000491 -> 845808 hit=0.117 (best 370849)",
+  "    cache-gather t=1000000463 -> 383939 hit=0.257 (best 370849)",
+  "    cache-colocate t=1000000463 -> 845808 hit=0.117 (best 370849)",
+  "    cache-gather t=1000000449 -> 383939 hit=0.257 (best 370849)",
+  "    cache-colocate t=1000000449 -> 845808 hit=0.117 (best 370849)",
+  "    cache-gather t=1000000435 -> 383939 hit=0.257 (best 370849)",
+  "    cache-colocate t=1000000435 -> 845808 hit=0.117 (best 370849)",
+  "    cache-gather t=1000000421 -> 383939 hit=0.257 (best 370849)",
+  "    cache-colocate t=1000000421 -> 845808 hit=0.117 (best 370849)",
+  "    cache-cluster t=None -> 383939 hit=0.257 (best 370849)",
+  "    cache-cluster t=None -> 383939 hit=0.257 (best 370849)",
+  "    time-feedback -> 370849 (best 370849)",
+  "    interval[0:12] -> 363921 (best 370849)",
+  "    move sg2->c1 -> 426069 (best 363921)",
+  "    swap sg4<->sg2 -> 413083 (best 363921)",
+  "    move sg4->c1 -> 493630 (best 363921)",
+  "    swap sg0<->sg4 -> 375642 (best 363921)",
+  "    move sg0->c1 -> 460695 (best 363921)",
+  "    move sg2->c1 -> 426069 (best 363921)",
+  "    swap sg4<->sg2 -> 413083 (best 363921)",
+  "    move sg4->c1 -> 493630 (best 363921)",
+  "    swap sg0<->sg4 -> 375642 (best 363921)",
+  "    move sg0->c1 -> 460695 (best 363921)",
+  "    interval[6:14] -> 393449 (best 363921)",
+  "    time-feedback -> 363921 (best 363921)",
+  "    interval[4:12] -> 393449 (best 363921)",
+  "    move sg2->c1 -> 426069 (best 363921)",
+  "    swap sg4<->sg2 -> 413083 (best 363921)",
+  "    move sg4->c1 -> 493630 (best 363921)",
+  "    swap sg0<->sg4 -> 375642 (best 363921)",
+  "    move sg0->c1 -> 460695 (best 363921)",
+  "    move sg2->c1 -> 426069 (best 363921)",
+  "final: T_C=363921 added=15212544 hit_rate=0.325 subgraphs=8 time=65.3s"
+ ]
+}

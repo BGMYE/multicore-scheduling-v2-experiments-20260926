@@ -1,0 +1,132 @@
+{
+ "summary": {
+  "case": "case_038",
+  "cores": 4,
+  "makespan_eval": 336289,
+  "added_copy_bytes_eval": 5291520,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 2802950,
+   "scheduled_copy_bytes": 8094470,
+   "added_copy_bytes": 5291520,
+   "partition_added_copy_bytes": 5151744,
+   "spill_added_copy_bytes": 139776
+  },
+  "cache": {
+   "hits": 1134,
+   "accesses": 2355,
+   "hit_bytes": 3803136,
+   "miss_bytes": 4236810,
+   "hit_rate": 0.47303004273909305
+  },
+  "init_makespan_TC_PB": 336840,
+  "init_added_bytes": 5270016,
+  "init_cache": {
+   "hits": 1257,
+   "accesses": 2352,
+   "hit_bytes": 4193280,
+   "miss_bytes": 3825162,
+   "hit_rate": 0.5229544592328534
+  },
+  "num_subgraphs": 27,
+  "improve_stats": {
+   "evals": 55,
+   "accepted": 3,
+   "accepted_cache_gather": 1,
+   "decode_cycle": 2,
+   "interval_FEASIBLE": 2,
+   "assign_FEASIBLE": 1,
+   "order_OPTIMAL": 1,
+   "accepted_order": 1,
+   "accepted_swap": 1,
+   "rounds": 7,
+   "subgraphs_start": 27
+  },
+  "reuse_windows": [
+   {
+    "candidates": 24,
+    "evaluated": 7,
+    "exhausted": false,
+    "improved": true
+   },
+   {
+    "candidates": 29,
+    "evaluated": 29,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 331250.0,
+  "total_seconds": 68.7
+ },
+ "log": [
+  "case_038 K=4 P_B: T_C=336840 added=5270016 hit_rate=0.523",
+  "    cache-cluster t=None -> 433372 hit=0.377 (best 336840)",
+  "    cache-gather t=1000003973 -> 336840 hit=0.523 (best 336840)",
+  "    cache-gather t=1000003971 -> 430249 hit=0.328 (best 336840)",
+  "    cache-colocate t=1000003971 -> 439220 hit=0.396 (best 336840)",
+  "    cache-gather t=1000003965 -> 336840 hit=0.523 (best 336840)",
+  "    cache-colocate t=1000003965 -> 540995 hit=0.257 (best 336840)",
+  "    cache-gather t=1000003961 -> 336839 hit=0.489 (best 336840)",
+  "    cache-cluster t=None -> 413490 hit=0.374 (best 336839)",
+  "    cache-gather t=1000003917 -> 413545 hit=0.358 (best 336839)",
+  "    cache-colocate t=1000003917 -> 549609 hit=0.243 (best 336839)",
+  "    cache-gather t=1000003905 -> 413545 hit=0.358 (best 336839)",
+  "    cache-colocate t=1000003905 -> 549609 hit=0.243 (best 336839)",
+  "    cache-gather t=1000003881 -> 413545 hit=0.358 (best 336839)",
+  "    cache-colocate t=1000003881 -> 549609 hit=0.243 (best 336839)",
+  "    cache-gather t=1000003857 -> 413545 hit=0.358 (best 336839)",
+  "    cache-colocate t=1000003857 -> 549609 hit=0.243 (best 336839)",
+  "    cache-gather t=1000003833 -> 413545 hit=0.358 (best 336839)",
+  "    cache-colocate t=1000003833 -> 549609 hit=0.243 (best 336839)",
+  "    cache-gather t=1000003821 -> 413545 hit=0.358 (best 336839)",
+  "    cache-colocate t=1000003821 -> 549609 hit=0.243 (best 336839)",
+  "    cache-gather t=1000003757 -> 336840 hit=0.491 (best 336839)",
+  "    cache-stagger t=1000003757 -> 336839 hit=0.489 (best 336839)",
+  "    cache-stagger2 t=1000003757 -> 336839 hit=0.489 (best 336839)",
+  "    cache-colocate t=1000003757 -> 436131 hit=0.380 (best 336839)",
+  "    cache-gather t=1000003745 -> 336840 hit=0.491 (best 336839)",
+  "    cache-stagger t=1000003745 -> 336839 hit=0.489 (best 336839)",
+  "    cache-stagger2 t=1000003745 -> 336839 hit=0.489 (best 336839)",
+  "    cache-colocate t=1000003745 -> 436131 hit=0.380 (best 336839)",
+  "    cache-gather t=1000003733 -> 336840 hit=0.491 (best 336839)",
+  "    cache-stagger t=1000003733 -> 336839 hit=0.489 (best 336839)",
+  "    cache-stagger2 t=1000003733 -> 336839 hit=0.489 (best 336839)",
+  "    cache-colocate t=1000003733 -> 436131 hit=0.380 (best 336839)",
+  "    cache-gather t=1000003721 -> 336840 hit=0.491 (best 336839)",
+  "    cache-stagger t=1000003721 -> 336840 hit=0.523 (best 336839)",
+  "    cache-stagger2 t=1000003721 -> 336840 hit=0.523 (best 336839)",
+  "    cache-colocate t=1000003721 -> 440519 hit=0.396 (best 336839)",
+  "    cache-cluster t=None -> 413490 hit=0.374 (best 336839)",
+  "    cache-cluster t=None -> 413490 hit=0.374 (best 336839)",
+  "    time-feedback -> 336839 (best 336839)",
+  "    interval[0:16] -> 341747 (best 336839)",
+  "    order core0[0:6] -> 336629 (best 336839)",
+  "    move sg13->c0 -> 351753 (best 336629)",
+  "    swap sg12<->sg13 -> 337230 (best 336629)",
+  "    move sg12->c0 -> 363260 (best 336629)",
+  "    swap sg11<->sg12 -> 336289 (best 336629)",
+  "    move sg11->c0 -> 420372 (best 336289)",
+  "    swap sg10<->sg11 -> 337374 (best 336289)",
+  "    move sg10->c0 -> 432482 (best 336289)",
+  "    swap sg9<->sg10 -> 352886 (best 336289)",
+  "    move sg9->c0 -> 354740 (best 336289)",
+  "    swap sg8<->sg9 -> 336629 (best 336289)",
+  "    move sg8->c0 -> 406894 (best 336289)",
+  "    swap sg7<->sg8 -> 336629 (best 336289)",
+  "    interval[12:28] -> 341511 (best 336289)",
+  "    time-feedback -> 336289 (best 336289)",
+  "final: T_C=336289 added=5291520 hit_rate=0.473 subgraphs=27 time=68.7s"
+ ]
+}

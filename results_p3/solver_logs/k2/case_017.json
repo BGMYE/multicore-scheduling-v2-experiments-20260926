@@ -1,0 +1,72 @@
+{
+ "summary": {
+  "case": "case_017",
+  "cores": 2,
+  "makespan_eval": 75942,
+  "added_copy_bytes_eval": 82944,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 643862,
+   "scheduled_copy_bytes": 726806,
+   "added_copy_bytes": 82944,
+   "partition_added_copy_bytes": 82944,
+   "spill_added_copy_bytes": 0
+  },
+  "cache": {
+   "hits": 5,
+   "accesses": 262,
+   "hit_bytes": 82944,
+   "miss_bytes": 535118,
+   "hit_rate": 0.13420012878966836
+  },
+  "init_makespan_TC_PB": 75942,
+  "init_added_bytes": 82944,
+  "init_cache": {
+   "hits": 5,
+   "accesses": 262,
+   "hit_bytes": 82944,
+   "miss_bytes": 535118,
+   "hit_rate": 0.13420012878966836
+  },
+  "num_subgraphs": 4,
+  "improve_stats": {
+   "evals": 26,
+   "interval_OPTIMAL": 5,
+   "assign_OPTIMAL": 3,
+   "rounds": 15,
+   "subgraphs_start": 4
+  },
+  "reuse_windows": [],
+  "lower_bound_LB0": 55300.0,
+  "total_seconds": 6.46
+ },
+ "log": [
+  "case_017 K=2 P_B: T_C=75942 added=82944 hit_rate=0.134",
+  "    time-feedback -> 75942 (best 75942)",
+  "    interval[0:4] -> 78507 (best 75942)",
+  "    move sg3->c0 -> 91702 (best 75942)",
+  "    swap sg2<->sg3 -> 76196 (best 75942)",
+  "    move sg2->c0 -> 131110 (best 75942)",
+  "    move sg3->c0 -> 91702 (best 75942)",
+  "    swap sg2<->sg3 -> 76196 (best 75942)",
+  "    move sg2->c0 -> 131110 (best 75942)",
+  "    move sg3->c0 -> 91702 (best 75942)",
+  "    swap sg2<->sg3 -> 76196 (best 75942)",
+  "    move sg2->c0 -> 131110 (best 75942)",
+  "    interval[3:7] -> 78507 (best 75942)",
+  "    time-feedback -> 75942 (best 75942)",
+  "    interval[2:6] -> 78507 (best 75942)",
+  "    move sg3->c0 -> 91702 (best 75942)",
+  "    swap sg2<->sg3 -> 76196 (best 75942)",
+  "    move sg2->c0 -> 131110 (best 75942)",
+  "    move sg3->c0 -> 91702 (best 75942)",
+  "    swap sg2<->sg3 -> 76196 (best 75942)",
+  "    move sg2->c0 -> 131110 (best 75942)",
+  "    move sg3->c0 -> 91702 (best 75942)",
+  "    swap sg2<->sg3 -> 76196 (best 75942)",
+  "    move sg2->c0 -> 131110 (best 75942)",
+  "    interval[1:5] -> 78507 (best 75942)",
+  "    time-feedback -> 75942 (best 75942)",
+  "    interval[0:4] -> 78507 (best 75942)",
+  "final: T_C=75942 added=82944 hit_rate=0.134 subgraphs=4 time=6.5s"
+ ]
+}

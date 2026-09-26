@@ -1,0 +1,37 @@
+{
+ "makespan": 58741,
+ "num_cores": 5,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 213686,
+  "scheduled_copy_bytes": 2477498,
+  "added_copy_bytes": 2263812,
+  "partition_added_copy_bytes": 2263812,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 18,
+ "cross_core_transfers": 611,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 11776,
+   "UB": 71680
+  },
+  "1": {
+   "L1": 9216,
+   "UB": 117780
+  },
+  "2": {
+   "L1": 4096,
+   "UB": 40960
+  },
+  "3": {
+   "L1": 14336,
+   "UB": 40962
+  },
+  "4": {
+   "L1": 16128,
+   "UB": 72714
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=2477498, physical_ddr_bytes=2477498\nOK: problem 2 makespan=58741; result=/tmp/tmpa6ezizym/res.json",
+ "eval_seconds": 0.36
+}

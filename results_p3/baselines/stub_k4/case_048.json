@@ -1,0 +1,26 @@
+{
+ "makespan": 222594,
+ "num_cores": 4,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 414790,
+  "scheduled_copy_bytes": 962642,
+  "added_copy_bytes": 547852,
+  "partition_added_copy_bytes": 547852,
+  "spill_added_copy_bytes": 0
+ },
+ "cache_stats": {
+  "hits": 26,
+  "accesses": 468,
+  "hit_bytes": 34124,
+  "miss_bytes": 665606,
+  "hit_rate": 0.048767381704371685,
+  "copy_in_hits": 26,
+  "copy_in_misses": 442
+ },
+ "cache_inserts": 442,
+ "cache_evictions": 0,
+ "num_subgraphs": 23,
+ "cross_core_transfers": 280,
+ "stdout": "data movement: scheduled_copy_bytes=962642, physical_ddr_bytes=962642, cache_hits=26/468, cache_hit_bytes=34124\nOK: problem 3 makespan=222594; result=/tmp/tmp0222rsvu/res.json",
+ "eval_seconds": 0.32
+}

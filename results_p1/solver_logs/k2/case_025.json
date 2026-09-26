@@ -1,0 +1,177 @@
+{
+ "summary": {
+  "case": "case_025",
+  "cores": 2,
+  "makespan_fast_eval": 2431840,
+  "added_copy_bytes_fast_eval": 27648,
+  "num_subgraphs": 2,
+  "initial_constructor": "comp-pack/1",
+  "initial_makespan": 2431840,
+  "initial_added_bytes": 27648,
+  "portfolio": [
+   {
+    "tag": "comp-pack/1",
+    "makespan": 2431840,
+    "added": 27648
+   },
+   {
+    "tag": "comp-pack/2",
+    "makespan": 2434186,
+    "added": 82944
+   },
+   {
+    "tag": "comp-pack/4",
+    "makespan": 2438930,
+    "added": 193536
+   },
+   {
+    "tag": "comp-pack/8",
+    "makespan": 2441122,
+    "added": 414720
+   },
+   {
+    "tag": "comp-pack/16",
+    "makespan": 2460098,
+    "added": 857088
+   },
+   {
+    "tag": "comp-pack/32",
+    "makespan": 2468866,
+    "added": 1741824
+   },
+   {
+    "tag": "band/8x2",
+    "makespan": 3793369,
+    "added": 102429696
+   },
+   {
+    "tag": "band/16x2",
+    "makespan": 3793369,
+    "added": 102429696
+   },
+   {
+    "tag": "band/32x2",
+    "makespan": 3793369,
+    "added": 102429696
+   },
+   {
+    "tag": "band/8x4",
+    "makespan": 3793549,
+    "added": 102484992
+   },
+   {
+    "tag": "band/16x4",
+    "makespan": 3793549,
+    "added": 102484992
+   },
+   {
+    "tag": "band/32x4",
+    "makespan": 3793549,
+    "added": 102484992
+   },
+   {
+    "tag": "band/4x4",
+    "makespan": 4024406,
+    "added": 86762496
+   },
+   {
+    "tag": "band/2x4",
+    "makespan": 4532840,
+    "added": 39103488
+   },
+   {
+    "tag": "interval-dfs/1",
+    "makespan": 4863786,
+    "added": 82944
+   },
+   {
+    "tag": "interval-dfs/2",
+    "makespan": 4865060,
+    "added": 150528
+   },
+   {
+    "tag": "band/2x2",
+    "makespan": 5680048,
+    "added": 40012800
+   },
+   {
+    "tag": "band/2x1",
+    "makespan": 5796812,
+    "added": 40465920
+   },
+   {
+    "tag": "band/4x2",
+    "makespan": 5990215,
+    "added": 88427520
+   },
+   {
+    "tag": "band/4x1",
+    "makespan": 6021724,
+    "added": 89246208
+   },
+   {
+    "tag": "band/8x1",
+    "makespan": 6538246,
+    "added": 102403584
+   },
+   {
+    "tag": "band/16x1",
+    "makespan": 6538246,
+    "added": 102403584
+   },
+   {
+    "tag": "band/32x1",
+    "makespan": 6538246,
+    "added": 102403584
+   }
+  ],
+  "lower_bound_LB0": 2351412.0,
+  "critical_path": 1632,
+  "window_stats": {
+   "windows": 1,
+   "improved": 0,
+   "optimal": 1,
+   "feasible": 0,
+   "unknown": 0,
+   "infeasible": 0,
+   "candidates": 12,
+   "evals": 1
+  },
+  "construct_seconds": 105.73,
+  "total_seconds": 114.58,
+  "task_cache": {
+   "entries": 262,
+   "hits": 510,
+   "misses": 262
+  }
+ },
+ "log": [
+  "case_025 K=2 ops=23997 compute=18662 LB0=2351412 CP=1632 W_M=4702824 W_V=1215696",
+  "  [comp-pack/1] makespan=2431840 added=27648 tasks=2 (0.1s)",
+  "  [comp-pack/2] makespan=2434186 added=82944 tasks=4 (0.1s)",
+  "  [comp-pack/4] makespan=2438930 added=193536 tasks=8 (0.1s)",
+  "  [comp-pack/8] makespan=2441122 added=414720 tasks=16 (0.1s)",
+  "  [comp-pack/16] makespan=2460098 added=857088 tasks=32 (0.1s)",
+  "  [comp-pack/32] makespan=2468866 added=1741824 tasks=64 (0.1s)",
+  "  [band/2x1] makespan=5796812 added=40465920 tasks=4 (0.3s)",
+  "  [band/2x2] makespan=5680048 added=40012800 tasks=6 (0.2s)",
+  "  [band/2x4] makespan=4532840 added=39103488 tasks=10 (0.2s)",
+  "  [band/4x1] makespan=6021724 added=89246208 tasks=6 (0.4s)",
+  "  [band/4x2] makespan=5990215 added=88427520 tasks=9 (0.4s)",
+  "  [band/4x4] makespan=4024406 added=86762496 tasks=15 (0.4s)",
+  "  [band/8x1] makespan=6538246 added=102403584 tasks=12 (0.4s)",
+  "  [band/8x2] makespan=3793369 added=102429696 tasks=18 (0.5s)",
+  "  [band/8x4] makespan=3793549 added=102484992 tasks=30 (0.5s)",
+  "  [band/16x1] makespan=6538246 added=102403584 tasks=12 (0.4s)",
+  "  [band/16x2] makespan=3793369 added=102429696 tasks=18 (0.5s)",
+  "  [band/16x4] makespan=3793549 added=102484992 tasks=30 (0.5s)",
+  "  [band/32x1] makespan=6538246 added=102403584 tasks=12 (0.4s)",
+  "  [band/32x2] makespan=3793369 added=102429696 tasks=18 (0.5s)",
+  "  [band/32x4] makespan=3793549 added=102484992 tasks=30 (0.5s)",
+  "  [interval-dfs/1] makespan=4863786 added=82944 tasks=3 (0.1s)",
+  "  [interval-dfs/2] makespan=4865060 added=150528 tasks=5 (0.1s)",
+  "initial best: comp-pack/1 (2431840, 27648)",
+  "    window[0,-1) tasks=2 cand=12 OPTIMAL obj=2893898 -> exact 2431840 (best 2431840)",
+  "final: makespan=2431840 added=27648 subgraphs=2 time=114.6s"
+ ]
+}

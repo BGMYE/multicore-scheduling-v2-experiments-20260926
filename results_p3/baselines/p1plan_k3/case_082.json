@@ -1,0 +1,26 @@
+{
+ "makespan": 301965,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 592006,
+  "scheduled_copy_bytes": 2897006,
+  "added_copy_bytes": 2305000,
+  "partition_added_copy_bytes": 2305000,
+  "spill_added_copy_bytes": 0
+ },
+ "cache_stats": {
+  "hits": 186,
+  "accesses": 971,
+  "hit_bytes": 600840,
+  "miss_bytes": 1323510,
+  "hit_rate": 0.31223010367136955,
+  "copy_in_hits": 186,
+  "copy_in_misses": 785
+ },
+ "cache_inserts": 781,
+ "cache_evictions": 66,
+ "num_subgraphs": 91,
+ "cross_core_transfers": 811,
+ "stdout": "data movement: scheduled_copy_bytes=2897006, physical_ddr_bytes=2897006, cache_hits=186/971, cache_hit_bytes=600840\nOK: problem 3 makespan=301965; result=/tmp/tmpsnborfg1/res.json",
+ "eval_seconds": 0.7
+}

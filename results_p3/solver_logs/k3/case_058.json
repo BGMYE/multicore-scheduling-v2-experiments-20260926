@@ -1,0 +1,86 @@
+{
+ "summary": {
+  "case": "case_058",
+  "cores": 3,
+  "makespan_eval": 1526307,
+  "added_copy_bytes_eval": 29601792,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 7667712,
+   "scheduled_copy_bytes": 37269504,
+   "added_copy_bytes": 29601792,
+   "partition_added_copy_bytes": 4595712,
+   "spill_added_copy_bytes": 25006080
+  },
+  "cache": {
+   "hits": 0,
+   "accesses": 8217,
+   "hit_bytes": 0,
+   "miss_bytes": 36225024,
+   "hit_rate": 0.0
+  },
+  "init_makespan_TC_PB": 1526307,
+  "init_added_bytes": 29601792,
+  "init_cache": {
+   "hits": 0,
+   "accesses": 8217,
+   "hit_bytes": 0,
+   "miss_bytes": 36225024,
+   "hit_rate": 0.0
+  },
+  "num_subgraphs": 3,
+  "improve_stats": {
+   "evals": 33,
+   "interval_OPTIMAL": 2,
+   "assign_OPTIMAL": 1,
+   "rounds": 7,
+   "subgraphs_start": 3
+  },
+  "reuse_windows": [
+   {
+    "candidates": 25,
+    "evaluated": 23,
+    "exhausted": false,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 1452990.0,
+  "total_seconds": 141.3
+ },
+ "log": [
+  "case_058 K=3 P_B: T_C=1526307 added=29601792 hit_rate=0.000",
+  "    cache-cluster t=None -> 1526307 hit=0.000 (best 1526307)",
+  "    cache-gather t=1000000985 -> 1526307 hit=0.000 (best 1526307)",
+  "    cache-colocate t=1000000985 -> 4562853 hit=0.011 (best 1526307)",
+  "    cache-gather t=1000000983 -> 1526307 hit=0.000 (best 1526307)",
+  "    cache-colocate t=1000000983 -> 4562853 hit=0.011 (best 1526307)",
+  "    cache-gather t=1000000977 -> 1526307 hit=0.000 (best 1526307)",
+  "    cache-colocate t=1000000977 -> 4563652 hit=0.000 (best 1526307)",
+  "    cache-gather t=1000000975 -> 1526307 hit=0.000 (best 1526307)",
+  "    cache-colocate t=1000000975 -> 4563652 hit=0.000 (best 1526307)",
+  "    cache-gather t=1000000973 -> 1526307 hit=0.000 (best 1526307)",
+  "    cache-colocate t=1000000973 -> 4563652 hit=0.000 (best 1526307)",
+  "    cache-gather t=1000000967 -> 1526307 hit=0.000 (best 1526307)",
+  "    cache-colocate t=1000000967 -> 4539717 hit=0.000 (best 1526307)",
+  "    cache-gather t=1000000965 -> 1526307 hit=0.000 (best 1526307)",
+  "    cache-colocate t=1000000965 -> 4539717 hit=0.000 (best 1526307)",
+  "    cache-gather t=1000000963 -> 1526307 hit=0.000 (best 1526307)",
+  "    cache-colocate t=1000000963 -> 4539717 hit=0.000 (best 1526307)",
+  "    cache-gather t=1000000957 -> 1526307 hit=0.000 (best 1526307)",
+  "    cache-colocate t=1000000957 -> 4562853 hit=0.011 (best 1526307)",
+  "    cache-gather t=1000000955 -> 1526307 hit=0.000 (best 1526307)",
+  "    cache-colocate t=1000000955 -> 4562853 hit=0.011 (best 1526307)",
+  "    cache-gather t=1000000953 -> 1526307 hit=0.000 (best 1526307)",
+  "    cache-colocate t=1000000953 -> 4562853 hit=0.011 (best 1526307)",
+  "    time-feedback -> 1526307 (best 1526307)",
+  "    interval[0:3] -> 1526307 (best 1526307)",
+  "    move sg2->c0 -> 3054625 (best 1526307)",
+  "    move sg2->c0 -> 3054625 (best 1526307)",
+  "    move sg2->c0 -> 3054625 (best 1526307)",
+  "    move sg2->c0 -> 3054625 (best 1526307)",
+  "    move sg2->c0 -> 3054625 (best 1526307)",
+  "    move sg2->c0 -> 3054625 (best 1526307)",
+  "    interval[1:4] -> 1526307 (best 1526307)",
+  "    time-feedback -> 1526307 (best 1526307)",
+  "final: T_C=1526307 added=29601792 hit_rate=0.000 subgraphs=3 time=141.3s"
+ ]
+}

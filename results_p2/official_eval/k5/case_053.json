@@ -1,0 +1,37 @@
+{
+ "makespan": 389130,
+ "num_cores": 5,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 2995288,
+  "scheduled_copy_bytes": 14109864,
+  "added_copy_bytes": 11114576,
+  "partition_added_copy_bytes": 7701872,
+  "spill_added_copy_bytes": 3412704
+ },
+ "num_subgraphs": 334,
+ "cross_core_transfers": 1014,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 519008,
+   "UB": 28614
+  },
+  "1": {
+   "L1": 519008,
+   "UB": 20886
+  },
+  "2": {
+   "L1": 519008,
+   "UB": 23716
+  },
+  "3": {
+   "L1": 519008,
+   "UB": 18432
+  },
+  "4": {
+   "L1": 519008,
+   "UB": 20882
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=14109864, physical_ddr_bytes=14109864\nOK: problem 2 makespan=389130; result=/tmp/tmpibhexhey/res.json",
+ "eval_seconds": 2.34
+}

@@ -1,0 +1,26 @@
+{
+ "makespan": 556460,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 1343488,
+  "scheduled_copy_bytes": 17424384,
+  "added_copy_bytes": 16080896,
+  "partition_added_copy_bytes": 13154304,
+  "spill_added_copy_bytes": 2926592
+ },
+ "cache_stats": {
+  "hits": 717,
+  "accesses": 2827,
+  "hit_bytes": 2217984,
+  "miss_bytes": 8177664,
+  "hit_rate": 0.21335697399527187,
+  "copy_in_hits": 717,
+  "copy_in_misses": 2110
+ },
+ "cache_inserts": 2108,
+ "cache_evictions": 1852,
+ "num_subgraphs": 36,
+ "cross_core_transfers": 1356,
+ "stdout": "data movement: scheduled_copy_bytes=17424384, physical_ddr_bytes=17424384, cache_hits=717/2827, cache_hit_bytes=2217984\nOK: problem 3 makespan=556460; result=/tmp/tmp510nurr_/res.json",
+ "eval_seconds": 0.81
+}

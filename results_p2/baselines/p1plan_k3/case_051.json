@@ -1,0 +1,29 @@
+{
+ "makespan": 288394,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 393218,
+  "scheduled_copy_bytes": 3802210,
+  "added_copy_bytes": 3408992,
+  "partition_added_copy_bytes": 3408992,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 249,
+ "cross_core_transfers": 323,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 163840,
+   "UB": 98306
+  },
+  "1": {
+   "L1": 327680,
+   "UB": 98308
+  },
+  "2": {
+   "L1": 294912,
+   "UB": 98308
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=3802210, physical_ddr_bytes=3802210\nOK: problem 2 makespan=288394; result=/tmp/tmp5hikm059/res.json",
+ "eval_seconds": 0.25
+}

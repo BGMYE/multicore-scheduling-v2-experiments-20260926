@@ -1,0 +1,37 @@
+{
+ "makespan": 701454,
+ "num_cores": 5,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 592006,
+  "scheduled_copy_bytes": 6079928,
+  "added_copy_bytes": 5487922,
+  "partition_added_copy_bytes": 5487922,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 52,
+ "cross_core_transfers": 2155,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 39424,
+   "UB": 49984
+  },
+  "1": {
+   "L1": 41728,
+   "UB": 39748
+  },
+  "2": {
+   "L1": 53248,
+   "UB": 55972
+  },
+  "3": {
+   "L1": 78080,
+   "UB": 50676
+  },
+  "4": {
+   "L1": 100480,
+   "UB": 49844
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=6079928, physical_ddr_bytes=6079928\nOK: problem 2 makespan=701454; result=/tmp/tmps6jatun_/res.json",
+ "eval_seconds": 1.2
+}

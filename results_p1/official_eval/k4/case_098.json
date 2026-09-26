@@ -1,0 +1,32 @@
+{
+ "makespan": 72550,
+ "num_cores": 4,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 697994,
+  "scheduled_copy_bytes": 2249670,
+  "added_copy_bytes": 1551676,
+  "partition_added_copy_bytes": 1551676,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 22,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 212992,
+   "UB": 32776
+  },
+  "1": {
+   "L1": 49152,
+   "UB": 77824
+  },
+  "2": {
+   "L1": 16384,
+   "UB": 61450
+  },
+  "3": {
+   "L1": 20480,
+   "UB": 53260
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=2249670, physical_ddr_bytes=2249670\nOK: problem 1 makespan=72550; result=/tmp/tmpmics_pyu/res.json",
+ "eval_seconds": 0.29
+}

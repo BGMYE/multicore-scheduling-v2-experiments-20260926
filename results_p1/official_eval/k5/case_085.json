@@ -1,0 +1,36 @@
+{
+ "makespan": 934442,
+ "num_cores": 5,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 1689734,
+  "scheduled_copy_bytes": 18740242,
+  "added_copy_bytes": 17050508,
+  "partition_added_copy_bytes": 17050508,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 997,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 24576,
+   "UB": 20610
+  },
+  "1": {
+   "L1": 24576,
+   "UB": 20610
+  },
+  "2": {
+   "L1": 24576,
+   "UB": 23298
+  },
+  "3": {
+   "L1": 24576,
+   "UB": 20610
+  },
+  "4": {
+   "L1": 24576,
+   "UB": 20610
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=18740242, physical_ddr_bytes=18740242\nOK: problem 1 makespan=934442; result=/tmp/tmplikpdfn4/res.json",
+ "eval_seconds": 11.09
+}

@@ -1,0 +1,25 @@
+{
+ "makespan": 102330,
+ "num_cores": 2,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 443444,
+  "scheduled_copy_bytes": 1969564,
+  "added_copy_bytes": 1526120,
+  "partition_added_copy_bytes": 1199028,
+  "spill_added_copy_bytes": 327092
+ },
+ "num_subgraphs": 13,
+ "cross_core_transfers": 230,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 66048,
+   "UB": 86148
+  },
+  "1": {
+   "L1": 124576,
+   "UB": 130696
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=1969564, physical_ddr_bytes=1969564\nOK: problem 2 makespan=102330; result=/tmp/tmp07_eksry/res.json",
+ "eval_seconds": 0.22
+}

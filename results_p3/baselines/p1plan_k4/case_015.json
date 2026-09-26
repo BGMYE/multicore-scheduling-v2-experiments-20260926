@@ -1,0 +1,26 @@
+{
+ "makespan": 48522,
+ "num_cores": 4,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 884614,
+  "scheduled_copy_bytes": 1212934,
+  "added_copy_bytes": 328320,
+  "partition_added_copy_bytes": 328320,
+  "spill_added_copy_bytes": 0
+ },
+ "cache_stats": {
+  "hits": 22,
+  "accesses": 240,
+  "hit_bytes": 190336,
+  "miss_bytes": 1019010,
+  "hit_rate": 0.15738754665744956,
+  "copy_in_hits": 22,
+  "copy_in_misses": 218
+ },
+ "cache_inserts": 214,
+ "cache_evictions": 0,
+ "num_subgraphs": 22,
+ "cross_core_transfers": 3,
+ "stdout": "data movement: scheduled_copy_bytes=1212934, physical_ddr_bytes=1212934, cache_hits=22/240, cache_hit_bytes=190336\nOK: problem 3 makespan=48522; result=/tmp/tmp6todej3d/res.json",
+ "eval_seconds": 0.18
+}

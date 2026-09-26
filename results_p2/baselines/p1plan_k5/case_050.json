@@ -1,0 +1,37 @@
+{
+ "makespan": 48430,
+ "num_cores": 5,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 319376,
+  "scheduled_copy_bytes": 1039258,
+  "added_copy_bytes": 719882,
+  "partition_added_copy_bytes": 719882,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 179,
+ "cross_core_transfers": 498,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 14784,
+   "UB": 73736
+  },
+  "1": {
+   "L1": 11392,
+   "UB": 45056
+  },
+  "2": {
+   "L1": 16000,
+   "UB": 49160
+  },
+  "3": {
+   "L1": 15680,
+   "UB": 45056
+  },
+  "4": {
+   "L1": 18336,
+   "UB": 57350
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=1039258, physical_ddr_bytes=1039258\nOK: problem 2 makespan=48430; result=/tmp/tmppmny503m/res.json",
+ "eval_seconds": 0.73
+}

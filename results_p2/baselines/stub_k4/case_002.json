@@ -1,0 +1,33 @@
+{
+ "makespan": 200352,
+ "num_cores": 4,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 1224192,
+  "scheduled_copy_bytes": 5595648,
+  "added_copy_bytes": 4371456,
+  "partition_added_copy_bytes": 4371456,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 23,
+ "cross_core_transfers": 952,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 46080,
+   "UB": 18432
+  },
+  "1": {
+   "L1": 274944,
+   "UB": 26112
+  },
+  "2": {
+   "L1": 39936,
+   "UB": 64512
+  },
+  "3": {
+   "L1": 371712,
+   "UB": 76800
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=5595648, physical_ddr_bytes=5595648\nOK: problem 2 makespan=200352; result=/tmp/tmp924_kbsh/res.json",
+ "eval_seconds": 0.52
+}

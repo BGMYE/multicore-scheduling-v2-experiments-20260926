@@ -1,0 +1,112 @@
+{
+ "summary": {
+  "case": "case_018",
+  "cores": 3,
+  "makespan_eval": 338555,
+  "added_copy_bytes_eval": 1822720,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 1592848,
+   "scheduled_copy_bytes": 3415568,
+   "added_copy_bytes": 1822720,
+   "partition_added_copy_bytes": 1490944,
+   "spill_added_copy_bytes": 331776
+  },
+  "cache": {
+   "hits": 297,
+   "accesses": 783,
+   "hit_bytes": 1564672,
+   "miss_bytes": 1850644,
+   "hit_rate": 0.4581338886357807
+  },
+  "init_makespan_TC_PB": 338555,
+  "init_added_bytes": 1822720,
+  "init_cache": {
+   "hits": 297,
+   "accesses": 783,
+   "hit_bytes": 1564672,
+   "miss_bytes": 1850644,
+   "hit_rate": 0.4581338886357807
+  },
+  "num_subgraphs": 4,
+  "improve_stats": {
+   "evals": 47,
+   "interval_OPTIMAL": 5,
+   "assign_OPTIMAL": 3,
+   "rounds": 15,
+   "subgraphs_start": 4
+  },
+  "reuse_windows": [
+   {
+    "candidates": 25,
+    "evaluated": 25,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 323773.3333333333,
+  "total_seconds": 17.92
+ },
+ "log": [
+  "case_018 K=3 P_B: T_C=338555 added=1822720 hit_rate=0.458",
+  "    cache-cluster t=None -> 338555 hit=0.458 (best 338555)",
+  "    cache-gather t=1975 -> 338555 hit=0.458 (best 338555)",
+  "    cache-colocate t=1975 -> 666057 hit=0.413 (best 338555)",
+  "    cache-gather t=1972 -> 338555 hit=0.458 (best 338555)",
+  "    cache-colocate t=1972 -> 666057 hit=0.413 (best 338555)",
+  "    cache-gather t=1969 -> 338555 hit=0.458 (best 338555)",
+  "    cache-colocate t=1969 -> 666057 hit=0.413 (best 338555)",
+  "    cache-gather t=1966 -> 338555 hit=0.458 (best 338555)",
+  "    cache-colocate t=1966 -> 666057 hit=0.413 (best 338555)",
+  "    cache-gather t=1963 -> 338555 hit=0.458 (best 338555)",
+  "    cache-colocate t=1963 -> 666057 hit=0.413 (best 338555)",
+  "    cache-gather t=1960 -> 338555 hit=0.458 (best 338555)",
+  "    cache-colocate t=1960 -> 666057 hit=0.413 (best 338555)",
+  "    cache-gather t=1957 -> 338555 hit=0.458 (best 338555)",
+  "    cache-colocate t=1957 -> 666057 hit=0.413 (best 338555)",
+  "    cache-gather t=1954 -> 338555 hit=0.458 (best 338555)",
+  "    cache-colocate t=1954 -> 666057 hit=0.413 (best 338555)",
+  "    cache-gather t=1951 -> 338555 hit=0.458 (best 338555)",
+  "    cache-colocate t=1951 -> 666057 hit=0.413 (best 338555)",
+  "    cache-gather t=1933 -> 338555 hit=0.458 (best 338555)",
+  "    cache-colocate t=1933 -> 670303 hit=0.364 (best 338555)",
+  "    cache-gather t=1909 -> 338555 hit=0.458 (best 338555)",
+  "    cache-colocate t=1909 -> 674251 hit=0.440 (best 338555)",
+  "    cache-gather t=1903 -> 338555 hit=0.458 (best 338555)",
+  "    cache-colocate t=1903 -> 670303 hit=0.364 (best 338555)",
+  "    cache-cluster t=None -> 338555 hit=0.458 (best 338555)",
+  "    cache-cluster t=None -> 338555 hit=0.458 (best 338555)",
+  "    time-feedback -> 338555 (best 338555)",
+  "    interval[0:4] -> 338555 (best 338555)",
+  "    move sg1->c2 -> 672259 (best 338555)",
+  "    move sg1->c2 -> 672259 (best 338555)",
+  "    move sg1->c2 -> 672259 (best 338555)",
+  "    move sg1->c2 -> 672259 (best 338555)",
+  "    move sg1->c2 -> 672259 (best 338555)",
+  "    move sg1->c2 -> 672259 (best 338555)",
+  "    interval[3:7] -> 338555 (best 338555)",
+  "    time-feedback -> 338555 (best 338555)",
+  "    interval[2:6] -> 338555 (best 338555)",
+  "    move sg1->c2 -> 672259 (best 338555)",
+  "    move sg1->c2 -> 672259 (best 338555)",
+  "    move sg1->c2 -> 672259 (best 338555)",
+  "    move sg1->c2 -> 672259 (best 338555)",
+  "    move sg1->c2 -> 672259 (best 338555)",
+  "    move sg1->c2 -> 672259 (best 338555)",
+  "    interval[1:5] -> 338555 (best 338555)",
+  "    time-feedback -> 338555 (best 338555)",
+  "    interval[0:4] -> 338555 (best 338555)",
+  "final: T_C=338555 added=1822720 hit_rate=0.458 subgraphs=4 time=17.9s"
+ ]
+}

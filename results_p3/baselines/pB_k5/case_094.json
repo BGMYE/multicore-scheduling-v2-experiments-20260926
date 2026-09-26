@@ -1,0 +1,26 @@
+{
+ "makespan": 18673,
+ "num_cores": 5,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 526692,
+  "scheduled_copy_bytes": 778084,
+  "added_copy_bytes": 251392,
+  "partition_added_copy_bytes": 251392,
+  "spill_added_copy_bytes": 0
+ },
+ "cache_stats": {
+  "hits": 24,
+  "accesses": 141,
+  "hit_bytes": 137728,
+  "miss_bytes": 546592,
+  "hit_rate": 0.20126256722001404,
+  "copy_in_hits": 24,
+  "copy_in_misses": 117
+ },
+ "cache_inserts": 113,
+ "cache_evictions": 0,
+ "num_subgraphs": 13,
+ "cross_core_transfers": 9,
+ "stdout": "data movement: scheduled_copy_bytes=778084, physical_ddr_bytes=778084, cache_hits=24/141, cache_hit_bytes=137728\nOK: problem 3 makespan=18673; result=/tmp/tmpep_uzhne/res.json",
+ "eval_seconds": 0.12
+}

@@ -1,0 +1,26 @@
+{
+ "makespan": 202688,
+ "num_cores": 4,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 1284264,
+  "scheduled_copy_bytes": 4935782,
+  "added_copy_bytes": 3651518,
+  "partition_added_copy_bytes": 3651518,
+  "spill_added_copy_bytes": 0
+ },
+ "cache_stats": {
+  "hits": 630,
+  "accesses": 1558,
+  "hit_bytes": 1530896,
+  "miss_bytes": 2240798,
+  "hit_rate": 0.4058908278349198,
+  "copy_in_hits": 630,
+  "copy_in_misses": 928
+ },
+ "cache_inserts": 861,
+ "cache_evictions": 395,
+ "num_subgraphs": 331,
+ "cross_core_transfers": 1185,
+ "stdout": "data movement: scheduled_copy_bytes=4935782, physical_ddr_bytes=4935782, cache_hits=630/1558, cache_hit_bytes=1530896\nOK: problem 3 makespan=202688; result=/tmp/tmp_a89trev/res.json",
+ "eval_seconds": 2.54
+}

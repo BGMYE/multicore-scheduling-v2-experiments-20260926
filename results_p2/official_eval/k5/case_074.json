@@ -1,0 +1,37 @@
+{
+ "makespan": 332650,
+ "num_cores": 5,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 3776728,
+  "scheduled_copy_bytes": 9097432,
+  "added_copy_bytes": 5320704,
+  "partition_added_copy_bytes": 4833280,
+  "spill_added_copy_bytes": 487424
+ },
+ "num_subgraphs": 20,
+ "cross_core_transfers": 0,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 524288,
+   "UB": 132
+  },
+  "1": {
+   "L1": 438272,
+   "UB": 114696
+  },
+  "2": {
+   "L1": 524288,
+   "UB": 98312
+  },
+  "3": {
+   "L1": 446464,
+   "UB": 65540
+  },
+  "4": {
+   "L1": 446464,
+   "UB": 130
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=9097432, physical_ddr_bytes=9097432\nOK: problem 2 makespan=332650; result=/tmp/tmpa2gubrza/res.json",
+ "eval_seconds": 0.58
+}

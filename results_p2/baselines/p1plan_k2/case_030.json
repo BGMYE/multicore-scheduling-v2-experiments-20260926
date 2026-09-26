@@ -1,0 +1,25 @@
+{
+ "makespan": 1402992,
+ "num_cores": 2,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 2394060,
+  "scheduled_copy_bytes": 4982732,
+  "added_copy_bytes": 2588672,
+  "partition_added_copy_bytes": 845824,
+  "spill_added_copy_bytes": 1742848
+ },
+ "num_subgraphs": 4,
+ "cross_core_transfers": 0,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 524288,
+   "UB": 132
+  },
+  "1": {
+   "L1": 524288,
+   "UB": 130
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=4982732, physical_ddr_bytes=4982732\nOK: problem 2 makespan=1402992; result=/tmp/tmp3morux63/res.json",
+ "eval_seconds": 1.84
+}

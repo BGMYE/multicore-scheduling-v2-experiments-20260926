@@ -1,0 +1,26 @@
+{
+ "makespan": 115927,
+ "num_cores": 5,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 2141360,
+  "scheduled_copy_bytes": 2313392,
+  "added_copy_bytes": 172032,
+  "partition_added_copy_bytes": 172032,
+  "spill_added_copy_bytes": 0
+ },
+ "cache_stats": {
+  "hits": 13,
+  "accesses": 357,
+  "hit_bytes": 106496,
+  "miss_bytes": 2206796,
+  "hit_rate": 0.04603655742552172,
+  "copy_in_hits": 13,
+  "copy_in_misses": 344
+ },
+ "cache_inserts": 343,
+ "cache_evictions": 208,
+ "num_subgraphs": 5,
+ "cross_core_transfers": 0,
+ "stdout": "data movement: scheduled_copy_bytes=2313392, physical_ddr_bytes=2313392, cache_hits=13/357, cache_hit_bytes=106496\nOK: problem 3 makespan=115927; result=/tmp/tmpbi4sumho/res.json",
+ "eval_seconds": 0.55
+}

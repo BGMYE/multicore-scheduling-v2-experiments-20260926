@@ -1,0 +1,26 @@
+{
+ "makespan": 162412,
+ "num_cores": 5,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 2280386,
+  "scheduled_copy_bytes": 5381058,
+  "added_copy_bytes": 3100672,
+  "partition_added_copy_bytes": 3100672,
+  "spill_added_copy_bytes": 0
+ },
+ "cache_stats": {
+  "hits": 836,
+  "accesses": 1538,
+  "hit_bytes": 2773504,
+  "miss_bytes": 2607152,
+  "hit_rate": 0.5154583381654579,
+  "copy_in_hits": 836,
+  "copy_in_misses": 702
+ },
+ "cache_inserts": 692,
+ "cache_evictions": 420,
+ "num_subgraphs": 10,
+ "cross_core_transfers": 0,
+ "stdout": "data movement: scheduled_copy_bytes=5381058, physical_ddr_bytes=5381058, cache_hits=836/1538, cache_hit_bytes=2773504\nOK: problem 3 makespan=162412; result=/tmp/tmpaimfvaod/res.json",
+ "eval_seconds": 0.63
+}

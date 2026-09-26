@@ -1,0 +1,26 @@
+{
+ "makespan": 303597,
+ "num_cores": 2,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 566400,
+  "scheduled_copy_bytes": 4464896,
+  "added_copy_bytes": 3898496,
+  "partition_added_copy_bytes": 3898496,
+  "spill_added_copy_bytes": 0
+ },
+ "cache_stats": {
+  "hits": 42,
+  "accesses": 1040,
+  "hit_bytes": 227848,
+  "miss_bytes": 2238712,
+  "hit_rate": 0.09237480539699014,
+  "copy_in_hits": 42,
+  "copy_in_misses": 998
+ },
+ "cache_inserts": 988,
+ "cache_evictions": 730,
+ "num_subgraphs": 4262,
+ "cross_core_transfers": 894,
+ "stdout": "data movement: scheduled_copy_bytes=4464896, physical_ddr_bytes=4464896, cache_hits=42/1040, cache_hit_bytes=227848\nOK: problem 3 makespan=303597; result=/tmp/tmpiodiwaf8/res.json",
+ "eval_seconds": 1.26
+}

@@ -1,0 +1,26 @@
+{
+ "makespan": 2069328,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 11355036,
+  "scheduled_copy_bytes": 106783644,
+  "added_copy_bytes": 95428608,
+  "partition_added_copy_bytes": 63644160,
+  "spill_added_copy_bytes": 31784448
+ },
+ "cache_stats": {
+  "hits": 68,
+  "accesses": 5365,
+  "hit_bytes": 1253376,
+  "miss_bytes": 57788316,
+  "hit_rate": 0.02122865991035623,
+  "copy_in_hits": 68,
+  "copy_in_misses": 5297
+ },
+ "cache_inserts": 5297,
+ "cache_evictions": 5203,
+ "num_subgraphs": 48,
+ "cross_core_transfers": 2245,
+ "stdout": "data movement: scheduled_copy_bytes=106783644, physical_ddr_bytes=106783644, cache_hits=68/5365, cache_hit_bytes=1253376\nOK: problem 3 makespan=2069328; result=/tmp/tmpe5fs488e/res.json",
+ "eval_seconds": 1.98
+}

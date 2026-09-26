@@ -1,0 +1,72 @@
+{
+ "summary": {
+  "case": "case_076",
+  "cores": 4,
+  "makespan_eval": 1551218,
+  "added_copy_bytes_eval": 17539072,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 4270674,
+   "scheduled_copy_bytes": 21809746,
+   "added_copy_bytes": 17539072,
+   "partition_added_copy_bytes": 3345408,
+   "spill_added_copy_bytes": 14193664
+  },
+  "cache": {
+   "hits": 2250,
+   "accesses": 9511,
+   "hit_bytes": 4760576,
+   "miss_bytes": 17047552,
+   "hit_rate": 0.21829365638352818
+  },
+  "init_makespan_TC_PB": 1551218,
+  "init_added_bytes": 17539072,
+  "init_cache": {
+   "hits": 2250,
+   "accesses": 9511,
+   "hit_bytes": 4760576,
+   "miss_bytes": 17047552,
+   "hit_rate": 0.21829365638352818
+  },
+  "num_subgraphs": 4,
+  "improve_stats": {
+   "evals": 20,
+   "assign_UNKNOWN": 1,
+   "rounds": 5,
+   "subgraphs_start": 4
+  },
+  "reuse_windows": [
+   {
+    "candidates": 19,
+    "evaluated": 14,
+    "exhausted": false,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 1515411.0,
+  "total_seconds": 184.83
+ },
+ "log": [
+  "case_076 K=4 P_B: T_C=1551218 added=17539072 hit_rate=0.218",
+  "    cache-cluster t=None -> 1551218 hit=0.218 (best 1551218)",
+  "    cache-gather t=1000013511 -> 1551218 hit=0.218 (best 1551218)",
+  "    cache-colocate t=1000013511 -> 3096493 hit=0.197 (best 1551218)",
+  "    cache-gather t=1000013477 -> 1551218 hit=0.218 (best 1551218)",
+  "    cache-colocate t=1000013477 -> 3096493 hit=0.197 (best 1551218)",
+  "    cache-gather t=1000013443 -> 1551218 hit=0.218 (best 1551218)",
+  "    cache-colocate t=1000013443 -> 3096493 hit=0.197 (best 1551218)",
+  "    cache-gather t=1000013409 -> 1551218 hit=0.218 (best 1551218)",
+  "    cache-colocate t=1000013409 -> 3096493 hit=0.197 (best 1551218)",
+  "    cache-gather t=1000013375 -> 1551218 hit=0.218 (best 1551218)",
+  "    cache-colocate t=1000013375 -> 3096493 hit=0.197 (best 1551218)",
+  "    cache-gather t=1000013341 -> 1551218 hit=0.218 (best 1551218)",
+  "    cache-colocate t=1000013341 -> 3096493 hit=0.197 (best 1551218)",
+  "    cache-gather t=1000013307 -> 1551218 hit=0.218 (best 1551218)",
+  "    time-feedback -> 1551218 (best 1551218)",
+  "    move sg3->c0 -> 3076907 (best 1551218)",
+  "    move sg3->c0 -> 3076907 (best 1551218)",
+  "    move sg3->c0 -> 3076907 (best 1551218)",
+  "    move sg3->c0 -> 3076907 (best 1551218)",
+  "    move sg3->c0 -> 3076907 (best 1551218)",
+  "final: T_C=1551218 added=17539072 hit_rate=0.218 subgraphs=4 time=184.8s"
+ ]
+}

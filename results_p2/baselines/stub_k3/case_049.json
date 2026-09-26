@@ -1,0 +1,29 @@
+{
+ "makespan": 213485,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 152540,
+  "scheduled_copy_bytes": 3270710,
+  "added_copy_bytes": 3118170,
+  "partition_added_copy_bytes": 3118170,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 57,
+ "cross_core_transfers": 1759,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 26752,
+   "UB": 60648
+  },
+  "1": {
+   "L1": 24224,
+   "UB": 37762
+  },
+  "2": {
+   "L1": 33472,
+   "UB": 71562
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=3270710, physical_ddr_bytes=3270710\nOK: problem 2 makespan=213485; result=/tmp/tmpfxratby4/res.json",
+ "eval_seconds": 1.43
+}

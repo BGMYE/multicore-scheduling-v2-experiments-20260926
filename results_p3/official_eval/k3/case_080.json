@@ -1,0 +1,26 @@
+{
+ "makespan": 101509,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 1978368,
+  "scheduled_copy_bytes": 2764800,
+  "added_copy_bytes": 786432,
+  "partition_added_copy_bytes": 761856,
+  "spill_added_copy_bytes": 24576
+ },
+ "cache_stats": {
+  "hits": 6,
+  "accesses": 471,
+  "hit_bytes": 24576,
+  "miss_bytes": 2666496,
+  "hit_rate": 0.0091324200913242,
+  "copy_in_hits": 6,
+  "copy_in_misses": 465
+ },
+ "cache_inserts": 279,
+ "cache_evictions": 120,
+ "num_subgraphs": 3,
+ "cross_core_transfers": 0,
+ "stdout": "data movement: scheduled_copy_bytes=2764800, physical_ddr_bytes=2764800, cache_hits=6/471, cache_hit_bytes=24576\nOK: problem 3 makespan=101509; result=/tmp/tmpmovoiomk/res.json",
+ "eval_seconds": 0.18
+}

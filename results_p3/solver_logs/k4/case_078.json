@@ -1,0 +1,126 @@
+{
+ "summary": {
+  "case": "case_078",
+  "cores": 4,
+  "makespan_eval": 519179,
+  "added_copy_bytes_eval": 7688688,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 2345088,
+   "scheduled_copy_bytes": 10033776,
+   "added_copy_bytes": 7688688,
+   "partition_added_copy_bytes": 7688688,
+   "spill_added_copy_bytes": 0
+  },
+  "cache": {
+   "hits": 69,
+   "accesses": 329,
+   "hit_bytes": 3264264,
+   "miss_bytes": 5940072,
+   "hit_rate": 0.3546441590137518
+  },
+  "init_makespan_TC_PB": 519213,
+  "init_added_bytes": 7688688,
+  "init_cache": {
+   "hits": 51,
+   "accesses": 329,
+   "hit_bytes": 1725192,
+   "miss_bytes": 7479144,
+   "hit_rate": 0.1874325317980569
+  },
+  "num_subgraphs": 1015,
+  "improve_stats": {
+   "evals": 50,
+   "accepted": 1,
+   "accepted_cache_cluster": 1,
+   "decode_cycle": 3,
+   "interval_FEASIBLE": 5,
+   "eval_errors": 5,
+   "assign_OPTIMAL": 3,
+   "order_OPTIMAL": 2,
+   "rounds": 15,
+   "subgraphs_start": 1015
+  },
+  "reuse_windows": [
+   {
+    "candidates": 37,
+    "evaluated": 1,
+    "exhausted": false,
+    "improved": true
+   },
+   {
+    "candidates": 13,
+    "evaluated": 13,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 509472.0,
+  "total_seconds": 21.97
+ },
+ "log": [
+  "case_078 K=4 P_B: T_C=519213 added=7688688 hit_rate=0.187",
+  "    cache-cluster t=None -> 519179 hit=0.355 (best 519213)",
+  "    cache-cluster t=None -> 519534 hit=0.356 (best 519179)",
+  "    cache-stagger t=1000000035 -> 519229 hit=0.355 (best 519179)",
+  "    cache-stagger2 t=1000000035 -> 519229 hit=0.355 (best 519179)",
+  "    cache-colocate t=1000000035 -> 534803 hit=0.635 (best 519179)",
+  "    cache-stagger t=1000000033 -> 519229 hit=0.355 (best 519179)",
+  "    cache-stagger2 t=1000000033 -> 519229 hit=0.355 (best 519179)",
+  "    cache-colocate t=1000000033 -> 534803 hit=0.649 (best 519179)",
+  "    cache-stagger t=1000000031 -> 519179 hit=0.355 (best 519179)",
+  "    cache-stagger2 t=1000000031 -> 519179 hit=0.355 (best 519179)",
+  "    cache-colocate t=1000000031 -> 527027 hit=0.362 (best 519179)",
+  "    cache-stagger t=1000000071 -> 519179 hit=0.356 (best 519179)",
+  "    cache-stagger2 t=1000000071 -> 519179 hit=0.356 (best 519179)",
+  "    cache-colocate t=1000000071 -> 524387 hit=0.360 (best 519179)",
+  "    cache-cluster t=None -> 519534 hit=0.356 (best 519179)",
+  "    cache-cluster t=None -> 519534 hit=0.356 (best 519179)",
+  "    time-feedback -> 560064 (best 519179)",
+  "    [invalid] dependency order violation on core 0: 2 -> 1000",
+  "    order core3[0:12] -> 519179 (best 519179)",
+  "    move sg1014->c0 -> 520356 (best 519179)",
+  "    swap sg1013<->sg1014 -> 519179 (best 519179)",
+  "    move sg1013->c0 -> 521319 (best 519179)",
+  "    swap sg1012<->sg1013 -> 519587 (best 519179)",
+  "    move sg1011->c0 -> 523571 (best 519179)",
+  "    swap sg1010<->sg1011 -> 519179 (best 519179)",
+  "    move sg1012->c0 -> 519245 (best 519179)",
+  "    swap sg1011<->sg1012 -> 519179 (best 519179)",
+  "    move sg1010->c0 -> 519245 (best 519179)",
+  "    swap sg1009<->sg1010 -> 519995 (best 519179)",
+  "    move sg1008->c0 -> 523574 (best 519179)",
+  "    swap sg1007<->sg1008 -> 519995 (best 519179)",
+  "    [invalid] contracted subgraph graph contains a cycle",
+  "    time-feedback -> 560064 (best 519179)",
+  "    [invalid] contracted subgraph graph contains a cycle",
+  "    order core3[6:18] -> 519179 (best 519179)",
+  "    move sg1009->c0 -> 519179 (best 519179)",
+  "    swap sg1008<->sg1009 -> 519179 (best 519179)",
+  "    move sg1007->c0 -> 523979 (best 519179)",
+  "    swap sg1006<->sg1007 -> 519179 (best 519179)",
+  "    move sg1006->c0 -> 519245 (best 519179)",
+  "    swap sg1005<->sg1006 -> 519307 (best 519179)",
+  "    move sg1005->c0 -> 523779 (best 519179)",
+  "    swap sg1004<->sg1005 -> 519179 (best 519179)",
+  "    move sg1004->c0 -> 519533 (best 519179)",
+  "    swap sg1003<->sg1004 -> 519179 (best 519179)",
+  "    move sg1003->c0 -> 523165 (best 519179)",
+  "    swap sg1002<->sg1003 -> 519179 (best 519179)",
+  "    [invalid] contracted subgraph graph contains a cycle",
+  "    time-feedback -> 560064 (best 519179)",
+  "    [invalid] contracted subgraph graph contains a cycle",
+  "final: T_C=519179 added=7688688 hit_rate=0.355 subgraphs=1015 time=22.0s"
+ ]
+}

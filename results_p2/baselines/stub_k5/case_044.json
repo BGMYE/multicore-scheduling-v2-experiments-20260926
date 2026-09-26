@@ -1,0 +1,37 @@
+{
+ "makespan": 117545,
+ "num_cores": 5,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 975456,
+  "scheduled_copy_bytes": 3561184,
+  "added_copy_bytes": 2585728,
+  "partition_added_copy_bytes": 2415488,
+  "spill_added_copy_bytes": 170240
+ },
+ "num_subgraphs": 17,
+ "cross_core_transfers": 299,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 443392,
+   "UB": 0
+  },
+  "1": {
+   "L1": 175616,
+   "UB": 0
+  },
+  "2": {
+   "L1": 199936,
+   "UB": 0
+  },
+  "3": {
+   "L1": 477952,
+   "UB": 0
+  },
+  "4": {
+   "L1": 517376,
+   "UB": 0
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=3561184, physical_ddr_bytes=3561184\nOK: problem 2 makespan=117545; result=/tmp/tmptoz710cd/res.json",
+ "eval_seconds": 0.25
+}

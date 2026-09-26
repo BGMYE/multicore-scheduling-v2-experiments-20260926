@@ -1,0 +1,115 @@
+{
+ "summary": {
+  "case": "case_004",
+  "cores": 3,
+  "makespan_eval": 130926,
+  "added_copy_bytes_eval": 2101248,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 792576,
+   "scheduled_copy_bytes": 2893824,
+   "added_copy_bytes": 2101248,
+   "partition_added_copy_bytes": 221184,
+   "spill_added_copy_bytes": 1880064
+  },
+  "cache": {
+   "hits": 0,
+   "accesses": 273,
+   "hit_bytes": 0,
+   "miss_bytes": 1612800,
+   "hit_rate": 0.0
+  },
+  "init_makespan_TC_PB": 130926,
+  "init_added_bytes": 2101248,
+  "init_cache": {
+   "hits": 0,
+   "accesses": 273,
+   "hit_bytes": 0,
+   "miss_bytes": 1612800,
+   "hit_rate": 0.0
+  },
+  "num_subgraphs": 777,
+  "improve_stats": {
+   "evals": 49,
+   "interval_FEASIBLE": 5,
+   "assign_OPTIMAL": 3,
+   "order_OPTIMAL": 2,
+   "rounds": 15,
+   "subgraphs_start": 777
+  },
+  "reuse_windows": [
+   {
+    "candidates": 10,
+    "evaluated": 10,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 128538.0,
+  "total_seconds": 20.27
+ },
+ "log": [
+  "case_004 K=3 P_B: T_C=130926 added=2101248 hit_rate=0.000",
+  "    cache-cluster t=None -> 132032 hit=0.000 (best 130926)",
+  "    cache-stagger t=1000000005 -> 130926 hit=0.000 (best 130926)",
+  "    cache-stagger2 t=1000000005 -> 130926 hit=0.000 (best 130926)",
+  "    cache-colocate t=1000000005 -> 133689 hit=0.046 (best 130926)",
+  "    cache-stagger t=1000000003 -> 130926 hit=0.023 (best 130926)",
+  "    cache-stagger2 t=1000000003 -> 130926 hit=0.023 (best 130926)",
+  "    cache-colocate t=1000000003 -> 132937 hit=0.026 (best 130926)",
+  "    cache-stagger t=1000000001 -> 130926 hit=0.000 (best 130926)",
+  "    cache-stagger2 t=1000000001 -> 130926 hit=0.000 (best 130926)",
+  "    cache-colocate t=1000000001 -> 132767 hit=0.094 (best 130926)",
+  "    cache-cluster t=None -> 132032 hit=0.000 (best 130926)",
+  "    cache-cluster t=None -> 132032 hit=0.000 (best 130926)",
+  "    time-feedback -> 132084 (best 130926)",
+  "    merge -> 134043 (best 130926)",
+  "    interval[0:16] -> 142723 (best 130926)",
+  "    order core0[0:12] -> 130926 (best 130926)",
+  "    move sg258->c1 -> 131500 (best 130926)",
+  "    swap sg257<->sg258 -> 130926 (best 130926)",
+  "    move sg257->c1 -> 132029 (best 130926)",
+  "    swap sg256<->sg257 -> 130926 (best 130926)",
+  "    move sg256->c1 -> 130926 (best 130926)",
+  "    swap sg255<->sg256 -> 130926 (best 130926)",
+  "    move sg255->c1 -> 132083 (best 130926)",
+  "    swap sg254<->sg255 -> 130926 (best 130926)",
+  "    move sg254->c1 -> 130926 (best 130926)",
+  "    swap sg253<->sg254 -> 130926 (best 130926)",
+  "    move sg253->c1 -> 131980 (best 130926)",
+  "    swap sg252<->sg253 -> 130926 (best 130926)",
+  "    interval[12:28] -> 136446 (best 130926)",
+  "    time-feedback -> 132084 (best 130926)",
+  "    merge -> 134043 (best 130926)",
+  "    interval[8:24] -> 140763 (best 130926)",
+  "    order core0[6:18] -> 130926 (best 130926)",
+  "    move sg252->c1 -> 131624 (best 130926)",
+  "    swap sg251<->sg252 -> 130926 (best 130926)",
+  "    move sg251->c1 -> 131980 (best 130926)",
+  "    swap sg250<->sg251 -> 130926 (best 130926)",
+  "    move sg250->c1 -> 131624 (best 130926)",
+  "    swap sg249<->sg250 -> 130926 (best 130926)",
+  "    move sg249->c1 -> 131980 (best 130926)",
+  "    swap sg248<->sg249 -> 130926 (best 130926)",
+  "    move sg248->c1 -> 131624 (best 130926)",
+  "    swap sg247<->sg248 -> 130926 (best 130926)",
+  "    move sg247->c1 -> 131980 (best 130926)",
+  "    swap sg246<->sg247 -> 130926 (best 130926)",
+  "    interval[20:36] -> 138656 (best 130926)",
+  "    time-feedback -> 132084 (best 130926)",
+  "    merge -> 134043 (best 130926)",
+  "    interval[16:32] -> 138228 (best 130926)",
+  "final: T_C=130926 added=2101248 hit_rate=0.000 subgraphs=777 time=20.3s"
+ ]
+}

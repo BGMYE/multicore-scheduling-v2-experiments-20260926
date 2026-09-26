@@ -1,0 +1,66 @@
+{
+ "summary": {
+  "case": "case_012",
+  "cores": 3,
+  "makespan_eval": 19596,
+  "added_copy_bytes_eval": 9216,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 554898,
+   "scheduled_copy_bytes": 564114,
+   "added_copy_bytes": 9216,
+   "partition_added_copy_bytes": 9216,
+   "spill_added_copy_bytes": 0
+  },
+  "cache": {
+   "hits": 8,
+   "accesses": 259,
+   "hit_bytes": 9216,
+   "miss_bytes": 484096,
+   "hit_rate": 0.01868188894654904
+  },
+  "init_makespan_TC_PB": 19596,
+  "init_added_bytes": 9216,
+  "init_cache": {
+   "hits": 8,
+   "accesses": 259,
+   "hit_bytes": 9216,
+   "miss_bytes": 484096,
+   "hit_rate": 0.01868188894654904
+  },
+  "num_subgraphs": 6,
+  "improve_stats": {
+   "evals": 20,
+   "interval_OPTIMAL": 5,
+   "assign_OPTIMAL": 3,
+   "rounds": 15,
+   "subgraphs_start": 6
+  },
+  "reuse_windows": [],
+  "lower_bound_LB0": 11857.333333333334,
+  "total_seconds": 2.93
+ },
+ "log": [
+  "case_012 K=3 P_B: T_C=19596 added=9216 hit_rate=0.019",
+  "    time-feedback -> 19596 (best 19596)",
+  "    interval[0:6] -> 20211 (best 19596)",
+  "    move sg0->c2 -> 34580 (best 19596)",
+  "    move sg0->c2 -> 34580 (best 19596)",
+  "    move sg0->c2 -> 34580 (best 19596)",
+  "    move sg0->c2 -> 34580 (best 19596)",
+  "    move sg0->c2 -> 34580 (best 19596)",
+  "    move sg0->c2 -> 34580 (best 19596)",
+  "    interval[4:10] -> 20211 (best 19596)",
+  "    time-feedback -> 19596 (best 19596)",
+  "    interval[3:9] -> 20211 (best 19596)",
+  "    move sg0->c2 -> 34580 (best 19596)",
+  "    move sg0->c2 -> 34580 (best 19596)",
+  "    move sg0->c2 -> 34580 (best 19596)",
+  "    move sg0->c2 -> 34580 (best 19596)",
+  "    move sg0->c2 -> 34580 (best 19596)",
+  "    move sg0->c2 -> 34580 (best 19596)",
+  "    interval[1:7] -> 20211 (best 19596)",
+  "    time-feedback -> 19596 (best 19596)",
+  "    interval[0:6] -> 20211 (best 19596)",
+  "final: T_C=19596 added=9216 hit_rate=0.019 subgraphs=6 time=2.9s"
+ ]
+}

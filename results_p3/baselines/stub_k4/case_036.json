@@ -1,0 +1,26 @@
+{
+ "makespan": 606136,
+ "num_cores": 4,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 6554752,
+  "scheduled_copy_bytes": 18182656,
+  "added_copy_bytes": 11627904,
+  "partition_added_copy_bytes": 11513216,
+  "spill_added_copy_bytes": 114688
+ },
+ "cache_stats": {
+  "hits": 59,
+  "accesses": 2522,
+  "hit_bytes": 241664,
+  "miss_bytes": 10076672,
+  "hit_rate": 0.023420830645561455,
+  "copy_in_hits": 59,
+  "copy_in_misses": 2463
+ },
+ "cache_inserts": 2460,
+ "cache_evictions": 2204,
+ "num_subgraphs": 33,
+ "cross_core_transfers": 1106,
+ "stdout": "data movement: scheduled_copy_bytes=18182656, physical_ddr_bytes=18182656, cache_hits=59/2522, cache_hit_bytes=241664\nOK: problem 3 makespan=606136; result=/tmp/tmp0vilcstt/res.json",
+ "eval_seconds": 0.86
+}

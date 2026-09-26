@@ -1,0 +1,69 @@
+{
+ "summary": {
+  "case": "case_035",
+  "cores": 2,
+  "makespan_eval": 95406,
+  "added_copy_bytes_eval": 0,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 410854,
+   "scheduled_copy_bytes": 410854,
+   "added_copy_bytes": 0,
+   "partition_added_copy_bytes": 0,
+   "spill_added_copy_bytes": 0
+  },
+  "cache": {
+   "hits": 0,
+   "accesses": 301,
+   "hit_bytes": 0,
+   "miss_bytes": 396878,
+   "hit_rate": 0.0
+  },
+  "init_makespan_TC_PB": 95406,
+  "init_added_bytes": 0,
+  "init_cache": {
+   "hits": 0,
+   "accesses": 301,
+   "hit_bytes": 0,
+   "miss_bytes": 396878,
+   "hit_rate": 0.0
+  },
+  "num_subgraphs": 6,
+  "improve_stats": {
+   "evals": 23,
+   "interval_OPTIMAL": 5,
+   "assign_OPTIMAL": 3,
+   "rounds": 15,
+   "subgraphs_start": 6
+  },
+  "reuse_windows": [],
+  "lower_bound_LB0": 71954.5,
+  "total_seconds": 12.14
+ },
+ "log": [
+  "case_035 K=2 P_B: T_C=95406 added=0 hit_rate=0.000",
+  "    time-feedback -> 95406 (best 95406)",
+  "    merge -> 95406 (best 95406)",
+  "    interval[0:6] -> 95406 (best 95406)",
+  "    move sg0->c1 -> 170340 (best 95406)",
+  "    move sg0->c1 -> 170340 (best 95406)",
+  "    move sg0->c1 -> 170340 (best 95406)",
+  "    move sg0->c1 -> 170340 (best 95406)",
+  "    move sg0->c1 -> 170340 (best 95406)",
+  "    move sg0->c1 -> 170340 (best 95406)",
+  "    interval[4:10] -> 95406 (best 95406)",
+  "    time-feedback -> 95406 (best 95406)",
+  "    merge -> 95406 (best 95406)",
+  "    interval[3:9] -> 95406 (best 95406)",
+  "    move sg0->c1 -> 170340 (best 95406)",
+  "    move sg0->c1 -> 170340 (best 95406)",
+  "    move sg0->c1 -> 170340 (best 95406)",
+  "    move sg0->c1 -> 170340 (best 95406)",
+  "    move sg0->c1 -> 170340 (best 95406)",
+  "    move sg0->c1 -> 170340 (best 95406)",
+  "    interval[1:7] -> 95406 (best 95406)",
+  "    time-feedback -> 95406 (best 95406)",
+  "    merge -> 95406 (best 95406)",
+  "    interval[0:6] -> 95406 (best 95406)",
+  "final: T_C=95406 added=0 hit_rate=0.000 subgraphs=6 time=12.1s"
+ ]
+}

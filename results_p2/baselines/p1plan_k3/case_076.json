@@ -1,0 +1,29 @@
+{
+ "makespan": 2090674,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 4270674,
+  "scheduled_copy_bytes": 23040594,
+  "added_copy_bytes": 18769920,
+  "partition_added_copy_bytes": 5248000,
+  "spill_added_copy_bytes": 13521920
+ },
+ "num_subgraphs": 24,
+ "cross_core_transfers": 0,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 524288,
+   "UB": 100
+  },
+  "1": {
+   "L1": 524288,
+   "UB": 8192
+  },
+  "2": {
+   "L1": 524288,
+   "UB": 100
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=23040594, physical_ddr_bytes=23040594\nOK: problem 2 makespan=2090674; result=/tmp/tmpfkicntio/res.json",
+ "eval_seconds": 12.66
+}

@@ -1,0 +1,69 @@
+{
+ "summary": {
+  "case": "case_084",
+  "cores": 5,
+  "makespan_eval": 381521,
+  "added_copy_bytes_eval": 9206784,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 13236330,
+   "scheduled_copy_bytes": 22443114,
+   "added_copy_bytes": 9206784,
+   "partition_added_copy_bytes": 5787648,
+   "spill_added_copy_bytes": 3419136
+  },
+  "cache": {
+   "hits": 0,
+   "accesses": 5307,
+   "hit_bytes": 0,
+   "miss_bytes": 14531178,
+   "hit_rate": 0.0
+  },
+  "init_makespan_TC_PB": 384094,
+  "init_added_bytes": 8939520,
+  "init_cache": {
+   "hits": 0,
+   "accesses": 5278,
+   "hit_bytes": 0,
+   "miss_bytes": 14397546,
+   "hit_rate": 0.0
+  },
+  "num_subgraphs": 15,
+  "improve_stats": {
+   "evals": 20,
+   "accepted": 2,
+   "accepted_merge": 1,
+   "interval_FEASIBLE": 3,
+   "accepted_interval": 1,
+   "assign_FEASIBLE": 2,
+   "rounds": 11,
+   "subgraphs_start": 11
+  },
+  "reuse_windows": [],
+  "lower_bound_LB0": 253310.4,
+  "total_seconds": 87.88
+ },
+ "log": [
+  "case_084 K=5 P_B: T_C=384094 added=8939520 hit_rate=0.000",
+  "    time-feedback -> 384094 (best 384094)",
+  "    merge -> 383977 (best 384094)",
+  "    interval[0:10] -> 381521 (best 383977)",
+  "    assign[0:15] moved=5 -> 391682 (best 381521)",
+  "    move sg8->c0 -> 468465 (best 381521)",
+  "    swap sg7<->sg8 -> 381521 (best 381521)",
+  "    move sg7->c0 -> 473025 (best 381521)",
+  "    move sg8->c0 -> 468465 (best 381521)",
+  "    swap sg7<->sg8 -> 381521 (best 381521)",
+  "    move sg7->c0 -> 473025 (best 381521)",
+  "    move sg8->c0 -> 468465 (best 381521)",
+  "    swap sg7<->sg8 -> 381521 (best 381521)",
+  "    move sg7->c0 -> 473025 (best 381521)",
+  "    interval[10:25] -> 405097 (best 381521)",
+  "    time-feedback -> 381521 (best 381521)",
+  "    interval[7:22] -> 405097 (best 381521)",
+  "    assign[0:15] moved=5 -> 391682 (best 381521)",
+  "    move sg8->c0 -> 468465 (best 381521)",
+  "    swap sg7<->sg8 -> 381521 (best 381521)",
+  "    move sg7->c0 -> 473025 (best 381521)",
+  "final: T_C=381521 added=9206784 hit_rate=0.000 subgraphs=15 time=87.9s"
+ ]
+}

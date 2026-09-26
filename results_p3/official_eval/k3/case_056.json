@@ -1,0 +1,26 @@
+{
+ "makespan": 117352,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 221600,
+  "scheduled_copy_bytes": 1087154,
+  "added_copy_bytes": 865554,
+  "partition_added_copy_bytes": 865554,
+  "spill_added_copy_bytes": 0
+ },
+ "cache_stats": {
+  "hits": 280,
+  "accesses": 917,
+  "hit_bytes": 254028,
+  "miss_bytes": 479674,
+  "hit_rate": 0.34622776004426864,
+  "copy_in_hits": 280,
+  "copy_in_misses": 637
+ },
+ "cache_inserts": 626,
+ "cache_evictions": 0,
+ "num_subgraphs": 322,
+ "cross_core_transfers": 540,
+ "stdout": "data movement: scheduled_copy_bytes=1087154, physical_ddr_bytes=1087154, cache_hits=280/917, cache_hit_bytes=254028\nOK: problem 3 makespan=117352; result=/tmp/tmp__i627vx/res.json",
+ "eval_seconds": 1.25
+}

@@ -1,0 +1,26 @@
+{
+ "makespan": 1437146,
+ "num_cores": 5,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 2995288,
+  "scheduled_copy_bytes": 8464536,
+  "added_copy_bytes": 5469248,
+  "partition_added_copy_bytes": 0,
+  "spill_added_copy_bytes": 5469248
+ },
+ "cache_stats": {
+  "hits": 305,
+  "accesses": 721,
+  "hit_bytes": 4285344,
+  "miss_bytes": 4021430,
+  "hit_rate": 0.5158854688956266,
+  "copy_in_hits": 305,
+  "copy_in_misses": 416
+ },
+ "cache_inserts": 416,
+ "cache_evictions": 270,
+ "num_subgraphs": 6,
+ "cross_core_transfers": 0,
+ "stdout": "data movement: scheduled_copy_bytes=8464536, physical_ddr_bytes=8464536, cache_hits=305/721, cache_hit_bytes=4285344\nOK: problem 3 makespan=1437146; result=/tmp/tmpoa20pry8/res.json",
+ "eval_seconds": 2.34
+}

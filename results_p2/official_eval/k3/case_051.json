@@ -1,0 +1,29 @@
+{
+ "makespan": 278240,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 393218,
+  "scheduled_copy_bytes": 3441786,
+  "added_copy_bytes": 3048568,
+  "partition_added_copy_bytes": 3048568,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 238,
+ "cross_core_transfers": 324,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 131072,
+   "UB": 65542
+  },
+  "1": {
+   "L1": 327680,
+   "UB": 98308
+  },
+  "2": {
+   "L1": 294912,
+   "UB": 98308
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=3441786, physical_ddr_bytes=3441786\nOK: problem 2 makespan=278240; result=/tmp/tmpdiol38cv/res.json",
+ "eval_seconds": 0.24
+}

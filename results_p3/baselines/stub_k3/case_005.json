@@ -1,0 +1,26 @@
+{
+ "makespan": 112159,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 333414,
+  "scheduled_copy_bytes": 3171662,
+  "added_copy_bytes": 2838248,
+  "partition_added_copy_bytes": 2838248,
+  "spill_added_copy_bytes": 0
+ },
+ "cache_stats": {
+  "hits": 221,
+  "accesses": 2140,
+  "hit_bytes": 314312,
+  "miss_bytes": 1523478,
+  "hit_rate": 0.17102715761866155,
+  "copy_in_hits": 221,
+  "copy_in_misses": 1919
+ },
+ "cache_inserts": 1919,
+ "cache_evictions": 602,
+ "num_subgraphs": 56,
+ "cross_core_transfers": 1981,
+ "stdout": "data movement: scheduled_copy_bytes=3171662, physical_ddr_bytes=3171662, cache_hits=221/2140, cache_hit_bytes=314312\nOK: problem 3 makespan=112159; result=/tmp/tmplmlz220u/res.json",
+ "eval_seconds": 1.12
+}

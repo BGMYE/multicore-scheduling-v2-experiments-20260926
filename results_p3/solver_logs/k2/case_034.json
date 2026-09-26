@@ -1,0 +1,127 @@
+{
+ "summary": {
+  "case": "case_034",
+  "cores": 2,
+  "makespan_eval": 416143,
+  "added_copy_bytes_eval": 3935840,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 2280386,
+   "scheduled_copy_bytes": 6216226,
+   "added_copy_bytes": 3935840,
+   "partition_added_copy_bytes": 3127896,
+   "spill_added_copy_bytes": 807944
+  },
+  "cache": {
+   "hits": 282,
+   "accesses": 1440,
+   "hit_bytes": 1015296,
+   "miss_bytes": 4357728,
+   "hit_rate": 0.18896174668119853
+  },
+  "init_makespan_TC_PB": 416504,
+  "init_added_bytes": 3957344,
+  "init_cache": {
+   "hits": 280,
+   "accesses": 1444,
+   "hit_bytes": 1007104,
+   "miss_bytes": 4381280,
+   "hit_rate": 0.1869027894077334
+  },
+  "num_subgraphs": 345,
+  "improve_stats": {
+   "evals": 51,
+   "accepted": 1,
+   "accepted_cache_colocate": 1,
+   "decode_cycle": 3,
+   "interval_FEASIBLE": 5,
+   "eval_errors": 4,
+   "assign_OPTIMAL": 3,
+   "order_OPTIMAL": 2,
+   "rounds": 15,
+   "subgraphs_start": 345
+  },
+  "reuse_windows": [
+   {
+    "candidates": 25,
+    "evaluated": 9,
+    "exhausted": false,
+    "improved": true
+   },
+   {
+    "candidates": 3,
+    "evaluated": 3,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 374580.0,
+  "total_seconds": 46.16
+ },
+ "log": [
+  "case_034 K=2 P_B: T_C=416504 added=3957344 hit_rate=0.187",
+  "    cache-cluster t=None -> 433975 hit=0.224 (best 416504)",
+  "    cache-gather t=4587 -> 423926 hit=0.191 (best 416504)",
+  "    cache-colocate t=4587 -> 427372 hit=0.191 (best 416504)",
+  "    cache-gather t=4557 -> 416504 hit=0.187 (best 416504)",
+  "    cache-colocate t=4557 -> 426668 hit=0.188 (best 416504)",
+  "    cache-gather t=4542 -> 419192 hit=0.187 (best 416504)",
+  "    cache-colocate t=4542 -> 420459 hit=0.187 (best 416504)",
+  "    cache-gather t=4467 -> 420810 hit=0.193 (best 416504)",
+  "    cache-colocate t=4467 -> 416143 hit=0.189 (best 416504)",
+  "    cache-cluster t=None -> 433977 hit=0.222 (best 416143)",
+  "    cache-gather t=3802 -> 416143 hit=0.189 (best 416143)",
+  "    cache-colocate t=3802 -> 419978 hit=0.193 (best 416143)",
+  "    cache-cluster t=None -> 433977 hit=0.222 (best 416143)",
+  "    cache-cluster t=None -> 433977 hit=0.222 (best 416143)",
+  "    time-feedback -> 449777 (best 416143)",
+  "    [invalid] global execution (core, op): dependency cycle; (0, 10299) -[cross-core COPY]-> (1, 10300); (1, 10300) -[local data/memor",
+  "    assign[0:24] moved=12 -> 434672 (best 416143)",
+  "    order core1[0:12] -> 416525 (best 416143)",
+  "    move sg344->c0 -> 418013 (best 416143)",
+  "    swap sg343<->sg344 -> 416143 (best 416143)",
+  "    move sg343->c0 -> 418822 (best 416143)",
+  "    swap sg342<->sg343 -> 416143 (best 416143)",
+  "    move sg342->c0 -> 417242 (best 416143)",
+  "    swap sg341<->sg342 -> 416143 (best 416143)",
+  "    move sg341->c0 -> 421711 (best 416143)",
+  "    swap sg340<->sg341 -> 416143 (best 416143)",
+  "    move sg340->c0 -> 421977 (best 416143)",
+  "    swap sg339<->sg340 -> 416143 (best 416143)",
+  "    move sg339->c0 -> 423965 (best 416143)",
+  "    swap sg338<->sg339 -> 416735 (best 416143)",
+  "    interval[12:28] -> 417643 (best 416143)",
+  "    time-feedback -> 449777 (best 416143)",
+  "    [invalid] contracted subgraph graph contains a cycle",
+  "    assign[12:36] moved=12 -> 429144 (best 416143)",
+  "    order core1[6:18] -> 416265 (best 416143)",
+  "    move sg338->c0 -> 420259 (best 416143)",
+  "    swap sg337<->sg338 -> 417888 (best 416143)",
+  "    move sg337->c0 -> 426287 (best 416143)",
+  "    swap sg336<->sg337 -> 420418 (best 416143)",
+  "    move sg336->c0 -> 419254 (best 416143)",
+  "    swap sg335<->sg336 -> 416143 (best 416143)",
+  "    move sg335->c0 -> 416923 (best 416143)",
+  "    swap sg334<->sg335 -> 416143 (best 416143)",
+  "    move sg334->c0 -> 416923 (best 416143)",
+  "    swap sg333<->sg334 -> 416143 (best 416143)",
+  "    move sg333->c0 -> 417703 (best 416143)",
+  "    swap sg332<->sg333 -> 416143 (best 416143)",
+  "    [invalid] global execution (core, op): dependency cycle; (0, 10371) -[PIPE_MTE3 FIFO]-> (0, 10377); (0, 10377) -[PIPE_MTE3 FIFO]->",
+  "    time-feedback -> 449777 (best 416143)",
+  "    [invalid] dependency order violation on core 0: 339 -> 9",
+  "    assign[24:48] moved=12 -> 416599 (best 416143)",
+  "final: T_C=416143 added=3935840 hit_rate=0.189 subgraphs=345 time=46.2s"
+ ]
+}

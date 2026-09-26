@@ -1,0 +1,26 @@
+{
+ "makespan": 686504,
+ "num_cores": 2,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 13236330,
+  "scheduled_copy_bytes": 22664298,
+  "added_copy_bytes": 9427968,
+  "partition_added_copy_bytes": 9216,
+  "spill_added_copy_bytes": 9418752
+ },
+ "cache_stats": {
+  "hits": 0,
+  "accesses": 5331,
+  "hit_bytes": 0,
+  "miss_bytes": 14641770,
+  "hit_rate": 0.0,
+  "copy_in_hits": 0,
+  "copy_in_misses": 5331
+ },
+ "cache_inserts": 5331,
+ "cache_evictions": 5058,
+ "num_subgraphs": 5,
+ "cross_core_transfers": 1,
+ "stdout": "data movement: scheduled_copy_bytes=22664298, physical_ddr_bytes=22664298, cache_hits=0/5331, cache_hit_bytes=0\nOK: problem 3 makespan=686504; result=/tmp/tmplru9066a/res.json",
+ "eval_seconds": 2.74
+}

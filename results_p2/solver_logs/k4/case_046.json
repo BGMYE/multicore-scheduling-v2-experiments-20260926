@@ -1,0 +1,229 @@
+{
+ "summary": {
+  "case": "case_046",
+  "cores": 4,
+  "makespan_eval": 78779,
+  "added_copy_bytes_eval": 2791200,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 1061472,
+   "scheduled_copy_bytes": 3852672,
+   "added_copy_bytes": 2791200,
+   "partition_added_copy_bytes": 2791200,
+   "spill_added_copy_bytes": 0
+  },
+  "num_subgraphs": 992,
+  "initial_constructor": "lsB/x0/runmax",
+  "initial_makespan": 79056,
+  "initial_added_bytes": 2791200,
+  "portfolio": [
+   {
+    "tag": "lsB/x0/runmax",
+    "makespan": 79056,
+    "added": 2791200
+   },
+   {
+    "tag": "lsB/x0/run8",
+    "makespan": 79056,
+    "added": 2791200
+   },
+   {
+    "tag": "hyper/x0",
+    "makespan": 79056,
+    "added": 2791200
+   },
+   {
+    "tag": "lsB/x1000/runmax",
+    "makespan": 79056,
+    "added": 2791200
+   },
+   {
+    "tag": "lsB/x1000/run8",
+    "makespan": 79056,
+    "added": 2791200
+   },
+   {
+    "tag": "hyper/x1000",
+    "makespan": 79056,
+    "added": 2791200
+   },
+   {
+    "tag": "band/16x4",
+    "makespan": 79814,
+    "added": 2791200
+   },
+   {
+    "tag": "p1-final",
+    "makespan": 85064,
+    "added": 2791200
+   },
+   {
+    "tag": "band/4x4",
+    "makespan": 100814,
+    "added": 772000
+   },
+   {
+    "tag": "comp-pack/1",
+    "makespan": 124612,
+    "added": 4513952
+   },
+   {
+    "tag": "comp-pack/4",
+    "makespan": 124612,
+    "added": 4513952
+   },
+   {
+    "tag": "tals-dfs/cf1/ob1000",
+    "makespan": 124612,
+    "added": 4513952
+   },
+   {
+    "tag": "tals-dfs/cf4/ob1000",
+    "makespan": 124612,
+    "added": 4513952
+   },
+   {
+    "tag": "tals-dfs/cf4/ob3000",
+    "makespan": 124612,
+    "added": 4513952
+   },
+   {
+    "tag": "tals-dfs/cf1/ob6000",
+    "makespan": 124612,
+    "added": 4513952
+   },
+   {
+    "tag": "tals-bl/cf4/ob1000",
+    "makespan": 124612,
+    "added": 4513952
+   },
+   {
+    "tag": "tals-bl/cf1/ob0",
+    "makespan": 124612,
+    "added": 4513952
+   },
+   {
+    "tag": "heft-cut/P1500",
+    "makespan": 124612,
+    "added": 4513952
+   },
+   {
+    "tag": "band/4x1",
+    "makespan": 226173,
+    "added": 208896
+   }
+  ],
+  "lower_bound_LB0": 52312.0,
+  "critical_path": 28456,
+  "improve_stats": {
+   "evals": 71,
+   "interval_OPTIMAL": 2,
+   "eval_errors": 9,
+   "assign_OPTIMAL": 4,
+   "order_OPTIMAL": 4,
+   "accepted": 2,
+   "accepted_swap": 2,
+   "interval_FEASIBLE": 7,
+   "rounds": 26,
+   "subgraphs_start": 992
+  },
+  "construct_seconds": 2.42,
+  "total_seconds": 32.21
+ },
+ "log": [
+  "case_046 K=4 compute=992 LB0=52312 CP=28456 W_M=209248 W_V=18400",
+  "  [p1-final] makespan=85064 added=2791200",
+  "  [lsB/x0/runmax] makespan=79056 added=2791200 subgraphs=992 (0.1s)",
+  "  [lsB/x0/run8] makespan=79056 added=2791200 subgraphs=992 (0.1s)",
+  "   hyper: comm 2.79MB -> 2.79MB",
+  "  [hyper/x0] makespan=79056 added=2791200 subgraphs=992 (0.1s)",
+  "  [lsB/x1000/runmax] makespan=79056 added=2791200 subgraphs=992 (0.1s)",
+  "  [lsB/x1000/run8] makespan=79056 added=2791200 subgraphs=992 (0.1s)",
+  "   hyper: comm 2.79MB -> 2.79MB",
+  "  [hyper/x1000] makespan=79056 added=2791200 subgraphs=992 (0.1s)",
+  "  [comp-pack/1] makespan=124612 added=4513952 subgraphs=4 (0.1s)",
+  "  [comp-pack/4] makespan=124612 added=4513952 subgraphs=8 (0.1s)",
+  "  [tals-dfs/cf1/ob1000] makespan=124612 added=4513952 subgraphs=4 (0.1s)",
+  "  [tals-dfs/cf4/ob1000] makespan=124612 added=4513952 subgraphs=4 (0.1s)",
+  "  [tals-dfs/cf4/ob3000] makespan=124612 added=4513952 subgraphs=4 (0.1s)",
+  "  [tals-dfs/cf1/ob6000] makespan=124612 added=4513952 subgraphs=4 (0.1s)",
+  "  [tals-bl/cf4/ob1000] makespan=124612 added=4513952 subgraphs=4 (0.1s)",
+  "  [tals-bl/cf1/ob0] makespan=124612 added=4513952 subgraphs=4 (0.1s)",
+  "  [band/4x1] makespan=226173 added=208896 subgraphs=7 (0.1s)",
+  "  [band/4x4] makespan=100814 added=772000 subgraphs=17 (0.1s)",
+  "  [band/16x4] makespan=79814 added=2791200 subgraphs=64 (0.1s)",
+  "  [heft-cut/P1500] makespan=124612 added=4513952 subgraphs=4 (0.1s)",
+  "initial best: lsB/x0/runmax (79056, 2791200)",
+  "    time-feedback -> 80172 (best 79056)",
+  "    merge -> 124612 (best 79056)",
+  "    [invalid] contracted subgraph graph contains a cycle",
+  "    order core0[0:12] -> 79056 (best 79056)",
+  "    move sg247->c1 -> 79330 (best 79056)",
+  "    swap sg246<->sg247 -> 79056 (best 79056)",
+  "    move sg246->c1 -> 79178 (best 79056)",
+  "    swap sg245<->sg246 -> 78919 (best 79056)",
+  "    move sg245->c1 -> 79830 (best 78919)",
+  "    swap sg244<->sg245 -> 79056 (best 78919)",
+  "    move sg244->c1 -> 79629 (best 78919)",
+  "    swap sg243<->sg244 -> 79056 (best 78919)",
+  "    move sg243->c1 -> 79578 (best 78919)",
+  "    swap sg242<->sg243 -> 79056 (best 78919)",
+  "    move sg241->c1 -> 79832 (best 78919)",
+  "    swap sg240<->sg241 -> 79056 (best 78919)",
+  "    [invalid] contracted subgraph graph contains a cycle",
+  "    time-feedback -> 80035 (best 78919)",
+  "    merge -> 124612 (best 78919)",
+  "    [invalid] contracted subgraph graph contains a cycle",
+  "    order core1[6:18] -> 78919 (best 78919)",
+  "    move sg490->c0 -> 79622 (best 78919)",
+  "    swap sg489<->sg490 -> 78919 (best 78919)",
+  "    move sg488->c0 -> 79954 (best 78919)",
+  "    swap sg487<->sg488 -> 78919 (best 78919)",
+  "    move sg487->c0 -> 79270 (best 78919)",
+  "    swap sg486<->sg487 -> 78919 (best 78919)",
+  "    move sg485->c0 -> 79787 (best 78919)",
+  "    swap sg484<->sg485 -> 78919 (best 78919)",
+  "    move sg486->c0 -> 79200 (best 78919)",
+  "    swap sg485<->sg486 -> 78919 (best 78919)",
+  "    move sg484->c0 -> 79200 (best 78919)",
+  "    swap sg483<->sg484 -> 78779 (best 78919)",
+  "    [invalid] contracted subgraph graph contains a cycle",
+  "    time-feedback -> 79895 (best 78779)",
+  "    merge -> 124612 (best 78779)",
+  "    [invalid] contracted subgraph graph contains a cycle",
+  "    order core2[12:24] -> 78779 (best 78779)",
+  "    move sg731->c1 -> 79200 (best 78779)",
+  "    swap sg730<->sg731 -> 78779 (best 78779)",
+  "    move sg730->c1 -> 79590 (best 78779)",
+  "    swap sg729<->sg730 -> 78779 (best 78779)",
+  "    move sg729->c1 -> 79200 (best 78779)",
+  "    swap sg728<->sg729 -> 78779 (best 78779)",
+  "    move sg727->c1 -> 79595 (best 78779)",
+  "    swap sg726<->sg727 -> 78779 (best 78779)",
+  "    move sg728->c1 -> 79270 (best 78779)",
+  "    swap sg727<->sg728 -> 78779 (best 78779)",
+  "    move sg726->c1 -> 79660 (best 78779)",
+  "    swap sg725<->sg726 -> 78779 (best 78779)",
+  "    [invalid] contracted subgraph graph contains a cycle",
+  "    time-feedback -> 79895 (best 78779)",
+  "    merge -> 124612 (best 78779)",
+  "    [invalid] contracted subgraph graph contains a cycle",
+  "    order core2[18:30] -> 78779 (best 78779)",
+  "    move sg725->c1 -> 79270 (best 78779)",
+  "    swap sg724<->sg725 -> 78779 (best 78779)",
+  "    move sg723->c1 -> 79787 (best 78779)",
+  "    swap sg722<->sg723 -> 78779 (best 78779)",
+  "    move sg724->c1 -> 79200 (best 78779)",
+  "    swap sg723<->sg724 -> 78779 (best 78779)",
+  "    move sg722->c1 -> 79648 (best 78779)",
+  "    swap sg721<->sg722 -> 78779 (best 78779)",
+  "    move sg721->c1 -> 79337 (best 78779)",
+  "    swap sg720<->sg721 -> 78779 (best 78779)",
+  "    move sg720->c1 -> 79550 (best 78779)",
+  "    swap sg719<->sg720 -> 78779 (best 78779)",
+  "    [invalid] contracted subgraph graph contains a cycle",
+  "    time-feedback -> 79895 (best 78779)",
+  "    merge -> 124612 (best 78779)",
+  "    [invalid] contracted subgraph graph contains a cycle",
+  "final: makespan=78779 added=2791200 subgraphs=992 time=32.2s"
+ ]
+}

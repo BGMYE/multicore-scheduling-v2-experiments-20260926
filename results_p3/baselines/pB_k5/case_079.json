@@ -1,0 +1,26 @@
+{
+ "makespan": 6046135,
+ "num_cores": 5,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 9351168,
+  "scheduled_copy_bytes": 54822912,
+  "added_copy_bytes": 45471744,
+  "partition_added_copy_bytes": 23402496,
+  "spill_added_copy_bytes": 22069248
+ },
+ "cache_stats": {
+  "hits": 2336,
+  "accesses": 10862,
+  "hit_bytes": 12908544,
+  "miss_bytes": 37859328,
+  "hit_rate": 0.25426600508289965,
+  "copy_in_hits": 2336,
+  "copy_in_misses": 8526
+ },
+ "cache_inserts": 8502,
+ "cache_evictions": 8255,
+ "num_subgraphs": 153,
+ "cross_core_transfers": 42,
+ "stdout": "data movement: scheduled_copy_bytes=54822912, physical_ddr_bytes=54822912, cache_hits=2336/10862, cache_hit_bytes=12908544\nOK: problem 3 makespan=6046135; result=/tmp/tmp8ymealeo/res.json",
+ "eval_seconds": 5.81
+}

@@ -1,0 +1,26 @@
+{
+ "makespan": 1987474,
+ "num_cores": 2,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 5919098,
+  "scheduled_copy_bytes": 14061434,
+  "added_copy_bytes": 8142336,
+  "partition_added_copy_bytes": 2022912,
+  "spill_added_copy_bytes": 6119424
+ },
+ "cache_stats": {
+  "hits": 693,
+  "accesses": 2668,
+  "hit_bytes": 3193344,
+  "miss_bytes": 10858460,
+  "hit_rate": 0.227255091232414,
+  "copy_in_hits": 693,
+  "copy_in_misses": 1975
+ },
+ "cache_inserts": 1973,
+ "cache_evictions": 1746,
+ "num_subgraphs": 17,
+ "cross_core_transfers": 2,
+ "stdout": "data movement: scheduled_copy_bytes=14061434, physical_ddr_bytes=14061434, cache_hits=693/2668, cache_hit_bytes=3193344\nOK: problem 3 makespan=1987474; result=/tmp/tmpfcs_nipl/res.json",
+ "eval_seconds": 7.44
+}

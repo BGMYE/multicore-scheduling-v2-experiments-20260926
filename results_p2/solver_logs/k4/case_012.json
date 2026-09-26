@@ -1,0 +1,219 @@
+{
+ "summary": {
+  "case": "case_012",
+  "cores": 4,
+  "makespan_eval": 14530,
+  "added_copy_bytes_eval": 28800,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 554898,
+   "scheduled_copy_bytes": 583698,
+   "added_copy_bytes": 28800,
+   "partition_added_copy_bytes": 28800,
+   "spill_added_copy_bytes": 0
+  },
+  "num_subgraphs": 17,
+  "initial_constructor": "comp-pack/4",
+  "initial_makespan": 15468,
+  "initial_added_bytes": 25344,
+  "portfolio": [
+   {
+    "tag": "comp-pack/4",
+    "makespan": 15468,
+    "added": 25344
+   },
+   {
+    "tag": "comp-pack/16",
+    "makespan": 15562,
+    "added": 49536
+   },
+   {
+    "tag": "p1-final",
+    "makespan": 16104,
+    "added": 40914
+   },
+   {
+    "tag": "tals-dfs/cf1/ob1000",
+    "makespan": 16328,
+    "added": 204610
+   },
+   {
+    "tag": "tals-dfs/cf4/ob3000",
+    "makespan": 16834,
+    "added": 149134
+   },
+   {
+    "tag": "tals-dfs/cf4/ob1000",
+    "makespan": 17642,
+    "added": 234314
+   },
+   {
+    "tag": "tals-dfs/cf1/ob6000",
+    "makespan": 19477,
+    "added": 77256
+   },
+   {
+    "tag": "comp-pack/1",
+    "makespan": 19760,
+    "added": 3456
+   },
+   {
+    "tag": "hyper/x1000",
+    "makespan": 19950,
+    "added": 509238
+   },
+   {
+    "tag": "hyper/x0",
+    "makespan": 20108,
+    "added": 430450
+   },
+   {
+    "tag": "tals-bl/cf4/ob1000",
+    "makespan": 28500,
+    "added": 1052032
+   },
+   {
+    "tag": "lsB/x1000/runmax",
+    "makespan": 30151,
+    "added": 1087516
+   },
+   {
+    "tag": "lsB/x1000/run8",
+    "makespan": 30153,
+    "added": 1087516
+   },
+   {
+    "tag": "heft-cut/P1500",
+    "makespan": 30510,
+    "added": 1107672
+   },
+   {
+    "tag": "tals-bl/cf1/ob0",
+    "makespan": 31145,
+    "added": 1138468
+   },
+   {
+    "tag": "band/16x4",
+    "makespan": 35269,
+    "added": 663700
+   },
+   {
+    "tag": "lsB/x0/runmax",
+    "makespan": 37118,
+    "added": 1550806
+   },
+   {
+    "tag": "lsB/x0/run8",
+    "makespan": 37118,
+    "added": 1550806
+   },
+   {
+    "tag": "band/4x4",
+    "makespan": 49153,
+    "added": 183590
+   },
+   {
+    "tag": "band/4x1",
+    "makespan": 59141,
+    "added": 0
+   }
+  ],
+  "lower_bound_LB0": 8893.0,
+  "critical_path": 2506,
+  "improve_stats": {
+   "evals": 56,
+   "interval_FEASIBLE": 9,
+   "assign_OPTIMAL": 4,
+   "accepted": 4,
+   "accepted_move": 3,
+   "order_OPTIMAL": 1,
+   "accepted_order": 1,
+   "rounds": 26,
+   "subgraphs_start": 17
+  },
+  "construct_seconds": 3.77,
+  "total_seconds": 39.38
+ },
+ "log": [
+  "case_012 K=4 compute=972 LB0=8893 CP=2506 W_M=35572 W_V=32237",
+  "  [p1-final] makespan=16104 added=40914",
+  "  [lsB/x0/runmax] makespan=37118 added=1550806 subgraphs=897 (0.2s)",
+  "  [lsB/x0/run8] makespan=37118 added=1550806 subgraphs=897 (0.2s)",
+  "   hyper: comm 1.55MB -> 0.43MB",
+  "  [hyper/x0] makespan=20108 added=430450 subgraphs=792 (0.2s)",
+  "  [lsB/x1000/runmax] makespan=30151 added=1087516 subgraphs=788 (0.2s)",
+  "  [lsB/x1000/run8] makespan=30153 added=1087516 subgraphs=794 (0.2s)",
+  "   hyper: comm 1.09MB -> 0.51MB",
+  "  [hyper/x1000] makespan=19950 added=509238 subgraphs=776 (0.2s)",
+  "  [comp-pack/1] makespan=19760 added=3456 subgraphs=6 (0.1s)",
+  "  [comp-pack/4] makespan=15468 added=25344 subgraphs=17 (0.1s)",
+  "  [comp-pack/16] makespan=15562 added=49536 subgraphs=36 (0.1s)",
+  "  [tals-dfs/cf1/ob1000] makespan=16328 added=204610 subgraphs=51 (0.1s)",
+  "  [tals-dfs/cf4/ob1000] makespan=17642 added=234314 subgraphs=64 (0.2s)",
+  "  [tals-dfs/cf4/ob3000] makespan=16834 added=149134 subgraphs=27 (0.1s)",
+  "  [tals-dfs/cf1/ob6000] makespan=19477 added=77256 subgraphs=15 (0.1s)",
+  "  [tals-bl/cf4/ob1000] makespan=28500 added=1052032 subgraphs=55 (0.2s)",
+  "  [tals-bl/cf1/ob0] makespan=31145 added=1138468 subgraphs=74 (0.2s)",
+  "  [band/4x1] makespan=59141 added=0 subgraphs=5 (0.1s)",
+  "  [band/4x4] makespan=49153 added=183590 subgraphs=16 (0.1s)",
+  "  [band/16x4] makespan=35269 added=663700 subgraphs=37 (0.1s)",
+  "  [heft-cut/P1500] makespan=30510 added=1107672 subgraphs=215 (0.2s)",
+  "initial best: comp-pack/4 (15468, 25344)",
+  "    time-feedback -> 15468 (best 15468)",
+  "    merge -> 15654 (best 15468)",
+  "    interval[0:16] -> 16149 (best 15468)",
+  "    assign[0:17] moved=1 -> 15992 (best 15468)",
+  "    move sg1->c1 -> 15368 (best 15468)",
+  "    swap sg0<->sg1 -> 15370 (best 15368)",
+  "    move sg0->c1 -> 27117 (best 15368)",
+  "    move sg1->c1 -> 15368 (best 15368)",
+  "    swap sg0<->sg1 -> 15370 (best 15368)",
+  "    move sg0->c1 -> 27117 (best 15368)",
+  "    move sg1->c1 -> 15368 (best 15368)",
+  "    swap sg0<->sg1 -> 15370 (best 15368)",
+  "    move sg0->c1 -> 27117 (best 15368)",
+  "    interval[12:28] -> 16298 (best 15368)",
+  "    time-feedback -> 15368 (best 15368)",
+  "    merge -> 16068 (best 15368)",
+  "    interval[8:24] -> 16298 (best 15368)",
+  "    assign[0:17] moved=1 -> 15992 (best 15368)",
+  "    order core3[0:5] -> 14686 (best 15368)",
+  "    move sg6->c3 -> 15874 (best 14686)",
+  "    swap sg5<->sg6 -> 14686 (best 14686)",
+  "    move sg5->c3 -> 14531 (best 14686)",
+  "    swap sg4<->sg5 -> 14686 (best 14531)",
+  "    move sg4->c3 -> 14530 (best 14531)",
+  "    swap sg3<->sg4 -> 16197 (best 14530)",
+  "    move sg3->c3 -> 16617 (best 14530)",
+  "    swap sg2<->sg3 -> 16197 (best 14530)",
+  "    move sg2->c3 -> 16291 (best 14530)",
+  "    swap sg1<->sg2 -> 14531 (best 14530)",
+  "    move sg1->c3 -> 17274 (best 14530)",
+  "    interval[3:19] -> 16115 (best 14530)",
+  "    time-feedback -> 14530 (best 14530)",
+  "    merge -> 18164 (best 14530)",
+  "    interval[16:32] -> 16115 (best 14530)",
+  "    assign[0:17] moved=1 -> 15992 (best 14530)",
+  "    move sg0->c1 -> 27095 (best 14530)",
+  "    move sg0->c1 -> 27095 (best 14530)",
+  "    move sg0->c1 -> 27095 (best 14530)",
+  "    move sg0->c1 -> 27095 (best 14530)",
+  "    move sg0->c1 -> 27095 (best 14530)",
+  "    move sg0->c1 -> 27095 (best 14530)",
+  "    interval[11:27] -> 16115 (best 14530)",
+  "    time-feedback -> 14530 (best 14530)",
+  "    merge -> 18164 (best 14530)",
+  "    interval[7:23] -> 16115 (best 14530)",
+  "    assign[0:17] moved=1 -> 15992 (best 14530)",
+  "    move sg0->c1 -> 27095 (best 14530)",
+  "    move sg0->c1 -> 27095 (best 14530)",
+  "    move sg0->c1 -> 27095 (best 14530)",
+  "    move sg0->c1 -> 27095 (best 14530)",
+  "    move sg0->c1 -> 27095 (best 14530)",
+  "    move sg0->c1 -> 27095 (best 14530)",
+  "    interval[2:18] -> 16115 (best 14530)",
+  "    time-feedback -> 14530 (best 14530)",
+  "    merge -> 18164 (best 14530)",
+  "    interval[15:31] -> 16115 (best 14530)",
+  "final: makespan=14530 added=28800 subgraphs=17 time=39.4s"
+ ]
+}

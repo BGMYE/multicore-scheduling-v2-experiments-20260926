@@ -1,0 +1,73 @@
+{
+ "summary": {
+  "case": "case_091",
+  "cores": 3,
+  "makespan_eval": 3064508,
+  "added_copy_bytes_eval": 37326304,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 6577656,
+   "scheduled_copy_bytes": 43903960,
+   "added_copy_bytes": 37326304,
+   "partition_added_copy_bytes": 7883776,
+   "spill_added_copy_bytes": 29442528
+  },
+  "cache": {
+   "hits": 3202,
+   "accesses": 12165,
+   "hit_bytes": 10271552,
+   "miss_bytes": 33578144,
+   "hit_rate": 0.23424454299523537
+  },
+  "init_makespan_TC_PB": 3066477,
+  "init_added_bytes": 37486048,
+  "init_cache": {
+   "hits": 3161,
+   "accesses": 12230,
+   "hit_bytes": 10150208,
+   "miss_bytes": 33859232,
+   "hit_rate": 0.23063706332096023
+  },
+  "num_subgraphs": 44,
+  "improve_stats": {
+   "evals": 18,
+   "assign_FEASIBLE": 1,
+   "order_OPTIMAL": 1,
+   "accepted": 1,
+   "accepted_swap": 1,
+   "rounds": 5,
+   "subgraphs_start": 44
+  },
+  "reuse_windows": [
+   {
+    "candidates": 25,
+    "evaluated": 12,
+    "exhausted": false,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 2993786.6666666665,
+  "total_seconds": 184.18
+ },
+ "log": [
+  "case_091 K=3 P_B: T_C=3066477 added=37486048 hit_rate=0.231",
+  "    cache-cluster t=None -> 3066477 hit=0.231 (best 3066477)",
+  "    cache-gather t=1000000053 -> 3066477 hit=0.231 (best 3066477)",
+  "    cache-colocate t=1000000053 -> 3264658 hit=0.254 (best 3066477)",
+  "    cache-gather t=1000000051 -> 3066477 hit=0.231 (best 3066477)",
+  "    cache-colocate t=1000000051 -> 3264658 hit=0.254 (best 3066477)",
+  "    cache-gather t=1000000049 -> 3066477 hit=0.231 (best 3066477)",
+  "    cache-colocate t=1000000049 -> 3264658 hit=0.254 (best 3066477)",
+  "    cache-gather t=1000000057 -> 3066477 hit=0.231 (best 3066477)",
+  "    cache-colocate t=1000000057 -> 3264658 hit=0.254 (best 3066477)",
+  "    cache-gather t=1000000055 -> 3066477 hit=0.231 (best 3066477)",
+  "    cache-colocate t=1000000055 -> 3264658 hit=0.254 (best 3066477)",
+  "    cache-gather t=1000000047 -> 3066477 hit=0.231 (best 3066477)",
+  "    time-feedback -> 3066477 (best 3066477)",
+  "    assign[0:24] moved=7 -> 3071992 (best 3066477)",
+  "    order core1[0:12] -> 3082477 (best 3066477)",
+  "    move sg30->c0 -> 3243499 (best 3066477)",
+  "    swap sg29<->sg30 -> 3064508 (best 3066477)",
+  "    move sg29->c0 -> 3231027 (best 3064508)",
+  "final: T_C=3064508 added=37326304 hit_rate=0.234 subgraphs=44 time=184.2s"
+ ]
+}

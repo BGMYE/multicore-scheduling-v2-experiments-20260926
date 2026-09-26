@@ -1,0 +1,81 @@
+{
+ "summary": {
+  "case": "case_010",
+  "cores": 2,
+  "makespan_eval": 40554,
+  "added_copy_bytes_eval": 357408,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 384150,
+   "scheduled_copy_bytes": 741558,
+   "added_copy_bytes": 357408,
+   "partition_added_copy_bytes": 357408,
+   "spill_added_copy_bytes": 0
+  },
+  "cache": {
+   "hits": 24,
+   "accesses": 159,
+   "hit_bytes": 156672,
+   "miss_bytes": 484446,
+   "hit_rate": 0.24437311072220713
+  },
+  "init_makespan_TC_PB": 40554,
+  "init_added_bytes": 357408,
+  "init_cache": {
+   "hits": 24,
+   "accesses": 159,
+   "hit_bytes": 156672,
+   "miss_bytes": 484446,
+   "hit_rate": 0.24437311072220713
+  },
+  "num_subgraphs": 12,
+  "improve_stats": {
+   "evals": 33,
+   "decode_cycle": 3,
+   "interval_FEASIBLE": 5,
+   "assign_OPTIMAL": 3,
+   "order_OPTIMAL": 2,
+   "rounds": 15,
+   "subgraphs_start": 12
+  },
+  "reuse_windows": [],
+  "lower_bound_LB0": 27748.0,
+  "total_seconds": 18.69
+ },
+ "log": [
+  "case_010 K=2 P_B: T_C=40554 added=357408 hit_rate=0.244",
+  "    time-feedback -> 40554 (best 40554)",
+  "    interval[0:12] -> 42389 (best 40554)",
+  "    assign[0:12] moved=4 -> 45343 (best 40554)",
+  "    move sg5->c1 -> 40926 (best 40554)",
+  "    swap sg4<->sg5 -> 40554 (best 40554)",
+  "    move sg4->c1 -> 46124 (best 40554)",
+  "    swap sg3<->sg4 -> 40554 (best 40554)",
+  "    move sg3->c1 -> 48008 (best 40554)",
+  "    swap sg2<->sg3 -> 40554 (best 40554)",
+  "    move sg2->c1 -> 43812 (best 40554)",
+  "    swap sg1<->sg2 -> 42243 (best 40554)",
+  "    move sg1->c1 -> 42846 (best 40554)",
+  "    swap sg0<->sg1 -> 40554 (best 40554)",
+  "    move sg0->c1 -> 51629 (best 40554)",
+  "    interval[9:21] -> 42389 (best 40554)",
+  "    time-feedback -> 40554 (best 40554)",
+  "    interval[6:18] -> 42389 (best 40554)",
+  "    assign[0:12] moved=4 -> 45343 (best 40554)",
+  "    move sg5->c1 -> 40926 (best 40554)",
+  "    swap sg4<->sg5 -> 40554 (best 40554)",
+  "    move sg4->c1 -> 46124 (best 40554)",
+  "    swap sg3<->sg4 -> 40554 (best 40554)",
+  "    move sg3->c1 -> 48008 (best 40554)",
+  "    swap sg2<->sg3 -> 40554 (best 40554)",
+  "    move sg2->c1 -> 43812 (best 40554)",
+  "    swap sg1<->sg2 -> 42243 (best 40554)",
+  "    move sg1->c1 -> 42846 (best 40554)",
+  "    swap sg0<->sg1 -> 40554 (best 40554)",
+  "    move sg0->c1 -> 51629 (best 40554)",
+  "    interval[3:15] -> 42389 (best 40554)",
+  "    time-feedback -> 40554 (best 40554)",
+  "    interval[0:12] -> 42389 (best 40554)",
+  "    assign[0:12] moved=4 -> 45343 (best 40554)",
+  "final: T_C=40554 added=357408 hit_rate=0.244 subgraphs=12 time=18.7s"
+ ]
+}

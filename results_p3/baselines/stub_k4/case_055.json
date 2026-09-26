@@ -1,0 +1,26 @@
+{
+ "makespan": 100755,
+ "num_cores": 4,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 625810,
+  "scheduled_copy_bytes": 2980608,
+  "added_copy_bytes": 2354798,
+  "partition_added_copy_bytes": 2245214,
+  "spill_added_copy_bytes": 109584
+ },
+ "cache_stats": {
+  "hits": 121,
+  "accesses": 793,
+  "hit_bytes": 503816,
+  "miss_bytes": 1552974,
+  "hit_rate": 0.24495257172584464,
+  "copy_in_hits": 121,
+  "copy_in_misses": 672
+ },
+ "cache_inserts": 672,
+ "cache_evictions": 147,
+ "num_subgraphs": 16,
+ "cross_core_transfers": 485,
+ "stdout": "data movement: scheduled_copy_bytes=2980608, physical_ddr_bytes=2980608, cache_hits=121/793, cache_hit_bytes=503816\nOK: problem 3 makespan=100755; result=/tmp/tmpeo21e91v/res.json",
+ "eval_seconds": 0.27
+}

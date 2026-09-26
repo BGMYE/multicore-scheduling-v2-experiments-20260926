@@ -1,0 +1,90 @@
+{
+ "summary": {
+  "case": "case_014",
+  "cores": 2,
+  "makespan_eval": 8810639,
+  "added_copy_bytes_eval": 57265056,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 9932740,
+   "scheduled_copy_bytes": 67197796,
+   "added_copy_bytes": 57265056,
+   "partition_added_copy_bytes": 5481984,
+   "spill_added_copy_bytes": 51783072
+  },
+  "num_subgraphs": 32,
+  "initial_constructor": "p1-final",
+  "initial_makespan": 8838851,
+  "initial_added_bytes": 56612256,
+  "portfolio": [
+   {
+    "tag": "p1-final",
+    "makespan": 8838851,
+    "added": 56612256
+   },
+   {
+    "tag": "hyper/x0",
+    "makespan": 11544158,
+    "added": 344815884
+   },
+   {
+    "tag": "lsB/x1000/run8",
+    "makespan": 11631635,
+    "added": 327386252
+   },
+   {
+    "tag": "lsB/x1000/runmax",
+    "makespan": 11632093,
+    "added": 327386252
+   },
+   {
+    "tag": "lsB/x0/run8",
+    "makespan": 11651048,
+    "added": 328885388
+   },
+   {
+    "tag": "lsB/x0/runmax",
+    "makespan": 11651673,
+    "added": 328885388
+   }
+  ],
+  "lower_bound_LB0": 8612874.0,
+  "critical_path": 31968,
+  "improve_stats": {
+   "evals": 13,
+   "assign_FEASIBLE": 1,
+   "order_OPTIMAL": 1,
+   "accepted": 2,
+   "accepted_order": 1,
+   "accepted_swap": 1,
+   "rounds": 5,
+   "subgraphs_start": 32
+  },
+  "construct_seconds": 150.12,
+  "total_seconds": 310.4
+ },
+ "log": [
+  "case_014 K=2 compute=35705 LB0=8612874 CP=31968 W_M=17225748 W_V=1651424",
+  "  [p1-final] makespan=8838851 added=56612256",
+  "  [lsB/x0/runmax] makespan=11651673 added=328885388 subgraphs=32391 (26.9s)",
+  "  [lsB/x0/run8] makespan=11651048 added=328885388 subgraphs=32398 (26.9s)",
+  "   hyper: comm 162.70MB -> 49.81MB",
+  "  [hyper/x0] makespan=11544158 added=344815884 subgraphs=25998 (25.1s)",
+  "  [lsB/x1000/runmax] makespan=11632093 added=327386252 subgraphs=32389 (30.3s)",
+  "  [lsB/x1000/run8] makespan=11631635 added=327386252 subgraphs=32396 (28.1s)",
+  "initial best: p1-final (8838851, 56612256)",
+  "    time-feedback -> 8838851 (best 8838851)",
+  "    order core1[0:12] -> 8816456 (best 8838851)",
+  "    move sg31->c0 -> 9364455 (best 8816456)",
+  "    swap sg30<->sg31 -> 8810639 (best 8816456)",
+  "    move sg30->c0 -> 9366744 (best 8810639)",
+  "    swap sg29<->sg30 -> 8815064 (best 8810639)",
+  "    move sg29->c0 -> 9365092 (best 8810639)",
+  "    swap sg28<->sg29 -> 8822829 (best 8810639)",
+  "    move sg28->c0 -> 9357532 (best 8810639)",
+  "    swap sg27<->sg28 -> 8814914 (best 8810639)",
+  "    move sg27->c0 -> 9363636 (best 8810639)",
+  "    swap sg26<->sg27 -> 8816337 (best 8810639)",
+  "    move sg26->c0 -> 9353461 (best 8810639)",
+  "final: makespan=8810639 added=57265056 subgraphs=32 time=310.4s"
+ ]
+}

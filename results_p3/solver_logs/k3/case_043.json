@@ -1,0 +1,69 @@
+{
+ "summary": {
+  "case": "case_043",
+  "cores": 3,
+  "makespan_eval": 271072,
+  "added_copy_bytes_eval": 92160,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 1431122,
+   "scheduled_copy_bytes": 1523282,
+   "added_copy_bytes": 92160,
+   "partition_added_copy_bytes": 92160,
+   "spill_added_copy_bytes": 0
+  },
+  "cache": {
+   "hits": 30,
+   "accesses": 414,
+   "hit_bytes": 92160,
+   "miss_bytes": 1430996,
+   "hit_rate": 0.060505949489087135
+  },
+  "init_makespan_TC_PB": 271072,
+  "init_added_bytes": 92160,
+  "init_cache": {
+   "hits": 30,
+   "accesses": 414,
+   "hit_bytes": 92160,
+   "miss_bytes": 1430996,
+   "hit_rate": 0.060505949489087135
+  },
+  "num_subgraphs": 17,
+  "improve_stats": {
+   "evals": 23,
+   "interval_OPTIMAL": 5,
+   "assign_OPTIMAL": 3,
+   "rounds": 15,
+   "subgraphs_start": 17
+  },
+  "reuse_windows": [],
+  "lower_bound_LB0": 172584.0,
+  "total_seconds": 34.87
+ },
+ "log": [
+  "case_043 K=3 P_B: T_C=271072 added=92160 hit_rate=0.061",
+  "    time-feedback -> 271072 (best 271072)",
+  "    merge -> 271072 (best 271072)",
+  "    interval[0:16] -> 271073 (best 271072)",
+  "    move sg0->c2 -> 455755 (best 271072)",
+  "    move sg0->c2 -> 455755 (best 271072)",
+  "    move sg0->c2 -> 455755 (best 271072)",
+  "    move sg0->c2 -> 455755 (best 271072)",
+  "    move sg0->c2 -> 455755 (best 271072)",
+  "    move sg0->c2 -> 455755 (best 271072)",
+  "    interval[12:28] -> 271072 (best 271072)",
+  "    time-feedback -> 271072 (best 271072)",
+  "    merge -> 271072 (best 271072)",
+  "    interval[8:24] -> 271072 (best 271072)",
+  "    move sg0->c2 -> 455755 (best 271072)",
+  "    move sg0->c2 -> 455755 (best 271072)",
+  "    move sg0->c2 -> 455755 (best 271072)",
+  "    move sg0->c2 -> 455755 (best 271072)",
+  "    move sg0->c2 -> 455755 (best 271072)",
+  "    move sg0->c2 -> 455755 (best 271072)",
+  "    interval[3:19] -> 271072 (best 271072)",
+  "    time-feedback -> 271072 (best 271072)",
+  "    merge -> 271072 (best 271072)",
+  "    interval[16:32] -> 271072 (best 271072)",
+  "final: T_C=271072 added=92160 hit_rate=0.061 subgraphs=17 time=34.9s"
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "makespan": 394990,
+ "num_cores": 2,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 592006,
+  "scheduled_copy_bytes": 1496844,
+  "added_copy_bytes": 904838,
+  "partition_added_copy_bytes": 904838,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 99,
+ "cross_core_transfers": 207,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 125696,
+   "UB": 47748
+  },
+  "1": {
+   "L1": 123776,
+   "UB": 39044
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=1496844, physical_ddr_bytes=1496844\nOK: problem 2 makespan=394990; result=/tmp/tmpoq902ewv/res.json",
+ "eval_seconds": 0.65
+}

@@ -1,0 +1,33 @@
+{
+ "makespan": 357459,
+ "num_cores": 4,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 2771250,
+  "scheduled_copy_bytes": 7199794,
+  "added_copy_bytes": 4428544,
+  "partition_added_copy_bytes": 4428544,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 72,
+ "cross_core_transfers": 2398,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 141696,
+   "UB": 88508
+  },
+  "1": {
+   "L1": 61632,
+   "UB": 90130
+  },
+  "2": {
+   "L1": 113664,
+   "UB": 112738
+  },
+  "3": {
+   "L1": 84480,
+   "UB": 53890
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=7199794, physical_ddr_bytes=7199794\nOK: problem 2 makespan=357459; result=/tmp/tmpxcnaveab/res.json",
+ "eval_seconds": 1.64
+}

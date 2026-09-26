@@ -1,0 +1,26 @@
+{
+ "makespan": 104696,
+ "num_cores": 4,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 221600,
+  "scheduled_copy_bytes": 1373474,
+  "added_copy_bytes": 1151874,
+  "partition_added_copy_bytes": 1151874,
+  "spill_added_copy_bytes": 0
+ },
+ "cache_stats": {
+  "hits": 404,
+  "accesses": 1095,
+  "hit_bytes": 301934,
+  "miss_bytes": 555746,
+  "hit_rate": 0.35203572427945157,
+  "copy_in_hits": 404,
+  "copy_in_misses": 691
+ },
+ "cache_inserts": 662,
+ "cache_evictions": 0,
+ "num_subgraphs": 280,
+ "cross_core_transfers": 705,
+ "stdout": "data movement: scheduled_copy_bytes=1373474, physical_ddr_bytes=1373474, cache_hits=404/1095, cache_hit_bytes=301934\nOK: problem 3 makespan=104696; result=/tmp/tmpi4he_24a/res.json",
+ "eval_seconds": 1.31
+}

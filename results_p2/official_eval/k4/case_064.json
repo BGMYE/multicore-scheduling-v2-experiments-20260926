@@ -1,0 +1,33 @@
+{
+ "makespan": 8135,
+ "num_cores": 4,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 37414,
+  "scheduled_copy_bytes": 143032,
+  "added_copy_bytes": 105618,
+  "partition_added_copy_bytes": 105618,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 66,
+ "cross_core_transfers": 116,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 3328,
+   "UB": 4166
+  },
+  "1": {
+   "L1": 2368,
+   "UB": 2662
+  },
+  "2": {
+   "L1": 3136,
+   "UB": 3394
+  },
+  "3": {
+   "L1": 2336,
+   "UB": 2882
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=143032, physical_ddr_bytes=143032\nOK: problem 2 makespan=8135; result=/tmp/tmpd31xoapc/res.json",
+ "eval_seconds": 0.2
+}

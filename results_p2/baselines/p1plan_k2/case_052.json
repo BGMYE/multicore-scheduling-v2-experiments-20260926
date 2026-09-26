@@ -1,0 +1,25 @@
+{
+ "makespan": 91863,
+ "num_cores": 2,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 810204,
+  "scheduled_copy_bytes": 913884,
+  "added_copy_bytes": 103680,
+  "partition_added_copy_bytes": 103680,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 4,
+ "cross_core_transfers": 2,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 101376,
+   "UB": 13824
+  },
+  "1": {
+   "L1": 119040,
+   "UB": 94232
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=913884, physical_ddr_bytes=913884\nOK: problem 2 makespan=91863; result=/tmp/tmpwe_amabo/res.json",
+ "eval_seconds": 0.17
+}

@@ -1,0 +1,25 @@
+{
+ "makespan": 48674,
+ "num_cores": 2,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 316202,
+  "scheduled_copy_bytes": 779054,
+  "added_copy_bytes": 462852,
+  "partition_added_copy_bytes": 462852,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 9,
+ "cross_core_transfers": 155,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 112784,
+   "UB": 88520
+  },
+  "1": {
+   "L1": 19456,
+   "UB": 27196
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=779054, physical_ddr_bytes=779054\nOK: problem 2 makespan=48674; result=/tmp/tmpkcfr3ore/res.json",
+ "eval_seconds": 0.16
+}

@@ -1,0 +1,29 @@
+{
+ "makespan": 5936316,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 9932740,
+  "scheduled_copy_bytes": 63514300,
+  "added_copy_bytes": 53581560,
+  "partition_added_copy_bytes": 14233944,
+  "spill_added_copy_bytes": 39347616
+ },
+ "num_subgraphs": 77,
+ "cross_core_transfers": 11,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 523776,
+   "UB": 132
+  },
+  "1": {
+   "L1": 523776,
+   "UB": 132
+  },
+  "2": {
+   "L1": 524160,
+   "UB": 258
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=63514300, physical_ddr_bytes=63514300\nOK: problem 2 makespan=5936316; result=/tmp/tmplond4ali/res.json",
+ "eval_seconds": 14.71
+}

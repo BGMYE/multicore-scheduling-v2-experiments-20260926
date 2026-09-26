@@ -1,0 +1,29 @@
+{
+ "makespan": 1219233,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 393218,
+  "scheduled_copy_bytes": 13636306,
+  "added_copy_bytes": 13243088,
+  "partition_added_copy_bytes": 13243088,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 1094,
+ "cross_core_transfers": 1401,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 98304,
+   "UB": 65542
+  },
+  "1": {
+   "L1": 294912,
+   "UB": 98308
+  },
+  "2": {
+   "L1": 294912,
+   "UB": 98308
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=13636306, physical_ddr_bytes=13636306\nOK: problem 2 makespan=1219233; result=/tmp/tmprx31vehz/res.json",
+ "eval_seconds": 1.16
+}

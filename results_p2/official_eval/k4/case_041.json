@@ -1,0 +1,33 @@
+{
+ "makespan": 1502089,
+ "num_cores": 4,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 4949980,
+  "scheduled_copy_bytes": 20749276,
+  "added_copy_bytes": 15799296,
+  "partition_added_copy_bytes": 5489664,
+  "spill_added_copy_bytes": 10309632
+ },
+ "num_subgraphs": 8,
+ "cross_core_transfers": 0,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 524288,
+   "UB": 8198
+  },
+  "1": {
+   "L1": 524288,
+   "UB": 130
+  },
+  "2": {
+   "L1": 524288,
+   "UB": 130
+  },
+  "3": {
+   "L1": 524288,
+   "UB": 130
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=20749276, physical_ddr_bytes=20749276\nOK: problem 2 makespan=1502089; result=/tmp/tmpigpgttdw/res.json",
+ "eval_seconds": 3.7
+}

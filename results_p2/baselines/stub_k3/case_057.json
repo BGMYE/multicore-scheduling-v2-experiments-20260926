@@ -1,0 +1,29 @@
+{
+ "makespan": 50877,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 342460,
+  "scheduled_copy_bytes": 1621346,
+  "added_copy_bytes": 1278886,
+  "partition_added_copy_bytes": 1278886,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 12,
+ "cross_core_transfers": 289,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 13056,
+   "UB": 36864
+  },
+  "1": {
+   "L1": 13824,
+   "UB": 57666
+  },
+  "2": {
+   "L1": 17664,
+   "UB": 103714
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=1621346, physical_ddr_bytes=1621346\nOK: problem 2 makespan=50877; result=/tmp/tmpoi_ql68x/res.json",
+ "eval_seconds": 0.3
+}

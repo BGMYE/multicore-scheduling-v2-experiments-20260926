@@ -1,0 +1,37 @@
+{
+ "makespan": 15876,
+ "num_cores": 5,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 714752,
+  "scheduled_copy_bytes": 747520,
+  "added_copy_bytes": 32768,
+  "partition_added_copy_bytes": 32768,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 5,
+ "cross_core_transfers": 0,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 20480,
+   "UB": 0
+  },
+  "1": {
+   "L1": 20480,
+   "UB": 0
+  },
+  "2": {
+   "L1": 20480,
+   "UB": 0
+  },
+  "3": {
+   "L1": 20480,
+   "UB": 0
+  },
+  "4": {
+   "L1": 20480,
+   "UB": 0
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=747520, physical_ddr_bytes=747520\nOK: problem 2 makespan=15876; result=/tmp/tmpelt_mzfi/res.json",
+ "eval_seconds": 0.12
+}

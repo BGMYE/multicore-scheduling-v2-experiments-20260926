@@ -1,0 +1,126 @@
+{
+ "summary": {
+  "case": "case_023",
+  "cores": 2,
+  "makespan_eval": 49532,
+  "added_copy_bytes_eval": 1713202,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 443444,
+   "scheduled_copy_bytes": 2156646,
+   "added_copy_bytes": 1713202,
+   "partition_added_copy_bytes": 1571890,
+   "spill_added_copy_bytes": 141312
+  },
+  "cache": {
+   "hits": 55,
+   "accesses": 465,
+   "hit_bytes": 167970,
+   "miss_bytes": 1227922,
+   "hit_rate": 0.12033165889624699
+  },
+  "init_makespan_TC_PB": 49591,
+  "init_added_bytes": 1713202,
+  "init_cache": {
+   "hits": 54,
+   "accesses": 465,
+   "hit_bytes": 165922,
+   "miss_bytes": 1229970,
+   "hit_rate": 0.11886449668025893
+  },
+  "num_subgraphs": 688,
+  "improve_stats": {
+   "evals": 50,
+   "accepted": 1,
+   "accepted_cache_stagger": 1,
+   "decode_cycle": 3,
+   "interval_FEASIBLE": 5,
+   "assign_OPTIMAL": 3,
+   "order_OPTIMAL": 2,
+   "eval_errors": 1,
+   "rounds": 15,
+   "subgraphs_start": 688
+  },
+  "reuse_windows": [
+   {
+    "candidates": 13,
+    "evaluated": 11,
+    "exhausted": false,
+    "improved": true
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 34779.0,
+  "total_seconds": 23.57
+ },
+ "log": [
+  "case_023 K=2 P_B: T_C=49591 added=1713202 hit_rate=0.119",
+  "    cache-cluster t=None -> 50031 hit=0.103 (best 49591)",
+  "    cache-stagger t=1038 -> 49591 hit=0.136 (best 49591)",
+  "    cache-stagger2 t=1038 -> 49597 hit=0.119 (best 49591)",
+  "    cache-colocate t=1038 -> 50207 hit=0.120 (best 49591)",
+  "    cache-stagger t=2181 -> 49591 hit=0.119 (best 49591)",
+  "    cache-stagger2 t=2181 -> 49591 hit=0.119 (best 49591)",
+  "    cache-colocate t=2181 -> 50185 hit=0.119 (best 49591)",
+  "    cache-stagger t=2136 -> 49594 hit=0.119 (best 49591)",
+  "    cache-stagger2 t=2136 -> 49594 hit=0.119 (best 49591)",
+  "    cache-colocate t=2136 -> 49881 hit=0.119 (best 49591)",
+  "    cache-stagger t=1415 -> 49532 hit=0.120 (best 49591)",
+  "    cache-cluster t=None -> 50031 hit=0.103 (best 49532)",
+  "    cache-cluster t=None -> 50031 hit=0.103 (best 49532)",
+  "    cache-cluster t=None -> 50031 hit=0.103 (best 49532)",
+  "    time-feedback -> 56320 (best 49532)",
+  "    interval[0:16] -> 50397 (best 49532)",
+  "    order core1[0:12] -> 49775 (best 49532)",
+  "    move sg687->c0 -> 49720 (best 49532)",
+  "    swap sg686<->sg687 -> 49532 (best 49532)",
+  "    move sg686->c0 -> 49668 (best 49532)",
+  "    swap sg685<->sg686 -> 49532 (best 49532)",
+  "    move sg685->c0 -> 49655 (best 49532)",
+  "    swap sg684<->sg685 -> 49532 (best 49532)",
+  "    move sg684->c0 -> 49642 (best 49532)",
+  "    swap sg683<->sg684 -> 49532 (best 49532)",
+  "    move sg683->c0 -> 49642 (best 49532)",
+  "    swap sg682<->sg683 -> 49532 (best 49532)",
+  "    move sg682->c0 -> 49642 (best 49532)",
+  "    swap sg681<->sg682 -> 49532 (best 49532)",
+  "    interval[12:28] -> 51309 (best 49532)",
+  "    time-feedback -> 56320 (best 49532)",
+  "    interval[8:24] -> 49982 (best 49532)",
+  "    assign[12:36] moved=2 -> 50679 (best 49532)",
+  "    order core1[6:18] -> 49640 (best 49532)",
+  "    move sg681->c0 -> 49655 (best 49532)",
+  "    swap sg680<->sg681 -> 49532 (best 49532)",
+  "    move sg680->c0 -> 49642 (best 49532)",
+  "    swap sg679<->sg680 -> 49532 (best 49532)",
+  "    move sg679->c0 -> 49603 (best 49532)",
+  "    swap sg678<->sg679 -> 49532 (best 49532)",
+  "    move sg678->c0 -> 49655 (best 49532)",
+  "    swap sg677<->sg678 -> 49532 (best 49532)",
+  "    move sg677->c0 -> 49681 (best 49532)",
+  "    swap sg676<->sg677 -> 49532 (best 49532)",
+  "    move sg676->c0 -> 49712 (best 49532)",
+  "    swap sg675<->sg676 -> 49532 (best 49532)",
+  "    interval[20:36] -> 54265 (best 49532)",
+  "    time-feedback -> 56320 (best 49532)",
+  "    [invalid] dependency order violation on core 0: 12 -> 680",
+  "    assign[24:48] moved=6 -> 49840 (best 49532)",
+  "final: T_C=49532 added=1713202 hit_rate=0.120 subgraphs=688 time=23.6s"
+ ]
+}

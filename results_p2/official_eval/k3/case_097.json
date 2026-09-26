@@ -1,0 +1,29 @@
+{
+ "makespan": 3437731,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 5046272,
+  "scheduled_copy_bytes": 75300864,
+  "added_copy_bytes": 70254592,
+  "partition_added_copy_bytes": 70254592,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 6478,
+ "cross_core_transfers": 2512,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 309248,
+   "UB": 0
+  },
+  "1": {
+   "L1": 317440,
+   "UB": 0
+  },
+  "2": {
+   "L1": 327680,
+   "UB": 0
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=75300864, physical_ddr_bytes=75300864\nOK: problem 2 makespan=3437731; result=/tmp/tmpegmn91dn/res.json",
+ "eval_seconds": 3.44
+}

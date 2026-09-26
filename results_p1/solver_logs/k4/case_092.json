@@ -1,0 +1,348 @@
+{
+ "summary": {
+  "case": "case_092",
+  "cores": 4,
+  "makespan_fast_eval": 1315425,
+  "added_copy_bytes_fast_eval": 32694688,
+  "num_subgraphs": 147,
+  "initial_constructor": "band/16x8",
+  "initial_makespan": 1432562,
+  "initial_added_bytes": 33100960,
+  "portfolio": [
+   {
+    "tag": "band/16x8",
+    "makespan": 1432562,
+    "added": 33100960
+   },
+   {
+    "tag": "band/8x8",
+    "makespan": 1579149,
+    "added": 19225760
+   },
+   {
+    "tag": "band/32x8",
+    "makespan": 1694762,
+    "added": 54207648
+   },
+   {
+    "tag": "heft-cut/P12000",
+    "makespan": 1713513,
+    "added": 76232416
+   },
+   {
+    "tag": "tals-bl/cf4/ob0",
+    "makespan": 1766231,
+    "added": 71271392
+   },
+   {
+    "tag": "tals-level/cf4/ob0",
+    "makespan": 1766231,
+    "added": 71271392
+   },
+   {
+    "tag": "tals-bl/cf4/ob1000",
+    "makespan": 1766308,
+    "added": 71387872
+   },
+   {
+    "tag": "tals-bl/cf1/ob0",
+    "makespan": 1770591,
+    "added": 71322080
+   },
+   {
+    "tag": "tals-level/cf1/ob0",
+    "makespan": 1770591,
+    "added": 71322080
+   },
+   {
+    "tag": "tals-bl/cf1/ob1000",
+    "makespan": 1772944,
+    "added": 71587552
+   },
+   {
+    "tag": "tals-bl/cf4/ob3000",
+    "makespan": 1780307,
+    "added": 71620320
+   },
+   {
+    "tag": "tals-level/cf4/ob3000",
+    "makespan": 1780307,
+    "added": 71620320
+   },
+   {
+    "tag": "tals-bl/cf1/ob3000",
+    "makespan": 1834734,
+    "added": 71708640
+   },
+   {
+    "tag": "tals-level/cf1/ob3000",
+    "makespan": 1834734,
+    "added": 71708640
+   },
+   {
+    "tag": "heft-cut/P4000",
+    "makespan": 1857133,
+    "added": 85544352
+   },
+   {
+    "tag": "band/4x8",
+    "makespan": 1892002,
+    "added": 13267104
+   },
+   {
+    "tag": "comp-pack/1",
+    "makespan": 1927824,
+    "added": 67187040
+   },
+   {
+    "tag": "tals-dfs/cf1/ob1000",
+    "makespan": 1947856,
+    "added": 68637920
+   },
+   {
+    "tag": "tals-dfs/cf4/ob1000",
+    "makespan": 1947856,
+    "added": 68637920
+   },
+   {
+    "tag": "tals-dfs/cf1/ob3000",
+    "makespan": 1947856,
+    "added": 68637920
+   },
+   {
+    "tag": "tals-dfs/cf4/ob3000",
+    "makespan": 1947856,
+    "added": 68637920
+   },
+   {
+    "tag": "tals-dfs/cf1/ob6000",
+    "makespan": 1947856,
+    "added": 68637920
+   },
+   {
+    "tag": "tals-dfs/cf4/ob6000",
+    "makespan": 1947856,
+    "added": 68637920
+   },
+   {
+    "tag": "tals-dfs/cf1/ob0",
+    "makespan": 1947856,
+    "added": 68637920
+   },
+   {
+    "tag": "tals-dfs/cf4/ob0",
+    "makespan": 1947856,
+    "added": 68637920
+   },
+   {
+    "tag": "comp-pack/2",
+    "makespan": 1971851,
+    "added": 68221152
+   },
+   {
+    "tag": "heft-cut/P1500",
+    "makespan": 1984819,
+    "added": 92621728
+   },
+   {
+    "tag": "comp-pack/4",
+    "makespan": 2010432,
+    "added": 72039136
+   },
+   {
+    "tag": "comp-pack/8",
+    "makespan": 2159501,
+    "added": 75145440
+   },
+   {
+    "tag": "comp-pack/16",
+    "makespan": 2164076,
+    "added": 84378912
+   },
+   {
+    "tag": "comp-pack/32",
+    "makespan": 2222627,
+    "added": 95706848
+   },
+   {
+    "tag": "band/16x4",
+    "makespan": 2265454,
+    "added": 29064992
+   },
+   {
+    "tag": "band/32x4",
+    "makespan": 2342019,
+    "added": 50042656
+   },
+   {
+    "tag": "band/8x4",
+    "makespan": 2403519,
+    "added": 15146784
+   },
+   {
+    "tag": "band/4x4",
+    "makespan": 2609928,
+    "added": 9586976
+   },
+   {
+    "tag": "band/2x8",
+    "makespan": 2676984,
+    "added": 24977696
+   },
+   {
+    "tag": "band/2x4",
+    "makespan": 3153321,
+    "added": 22024544
+   },
+   {
+    "tag": "band/4x1",
+    "makespan": 4076392,
+    "added": 9415456
+   },
+   {
+    "tag": "band/2x1",
+    "makespan": 4115633,
+    "added": 19675712
+   },
+   {
+    "tag": "band/8x1",
+    "makespan": 4122747,
+    "added": 15412480
+   },
+   {
+    "tag": "band/16x1",
+    "makespan": 4171516,
+    "added": 31227136
+   },
+   {
+    "tag": "band/32x1",
+    "makespan": 4294568,
+    "added": 52716544
+   },
+   {
+    "tag": "interval-dfs/1",
+    "makespan": 4816007,
+    "added": 67735200
+   },
+   {
+    "tag": "interval-dfs/8",
+    "makespan": 4858619,
+    "added": 78106144
+   },
+   {
+    "tag": "interval-dfs/4",
+    "makespan": 4863840,
+    "added": 72110080
+   },
+   {
+    "tag": "interval-dfs/2",
+    "makespan": 4876757,
+    "added": 68282912
+   }
+  ],
+  "lower_bound_LB0": 928538.0,
+  "critical_path": 28456,
+  "window_stats": {
+   "windows": 34,
+   "improved": 10,
+   "optimal": 0,
+   "feasible": 34,
+   "unknown": 0,
+   "infeasible": 0,
+   "candidates": 5648,
+   "evals": 34
+  },
+  "construct_seconds": 92.86,
+  "total_seconds": 216.47,
+  "task_cache": {
+   "entries": 5011,
+   "hits": 11386,
+   "misses": 5011
+  }
+ },
+ "log": [
+  "case_092 K=4 ops=17942 compute=17608 LB0=928538 CP=28456 W_M=3714152 W_V=326600",
+  "  [comp-pack/1] makespan=1927824 added=67187040 tasks=4 (0.1s)",
+  "  [comp-pack/2] makespan=1971851 added=68221152 tasks=8 (0.1s)",
+  "  [comp-pack/4] makespan=2010432 added=72039136 tasks=16 (0.1s)",
+  "  [comp-pack/8] makespan=2159501 added=75145440 tasks=29 (0.1s)",
+  "  [comp-pack/16] makespan=2164076 added=84378912 tasks=48 (0.1s)",
+  "  [comp-pack/32] makespan=2222627 added=95706848 tasks=71 (0.1s)",
+  "  [band/2x1] makespan=4115633 added=19675712 tasks=4 (0.1s)",
+  "  [band/2x4] makespan=3153321 added=22024544 tasks=10 (0.1s)",
+  "  [band/2x8] makespan=2676984 added=24977696 tasks=17 (0.2s)",
+  "  [band/4x1] makespan=4076392 added=9415456 tasks=8 (0.2s)",
+  "  [band/4x4] makespan=2609928 added=9586976 tasks=19 (0.1s)",
+  "  [band/4x8] makespan=1892002 added=13267104 tasks=32 (0.1s)",
+  "  [band/8x1] makespan=4122747 added=15412480 tasks=14 (0.1s)",
+  "  [band/8x4] makespan=2403519 added=15146784 tasks=34 (0.1s)",
+  "  [band/8x8] makespan=1579149 added=19225760 tasks=64 (0.1s)",
+  "  [band/16x1] makespan=4171516 added=31227136 tasks=26 (0.2s)",
+  "  [band/16x4] makespan=2265454 added=29064992 tasks=64 (0.2s)",
+  "  [band/16x8] makespan=1432562 added=33100960 tasks=128 (0.2s)",
+  "  [band/32x1] makespan=4294568 added=52716544 tasks=50 (0.2s)",
+  "  [band/32x4] makespan=2342019 added=50042656 tasks=127 (0.2s)",
+  "  [band/32x8] makespan=1694762 added=54207648 tasks=248 (0.3s)",
+  "  [interval-dfs/1] makespan=4816007 added=67735200 tasks=5 (0.1s)",
+  "  [interval-dfs/2] makespan=4876757 added=68282912 tasks=9 (0.1s)",
+  "  [interval-dfs/4] makespan=4863840 added=72110080 tasks=17 (0.1s)",
+  "  [interval-dfs/8] makespan=4858619 added=78106144 tasks=35 (0.1s)",
+  "  [tals-dfs/cf1/ob1000] makespan=1947856 added=68637920 tasks=8 (3.8s)",
+  "  [tals-dfs/cf4/ob1000] makespan=1947856 added=68637920 tasks=8 (0.1s)",
+  "  [tals-dfs/cf1/ob3000] makespan=1947856 added=68637920 tasks=8 (0.1s)",
+  "  [tals-dfs/cf4/ob3000] makespan=1947856 added=68637920 tasks=8 (0.1s)",
+  "  [tals-dfs/cf1/ob6000] makespan=1947856 added=68637920 tasks=8 (0.1s)",
+  "  [tals-dfs/cf4/ob6000] makespan=1947856 added=68637920 tasks=8 (0.1s)",
+  "  [tals-dfs/cf1/ob0] makespan=1947856 added=68637920 tasks=8 (0.1s)",
+  "  [tals-dfs/cf4/ob0] makespan=1947856 added=68637920 tasks=8 (0.1s)",
+  "  [tals-bl/cf1/ob0] makespan=1770591 added=71322080 tasks=8 (3.5s)",
+  "  [tals-bl/cf4/ob0] makespan=1766231 added=71271392 tasks=8 (1.7s)",
+  "  [tals-bl/cf1/ob1000] makespan=1772944 added=71587552 tasks=9 (3.4s)",
+  "  [tals-bl/cf4/ob1000] makespan=1766308 added=71387872 tasks=9 (2.1s)",
+  "  [tals-bl/cf1/ob3000] makespan=1834734 added=71708640 tasks=8 (3.7s)",
+  "  [tals-bl/cf4/ob3000] makespan=1780307 added=71620320 tasks=9 (1.7s)",
+  "  [tals-level/cf1/ob0] makespan=1770591 added=71322080 tasks=8 (0.1s)",
+  "  [tals-level/cf4/ob0] makespan=1766231 added=71271392 tasks=8 (0.1s)",
+  "  [tals-level/cf1/ob3000] makespan=1834734 added=71708640 tasks=8 (0.1s)",
+  "  [tals-level/cf4/ob3000] makespan=1780307 added=71620320 tasks=9 (0.1s)",
+  "  [heft-cut/P1500] makespan=1984819 added=92621728 tasks=1530 (2.8s)",
+  "  [heft-cut/P4000] makespan=1857133 added=85544352 tasks=802 (2.8s)",
+  "  [heft-cut/P12000] makespan=1713513 added=76232416 tasks=454 (2.1s)",
+  "initial best: band/16x8 (1432562, 33100960)",
+  "    window[0,274155) tasks=16 cand=168 FEASIBLE obj=1418206 -> exact 1380692 (best 1432562)",
+  "    window[0,225570) tasks=16 cand=172 FEASIBLE obj=1390112 -> exact 1361458 (best 1380692)",
+  "    window[0,167781) tasks=15 cand=156 FEASIBLE obj=1383317 -> exact 1361458 (best 1361458)",
+  "    window[102311,282727) tasks=16 cand=166 FEASIBLE obj=1391371 -> exact 1361420 (best 1361458)",
+  "    window[0,200893) tasks=16 cand=168 FEASIBLE obj=1370124 -> exact 1346445 (best 1361420)",
+  "    window[0,152891) tasks=16 cand=169 FEASIBLE obj=1371431 -> exact 1346445 (best 1346445)",
+  "    window[0,152891) tasks=16 cand=169 FEASIBLE obj=1371431 -> exact 1346445 (best 1346445)",
+  "    window[0,184176) tasks=17 cand=185 FEASIBLE obj=1370269 -> exact 1342539 (best 1346445)",
+  "    window[0,134330) tasks=16 cand=164 FEASIBLE obj=1355831 -> exact 1332702 (best 1342539)",
+  "    window[0,112672) tasks=16 cand=159 FEASIBLE obj=1335941 -> exact 1322530 (best 1332702)",
+  "    window[0,67954) tasks=16 cand=170 FEASIBLE obj=1358070 -> exact 1323571 (best 1322530)",
+  "    window[0,67954) tasks=16 cand=170 FEASIBLE obj=1358069 -> exact 1323571 (best 1322530)",
+  "    window[5506,79003) tasks=16 cand=164 FEASIBLE obj=1337372 -> exact 1332593 (best 1322530)",
+  "    window[61515,117096) tasks=16 cand=161 FEASIBLE obj=1331644 -> exact 1326533 (best 1322530)",
+  "    window[67954,119493) tasks=16 cand=161 FEASIBLE obj=1331631 -> exact 1320586 (best 1322530)",
+  "    window[0,68897) tasks=16 cand=170 FEASIBLE obj=1331617 -> exact 1325668 (best 1320586)",
+  "    window[0,68897) tasks=16 cand=170 FEASIBLE obj=1331913 -> exact 1327840 (best 1320586)",
+  "    window[23278,88408) tasks=16 cand=160 FEASIBLE obj=1332342 -> exact 1322547 (best 1320586)",
+  "    window[39982,100324) tasks=16 cand=159 FEASIBLE obj=1343493 -> exact 1328818 (best 1320586)",
+  "    window[58399,116033) tasks=16 cand=156 FEASIBLE obj=1338695 -> exact 1326790 (best 1320586)",
+  "    window[74596,124704) tasks=16 cand=162 FEASIBLE obj=1326605 -> exact 1324843 (best 1320586)",
+  "    window[103671,202478) tasks=16 cand=165 FEASIBLE obj=1337104 -> exact 1324482 (best 1320586)",
+  "    window[118853,238913) tasks=16 cand=167 FEASIBLE obj=1349245 -> exact 1322578 (best 1320586)",
+  "    window[119753,265228) tasks=16 cand=174 FEASIBLE obj=1354268 -> exact 1330760 (best 1320586)",
+  "    window[124704,274715) tasks=16 cand=172 FEASIBLE obj=1364603 -> exact 1337575 (best 1320586)",
+  "    window[135604,314374) tasks=16 cand=176 FEASIBLE obj=1351669 -> exact 1315910 (best 1320586)",
+  "    window[0,68897) tasks=16 cand=170 FEASIBLE obj=1330317 -> exact 1320416 (best 1315910)",
+  "    window[0,68897) tasks=16 cand=170 FEASIBLE obj=1330192 -> exact 1318851 (best 1315910)",
+  "    window[23278,88408) tasks=16 cand=160 FEASIBLE obj=1326469 -> exact 1322241 (best 1315910)",
+  "    window[39982,100324) tasks=16 cand=159 FEASIBLE obj=1326043 -> exact 1319190 (best 1315910)",
+  "    window[58399,116033) tasks=16 cand=156 FEASIBLE obj=1324287 -> exact 1318378 (best 1315910)",
+  "    window[74596,124704) tasks=16 cand=162 FEASIBLE obj=1321115 -> exact 1317285 (best 1315910)",
+  "    window[103671,203267) tasks=16 cand=168 FEASIBLE obj=1332937 -> exact 1315425 (best 1315910)",
+  "    window[0,68897) tasks=16 cand=170 FEASIBLE obj=1380376 -> exact 1354835 (best 1315425)",
+  "final: makespan=1315425 added=32694688 subgraphs=147 time=216.5s"
+ ]
+}

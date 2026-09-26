@@ -1,0 +1,29 @@
+{
+ "makespan": 3071845,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 6577656,
+  "scheduled_copy_bytes": 44063704,
+  "added_copy_bytes": 37486048,
+  "partition_added_copy_bytes": 7883776,
+  "spill_added_copy_bytes": 29602272
+ },
+ "num_subgraphs": 44,
+ "cross_core_transfers": 4,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 523776,
+   "UB": 66
+  },
+  "1": {
+   "L1": 523776,
+   "UB": 4100
+  },
+  "2": {
+   "L1": 523776,
+   "UB": 66
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=44063704, physical_ddr_bytes=44063704\nOK: problem 2 makespan=3071845; result=/tmp/tmpejadtfdb/res.json",
+ "eval_seconds": 13.69
+}

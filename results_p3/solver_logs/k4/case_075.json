@@ -1,0 +1,116 @@
+{
+ "summary": {
+  "case": "case_075",
+  "cores": 4,
+  "makespan_eval": 435900,
+  "added_copy_bytes_eval": 11645008,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 1837190,
+   "scheduled_copy_bytes": 13482198,
+   "added_copy_bytes": 11645008,
+   "partition_added_copy_bytes": 11645008,
+   "spill_added_copy_bytes": 0
+  },
+  "cache": {
+   "hits": 738,
+   "accesses": 3692,
+   "hit_bytes": 2615244,
+   "miss_bytes": 5885866,
+   "hit_rate": 0.30763559111692473
+  },
+  "init_makespan_TC_PB": 435917,
+  "init_added_bytes": 11645008,
+  "init_cache": {
+   "hits": 737,
+   "accesses": 3692,
+   "hit_bytes": 2611148,
+   "miss_bytes": 5889962,
+   "hit_rate": 0.30715377168393304
+  },
+  "num_subgraphs": 5061,
+  "improve_stats": {
+   "evals": 40,
+   "accepted": 1,
+   "accepted_cache_stagger": 1,
+   "decode_cycle": 3,
+   "interval_OPTIMAL": 4,
+   "eval_errors": 4,
+   "assign_OPTIMAL": 2,
+   "order_OPTIMAL": 2,
+   "rounds": 13,
+   "subgraphs_start": 5061
+  },
+  "reuse_windows": [
+   {
+    "candidates": 37,
+    "evaluated": 2,
+    "exhausted": false,
+    "improved": true
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 276880.0,
+  "total_seconds": 79.13
+ },
+ "log": [
+  "case_075 K=4 P_B: T_C=435917 added=11645008 hit_rate=0.307",
+  "    cache-cluster t=None -> 437011 hit=0.309 (best 435917)",
+  "    cache-stagger t=1000007179 -> 435900 hit=0.308 (best 435917)",
+  "    cache-cluster t=None -> 437000 hit=0.310 (best 435900)",
+  "    cache-cluster t=None -> 437000 hit=0.310 (best 435900)",
+  "    cache-cluster t=None -> 437000 hit=0.310 (best 435900)",
+  "    time-feedback -> 502369 (best 435900)",
+  "    [invalid] dependency order violation on core 0: 2 -> 5046",
+  "    assign[0:24] moved=4 -> 437934 (best 435900)",
+  "    order core2[0:12] -> 435900 (best 435900)",
+  "    move sg3866->c3 -> 436470 (best 435900)",
+  "    swap sg3865<->sg3866 -> 435900 (best 435900)",
+  "    move sg3865->c3 -> 437078 (best 435900)",
+  "    swap sg3864<->sg3865 -> 435900 (best 435900)",
+  "    move sg3864->c3 -> 437047 (best 435900)",
+  "    swap sg3863<->sg3864 -> 435900 (best 435900)",
+  "    move sg3863->c3 -> 436783 (best 435900)",
+  "    swap sg3862<->sg3863 -> 435900 (best 435900)",
+  "    move sg3862->c3 -> 436884 (best 435900)",
+  "    swap sg3861<->sg3862 -> 435900 (best 435900)",
+  "    move sg3861->c3 -> 437427 (best 435900)",
+  "    swap sg3860<->sg3861 -> 435900 (best 435900)",
+  "    [invalid] contracted subgraph graph contains a cycle",
+  "    time-feedback -> 502369 (best 435900)",
+  "    [invalid] dependency order violation on core 0: 1 -> 5046",
+  "    assign[12:36] moved=2 -> 436618 (best 435900)",
+  "    order core2[6:18] -> 435900 (best 435900)",
+  "    move sg3860->c3 -> 436753 (best 435900)",
+  "    swap sg3859<->sg3860 -> 436020 (best 435900)",
+  "    move sg3859->c3 -> 435981 (best 435900)",
+  "    swap sg3858<->sg3859 -> 435900 (best 435900)",
+  "    move sg3858->c3 -> 436624 (best 435900)",
+  "    swap sg3857<->sg3858 -> 435900 (best 435900)",
+  "    move sg3857->c3 -> 436861 (best 435900)",
+  "    swap sg3856<->sg3857 -> 435900 (best 435900)",
+  "    move sg3855->c3 -> 436793 (best 435900)",
+  "    swap sg3854<->sg3855 -> 435900 (best 435900)",
+  "    move sg3856->c3 -> 436532 (best 435900)",
+  "    swap sg3855<->sg3856 -> 435900 (best 435900)",
+  "    [invalid] dependency order violation on core 1: 5050 -> 1357",
+  "    time-feedback -> 502369 (best 435900)",
+  "final: T_C=435900 added=11645008 hit_rate=0.308 subgraphs=5061 time=79.1s"
+ ]
+}

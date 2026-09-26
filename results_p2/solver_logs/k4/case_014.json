@@ -1,0 +1,88 @@
+{
+ "summary": {
+  "case": "case_014",
+  "cores": 4,
+  "makespan_eval": 4435855,
+  "added_copy_bytes_eval": 55191456,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 9932740,
+   "scheduled_copy_bytes": 65124196,
+   "added_copy_bytes": 55191456,
+   "partition_added_copy_bytes": 13470720,
+   "spill_added_copy_bytes": 41720736
+  },
+  "num_subgraphs": 32,
+  "initial_constructor": "p1-final",
+  "initial_makespan": 4451379,
+  "initial_added_bytes": 54458784,
+  "portfolio": [
+   {
+    "tag": "p1-final",
+    "makespan": 4451379,
+    "added": 54458784
+   },
+   {
+    "tag": "lsB/x1000/runmax",
+    "makespan": 7605440,
+    "added": 347728088
+   },
+   {
+    "tag": "lsB/x1000/run8",
+    "makespan": 7605440,
+    "added": 347728088
+   },
+   {
+    "tag": "hyper/x0",
+    "makespan": 7615011,
+    "added": 350870224
+   },
+   {
+    "tag": "lsB/x0/runmax",
+    "makespan": 7656293,
+    "added": 347467808
+   },
+   {
+    "tag": "lsB/x0/run8",
+    "makespan": 7656293,
+    "added": 347467808
+   }
+  ],
+  "lower_bound_LB0": 4306437.0,
+  "critical_path": 31968,
+  "improve_stats": {
+   "evals": 11,
+   "assign_UNKNOWN": 1,
+   "order_OPTIMAL": 1,
+   "accepted": 2,
+   "accepted_order": 1,
+   "accepted_swap": 1,
+   "rounds": 5,
+   "subgraphs_start": 32
+  },
+  "construct_seconds": 160.0,
+  "total_seconds": 311.13
+ },
+ "log": [
+  "case_014 K=4 compute=35705 LB0=4306437 CP=31968 W_M=17225748 W_V=1651424",
+  "  [p1-final] makespan=4451379 added=54458784",
+  "  [lsB/x0/runmax] makespan=7656293 added=347467808 subgraphs=32866 (27.5s)",
+  "  [lsB/x0/run8] makespan=7656293 added=347467808 subgraphs=32866 (30.0s)",
+  "   hyper: comm 287.57MB -> 95.88MB",
+  "  [hyper/x0] makespan=7615011 added=350870224 subgraphs=30871 (25.5s)",
+  "  [lsB/x1000/runmax] makespan=7605440 added=347728088 subgraphs=32795 (29.9s)",
+  "  [lsB/x1000/run8] makespan=7605440 added=347728088 subgraphs=32795 (33.4s)",
+  "initial best: p1-final (4451379, 54458784)",
+  "    time-feedback -> 4451379 (best 4451379)",
+  "    order core1[0:10] -> 4437206 (best 4451379)",
+  "    move sg15->c3 -> 4599774 (best 4437206)",
+  "    swap sg14<->sg15 -> 4573499 (best 4437206)",
+  "    move sg14->c3 -> 4967340 (best 4437206)",
+  "    swap sg13<->sg14 -> 4444915 (best 4437206)",
+  "    move sg13->c3 -> 4954356 (best 4437206)",
+  "    swap sg12<->sg13 -> 4480418 (best 4437206)",
+  "    move sg12->c3 -> 4971459 (best 4437206)",
+  "    swap sg11<->sg12 -> 4435855 (best 4437206)",
+  "    move sg11->c3 -> 4992872 (best 4435855)",
+  "final: makespan=4435855 added=55191456 subgraphs=32 time=311.1s"
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "makespan": 82815,
+ "num_cores": 5,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 221600,
+  "scheduled_copy_bytes": 1713062,
+  "added_copy_bytes": 1491462,
+  "partition_added_copy_bytes": 1491462,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 334,
+ "cross_core_transfers": 914,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 21632,
+   "UB": 25286
+  },
+  "1": {
+   "L1": 20992,
+   "UB": 19652
+  },
+  "2": {
+   "L1": 18976,
+   "UB": 32774
+  },
+  "3": {
+   "L1": 23616,
+   "UB": 20742
+  },
+  "4": {
+   "L1": 20000,
+   "UB": 18630
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=1713062, physical_ddr_bytes=1713062\nOK: problem 2 makespan=82815; result=/tmp/tmpmlb110_e/res.json",
+ "eval_seconds": 2.08
+}

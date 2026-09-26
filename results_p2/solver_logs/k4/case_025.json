@@ -1,0 +1,119 @@
+{
+ "summary": {
+  "case": "case_025",
+  "cores": 4,
+  "makespan_eval": 1217470,
+  "added_copy_bytes_eval": 82944,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 8217600,
+   "scheduled_copy_bytes": 8300544,
+   "added_copy_bytes": 82944,
+   "partition_added_copy_bytes": 82944,
+   "spill_added_copy_bytes": 0
+  },
+  "num_subgraphs": 4,
+  "initial_constructor": "p1-final",
+  "initial_makespan": 1217470,
+  "initial_added_bytes": 82944,
+  "portfolio": [
+   {
+    "tag": "p1-final",
+    "makespan": 1217470,
+    "added": 82944
+   },
+   {
+    "tag": "comp-pack/1",
+    "makespan": 1217470,
+    "added": 82944
+   },
+   {
+    "tag": "comp-pack/4",
+    "makespan": 1219294,
+    "added": 82944
+   },
+   {
+    "tag": "comp-pack/16",
+    "makespan": 1226590,
+    "added": 82944
+   },
+   {
+    "tag": "lsB/x0/runmax",
+    "makespan": 1546726,
+    "added": 68668416
+   },
+   {
+    "tag": "lsB/x0/run8",
+    "makespan": 1546726,
+    "added": 68668416
+   },
+   {
+    "tag": "lsB/x1000/runmax",
+    "makespan": 1546726,
+    "added": 68668416
+   },
+   {
+    "tag": "lsB/x1000/run8",
+    "makespan": 1546726,
+    "added": 68668416
+   },
+   {
+    "tag": "hyper/x0",
+    "makespan": 1711095,
+    "added": 64742400
+   },
+   {
+    "tag": "hyper/x1000",
+    "makespan": 1711095,
+    "added": 64742400
+   }
+  ],
+  "lower_bound_LB0": 1175706.0,
+  "critical_path": 1632,
+  "improve_stats": {
+   "evals": 20,
+   "interval_OPTIMAL": 5,
+   "assign_OPTIMAL": 2,
+   "rounds": 14,
+   "subgraphs_start": 4
+  },
+  "construct_seconds": 115.68,
+  "total_seconds": 228.79
+ },
+ "log": [
+  "case_025 K=4 compute=18662 LB0=1175706 CP=1632 W_M=4702824 W_V=1215696",
+  "  [p1-final] makespan=1217470 added=82944",
+  "  [lsB/x0/runmax] makespan=1546726 added=68668416 subgraphs=18662 (11.7s)",
+  "  [lsB/x0/run8] makespan=1546726 added=68668416 subgraphs=18662 (11.9s)",
+  "   hyper: comm 37.00MB -> 0.08MB",
+  "  [hyper/x0] makespan=1711095 added=64742400 subgraphs=18662 (10.5s)",
+  "  [lsB/x1000/runmax] makespan=1546726 added=68668416 subgraphs=18662 (12.4s)",
+  "  [lsB/x1000/run8] makespan=1546726 added=68668416 subgraphs=18662 (12.1s)",
+  "   hyper: comm 37.00MB -> 0.08MB",
+  "  [hyper/x1000] makespan=1711095 added=64742400 subgraphs=18662 (11.4s)",
+  "  [comp-pack/1] makespan=1217470 added=82944 subgraphs=4 (4.6s)",
+  "  [comp-pack/4] makespan=1219294 added=82944 subgraphs=16 (4.5s)",
+  "  [comp-pack/16] makespan=1226590 added=82944 subgraphs=64 (4.7s)",
+  "initial best: p1-final (1217470, 82944)",
+  "    time-feedback -> 1217470 (best 1217470)",
+  "    interval[0:4] -> 1217470 (best 1217470)",
+  "    move sg0->c3 -> 2430170 (best 1217470)",
+  "    move sg0->c3 -> 2430170 (best 1217470)",
+  "    move sg0->c3 -> 2430170 (best 1217470)",
+  "    move sg0->c3 -> 2430170 (best 1217470)",
+  "    move sg0->c3 -> 2430170 (best 1217470)",
+  "    move sg0->c3 -> 2430170 (best 1217470)",
+  "    interval[3:7] -> 1217470 (best 1217470)",
+  "    time-feedback -> 1217470 (best 1217470)",
+  "    interval[2:6] -> 1217470 (best 1217470)",
+  "    move sg0->c3 -> 2430170 (best 1217470)",
+  "    move sg0->c3 -> 2430170 (best 1217470)",
+  "    move sg0->c3 -> 2430170 (best 1217470)",
+  "    move sg0->c3 -> 2430170 (best 1217470)",
+  "    move sg0->c3 -> 2430170 (best 1217470)",
+  "    move sg0->c3 -> 2430170 (best 1217470)",
+  "    interval[1:5] -> 1217470 (best 1217470)",
+  "    time-feedback -> 1217470 (best 1217470)",
+  "    interval[0:4] -> 1217470 (best 1217470)",
+  "final: makespan=1217470 added=82944 subgraphs=4 time=228.8s"
+ ]
+}

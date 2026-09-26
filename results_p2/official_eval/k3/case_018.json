@@ -1,0 +1,29 @@
+{
+ "makespan": 338555,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 1592848,
+  "scheduled_copy_bytes": 3415568,
+  "added_copy_bytes": 1822720,
+  "partition_added_copy_bytes": 1490944,
+  "spill_added_copy_bytes": 331776
+ },
+ "num_subgraphs": 4,
+ "cross_core_transfers": 0,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 524288,
+   "UB": 9312
+  },
+  "1": {
+   "L1": 524288,
+   "UB": 66
+  },
+  "2": {
+   "L1": 524288,
+   "UB": 65536
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=3415568, physical_ddr_bytes=3415568\nOK: problem 2 makespan=338555; result=/tmp/tmp_sde15y1/res.json",
+ "eval_seconds": 0.4
+}

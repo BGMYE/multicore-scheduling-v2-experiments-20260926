@@ -1,0 +1,96 @@
+{
+ "summary": {
+  "case": "case_030",
+  "cores": 2,
+  "makespan_eval": 1402710,
+  "added_copy_bytes_eval": 2588672,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 2394060,
+   "scheduled_copy_bytes": 4982732,
+   "added_copy_bytes": 2588672,
+   "partition_added_copy_bytes": 845824,
+   "spill_added_copy_bytes": 1742848
+  },
+  "cache": {
+   "hits": 675,
+   "accesses": 1671,
+   "hit_bytes": 1772544,
+   "miss_bytes": 3209216,
+   "hit_rate": 0.35580678314491265
+  },
+  "init_makespan_TC_PB": 1402710,
+  "init_added_bytes": 2588672,
+  "init_cache": {
+   "hits": 675,
+   "accesses": 1671,
+   "hit_bytes": 1772544,
+   "miss_bytes": 3209216,
+   "hit_rate": 0.35580678314491265
+  },
+  "num_subgraphs": 4,
+  "improve_stats": {
+   "evals": 31,
+   "interval_OPTIMAL": 5,
+   "assign_OPTIMAL": 3,
+   "rounds": 15,
+   "subgraphs_start": 4
+  },
+  "reuse_windows": [
+   {
+    "candidates": 3,
+    "evaluated": 3,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 1388240.0,
+  "total_seconds": 57.01
+ },
+ "log": [
+  "case_030 K=2 P_B: T_C=1402710 added=2588672 hit_rate=0.356",
+  "    cache-cluster t=None -> 1402710 hit=0.356 (best 1402710)",
+  "    cache-gather t=1000004511 -> 1402710 hit=0.356 (best 1402710)",
+  "    cache-colocate t=1000004511 -> 2108134 hit=0.272 (best 1402710)",
+  "    cache-cluster t=None -> 1402710 hit=0.356 (best 1402710)",
+  "    cache-cluster t=None -> 1402710 hit=0.356 (best 1402710)",
+  "    time-feedback -> 1402710 (best 1402710)",
+  "    interval[0:4] -> 1402710 (best 1402710)",
+  "    move sg1->c1 -> 2108134 (best 1402710)",
+  "    swap sg0<->sg1 -> 1402991 (best 1402710)",
+  "    move sg0->c1 -> 2102902 (best 1402710)",
+  "    move sg1->c1 -> 2108134 (best 1402710)",
+  "    swap sg0<->sg1 -> 1402991 (best 1402710)",
+  "    move sg0->c1 -> 2102902 (best 1402710)",
+  "    move sg1->c1 -> 2108134 (best 1402710)",
+  "    swap sg0<->sg1 -> 1402991 (best 1402710)",
+  "    move sg0->c1 -> 2102902 (best 1402710)",
+  "    interval[3:7] -> 1402710 (best 1402710)",
+  "    time-feedback -> 1402710 (best 1402710)",
+  "    interval[2:6] -> 1402710 (best 1402710)",
+  "    move sg1->c1 -> 2108134 (best 1402710)",
+  "    swap sg0<->sg1 -> 1402991 (best 1402710)",
+  "    move sg0->c1 -> 2102902 (best 1402710)",
+  "    move sg1->c1 -> 2108134 (best 1402710)",
+  "    swap sg0<->sg1 -> 1402991 (best 1402710)",
+  "    move sg0->c1 -> 2102902 (best 1402710)",
+  "    move sg1->c1 -> 2108134 (best 1402710)",
+  "    swap sg0<->sg1 -> 1402991 (best 1402710)",
+  "    move sg0->c1 -> 2102902 (best 1402710)",
+  "    interval[1:5] -> 1402710 (best 1402710)",
+  "    time-feedback -> 1402710 (best 1402710)",
+  "    interval[0:4] -> 1402710 (best 1402710)",
+  "final: T_C=1402710 added=2588672 hit_rate=0.356 subgraphs=4 time=57.0s"
+ ]
+}

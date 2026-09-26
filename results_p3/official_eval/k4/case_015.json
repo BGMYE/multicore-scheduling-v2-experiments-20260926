@@ -1,0 +1,26 @@
+{
+ "makespan": 48512,
+ "num_cores": 4,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 884614,
+  "scheduled_copy_bytes": 1245710,
+  "added_copy_bytes": 361096,
+  "partition_added_copy_bytes": 328320,
+  "spill_added_copy_bytes": 32776
+ },
+ "cache_stats": {
+  "hits": 27,
+  "accesses": 246,
+  "hit_bytes": 255872,
+  "miss_bytes": 986246,
+  "hit_rate": 0.20599653173047971,
+  "copy_in_hits": 27,
+  "copy_in_misses": 219
+ },
+ "cache_inserts": 216,
+ "cache_evictions": 0,
+ "num_subgraphs": 4,
+ "cross_core_transfers": 3,
+ "stdout": "data movement: scheduled_copy_bytes=1245710, physical_ddr_bytes=1245710, cache_hits=27/246, cache_hit_bytes=255872\nOK: problem 3 makespan=48512; result=/tmp/tmpcy1_g51c/res.json",
+ "eval_seconds": 0.18
+}

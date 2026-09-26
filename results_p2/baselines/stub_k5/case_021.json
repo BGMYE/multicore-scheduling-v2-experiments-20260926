@@ -1,0 +1,37 @@
+{
+ "makespan": 3773392,
+ "num_cores": 5,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 3338240,
+  "scheduled_copy_bytes": 90605568,
+  "added_copy_bytes": 87267328,
+  "partition_added_copy_bytes": 76976128,
+  "spill_added_copy_bytes": 10291200
+ },
+ "num_subgraphs": 55,
+ "cross_core_transfers": 2838,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 524288,
+   "UB": 0
+  },
+  "1": {
+   "L1": 524288,
+   "UB": 0
+  },
+  "2": {
+   "L1": 524288,
+   "UB": 0
+  },
+  "3": {
+   "L1": 524288,
+   "UB": 0
+  },
+  "4": {
+   "L1": 524288,
+   "UB": 0
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=90605568, physical_ddr_bytes=90605568\nOK: problem 2 makespan=3773392; result=/tmp/tmp30nvk_kw/res.json",
+ "eval_seconds": 1.77
+}

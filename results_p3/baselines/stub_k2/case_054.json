@@ -1,0 +1,26 @@
+{
+ "makespan": 803400,
+ "num_cores": 2,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 1606276,
+  "scheduled_copy_bytes": 9970610,
+  "added_copy_bytes": 8364334,
+  "partition_added_copy_bytes": 8364334,
+  "spill_added_copy_bytes": 0
+ },
+ "cache_stats": {
+  "hits": 102,
+  "accesses": 5725,
+  "hit_bytes": 187462,
+  "miss_bytes": 5698234,
+  "hit_rate": 0.03185043875864469,
+  "copy_in_hits": 102,
+  "copy_in_misses": 5623
+ },
+ "cache_inserts": 5623,
+ "cache_evictions": 3915,
+ "num_subgraphs": 211,
+ "cross_core_transfers": 5267,
+ "stdout": "data movement: scheduled_copy_bytes=9970610, physical_ddr_bytes=9970610, cache_hits=102/5725, cache_hit_bytes=187462\nOK: problem 3 makespan=803400; result=/tmp/tmp3_ehiat4/res.json",
+ "eval_seconds": 5.71
+}

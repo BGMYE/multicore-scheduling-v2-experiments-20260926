@@ -1,0 +1,69 @@
+{
+ "summary": {
+  "case": "case_006",
+  "cores": 3,
+  "makespan_eval": 31151,
+  "added_copy_bytes_eval": 0,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 543348,
+   "scheduled_copy_bytes": 543348,
+   "added_copy_bytes": 0,
+   "partition_added_copy_bytes": 0,
+   "spill_added_copy_bytes": 0
+  },
+  "cache": {
+   "hits": 0,
+   "accesses": 131,
+   "hit_bytes": 0,
+   "miss_bytes": 543264,
+   "hit_rate": 0.0
+  },
+  "init_makespan_TC_PB": 31151,
+  "init_added_bytes": 0,
+  "init_cache": {
+   "hits": 0,
+   "accesses": 131,
+   "hit_bytes": 0,
+   "miss_bytes": 543264,
+   "hit_rate": 0.0
+  },
+  "num_subgraphs": 7,
+  "improve_stats": {
+   "evals": 23,
+   "interval_OPTIMAL": 5,
+   "assign_OPTIMAL": 3,
+   "rounds": 15,
+   "subgraphs_start": 7
+  },
+  "reuse_windows": [],
+  "lower_bound_LB0": 23000.0,
+  "total_seconds": 2.27
+ },
+ "log": [
+  "case_006 K=3 P_B: T_C=31151 added=0 hit_rate=0.000",
+  "    time-feedback -> 31151 (best 31151)",
+  "    merge -> 31153 (best 31151)",
+  "    interval[0:7] -> 31152 (best 31151)",
+  "    move sg0->c1 -> 55850 (best 31151)",
+  "    move sg0->c1 -> 55850 (best 31151)",
+  "    move sg0->c1 -> 55850 (best 31151)",
+  "    move sg0->c1 -> 55850 (best 31151)",
+  "    move sg0->c1 -> 55850 (best 31151)",
+  "    move sg0->c1 -> 55850 (best 31151)",
+  "    interval[4:11] -> 31152 (best 31151)",
+  "    time-feedback -> 31151 (best 31151)",
+  "    merge -> 31153 (best 31151)",
+  "    interval[3:10] -> 31152 (best 31151)",
+  "    move sg0->c1 -> 55850 (best 31151)",
+  "    move sg0->c1 -> 55850 (best 31151)",
+  "    move sg0->c1 -> 55850 (best 31151)",
+  "    move sg0->c1 -> 55850 (best 31151)",
+  "    move sg0->c1 -> 55850 (best 31151)",
+  "    move sg0->c1 -> 55850 (best 31151)",
+  "    interval[1:8] -> 31152 (best 31151)",
+  "    time-feedback -> 31151 (best 31151)",
+  "    merge -> 31153 (best 31151)",
+  "    interval[0:7] -> 31152 (best 31151)",
+  "final: T_C=31151 added=0 hit_rate=0.000 subgraphs=7 time=2.3s"
+ ]
+}

@@ -1,0 +1,69 @@
+{
+ "summary": {
+  "case": "case_098",
+  "cores": 2,
+  "makespan_eval": 89620,
+  "added_copy_bytes_eval": 0,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 697994,
+   "scheduled_copy_bytes": 697994,
+   "added_copy_bytes": 0,
+   "partition_added_copy_bytes": 0,
+   "spill_added_copy_bytes": 0
+  },
+  "cache": {
+   "hits": 0,
+   "accesses": 147,
+   "hit_bytes": 0,
+   "miss_bytes": 697912,
+   "hit_rate": 0.0
+  },
+  "init_makespan_TC_PB": 89620,
+  "init_added_bytes": 0,
+  "init_cache": {
+   "hits": 0,
+   "accesses": 147,
+   "hit_bytes": 0,
+   "miss_bytes": 697912,
+   "hit_rate": 0.0
+  },
+  "num_subgraphs": 5,
+  "improve_stats": {
+   "evals": 23,
+   "interval_OPTIMAL": 5,
+   "assign_OPTIMAL": 3,
+   "rounds": 15,
+   "subgraphs_start": 5
+  },
+  "reuse_windows": [],
+  "lower_bound_LB0": 81350.5,
+  "total_seconds": 3.86
+ },
+ "log": [
+  "case_098 K=2 P_B: T_C=89620 added=0 hit_rate=0.000",
+  "    time-feedback -> 89620 (best 89620)",
+  "    merge -> 89620 (best 89620)",
+  "    interval[0:5] -> 89620 (best 89620)",
+  "    move sg4->c0 -> 176242 (best 89620)",
+  "    move sg4->c0 -> 176242 (best 89620)",
+  "    move sg4->c0 -> 176242 (best 89620)",
+  "    move sg4->c0 -> 176242 (best 89620)",
+  "    move sg4->c0 -> 176242 (best 89620)",
+  "    move sg4->c0 -> 176242 (best 89620)",
+  "    interval[3:8] -> 89620 (best 89620)",
+  "    time-feedback -> 89620 (best 89620)",
+  "    merge -> 89620 (best 89620)",
+  "    interval[2:7] -> 89620 (best 89620)",
+  "    move sg4->c0 -> 176242 (best 89620)",
+  "    move sg4->c0 -> 176242 (best 89620)",
+  "    move sg4->c0 -> 176242 (best 89620)",
+  "    move sg4->c0 -> 176242 (best 89620)",
+  "    move sg4->c0 -> 176242 (best 89620)",
+  "    move sg4->c0 -> 176242 (best 89620)",
+  "    interval[1:6] -> 89620 (best 89620)",
+  "    time-feedback -> 89620 (best 89620)",
+  "    merge -> 89620 (best 89620)",
+  "    interval[0:5] -> 89620 (best 89620)",
+  "final: T_C=89620 added=0 hit_rate=0.000 subgraphs=5 time=3.9s"
+ ]
+}

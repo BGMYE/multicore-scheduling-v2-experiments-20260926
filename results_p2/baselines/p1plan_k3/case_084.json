@@ -1,0 +1,29 @@
+{
+ "makespan": 686812,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 13236330,
+  "scheduled_copy_bytes": 22673514,
+  "added_copy_bytes": 9437184,
+  "partition_added_copy_bytes": 9216,
+  "spill_added_copy_bytes": 9427968
+ },
+ "num_subgraphs": 6,
+ "cross_core_transfers": 1,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 10752,
+   "UB": 129120
+  },
+  "1": {
+   "L1": 15360,
+   "UB": 129120
+  },
+  "2": {
+   "L1": 0,
+   "UB": 0
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=22673514, physical_ddr_bytes=22673514\nOK: problem 2 makespan=686812; result=/tmp/tmpcwr857a2/res.json",
+ "eval_seconds": 2.85
+}

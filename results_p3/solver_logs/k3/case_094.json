@@ -1,0 +1,132 @@
+{
+ "summary": {
+  "case": "case_094",
+  "cores": 3,
+  "makespan_eval": 30503,
+  "added_copy_bytes_eval": 715796,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 526692,
+   "scheduled_copy_bytes": 1242488,
+   "added_copy_bytes": 715796,
+   "partition_added_copy_bytes": 715796,
+   "spill_added_copy_bytes": 0
+  },
+  "cache": {
+   "hits": 32,
+   "accesses": 203,
+   "hit_bytes": 173888,
+   "miss_bytes": 760714,
+   "hit_rate": 0.1860556686161596
+  },
+  "init_makespan_TC_PB": 30945,
+  "init_added_bytes": 715600,
+  "init_cache": {
+   "hits": 31,
+   "accesses": 201,
+   "hit_bytes": 167744,
+   "miss_bytes": 766760,
+   "hit_rate": 0.17950056928595276
+  },
+  "num_subgraphs": 491,
+  "improve_stats": {
+   "evals": 54,
+   "accepted": 3,
+   "accepted_cache_cluster": 1,
+   "decode_cycle": 4,
+   "interval_OPTIMAL": 7,
+   "assign_OPTIMAL": 3,
+   "order_OPTIMAL": 3,
+   "accepted_order": 1,
+   "accepted_move": 1,
+   "eval_errors": 3,
+   "rounds": 20,
+   "subgraphs_start": 491
+  },
+  "reuse_windows": [
+   {
+    "candidates": 10,
+    "evaluated": 1,
+    "exhausted": false,
+    "improved": true
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 23648.0,
+  "total_seconds": 5.82
+ },
+ "log": [
+  "case_094 K=3 P_B: T_C=30945 added=715600 hit_rate=0.180",
+  "    cache-cluster t=None -> 30537 hit=0.186 (best 30945)",
+  "    cache-cluster t=None -> 30537 hit=0.186 (best 30537)",
+  "    cache-cluster t=None -> 30537 hit=0.186 (best 30537)",
+  "    cache-cluster t=None -> 30537 hit=0.186 (best 30537)",
+  "    time-feedback -> 33495 (best 30537)",
+  "    interval[0:16] -> 31345 (best 30537)",
+  "    assign[0:24] moved=2 -> 31087 (best 30537)",
+  "    order core2[0:12] -> 30534 (best 30537)",
+  "    move sg490->c0 -> 30991 (best 30534)",
+  "    swap sg489<->sg490 -> 30534 (best 30534)",
+  "    move sg489->c0 -> 30503 (best 30534)",
+  "    swap sg488<->sg489 -> 30534 (best 30503)",
+  "    move sg488->c0 -> 30659 (best 30503)",
+  "    swap sg487<->sg488 -> 30534 (best 30503)",
+  "    move sg487->c0 -> 30606 (best 30503)",
+  "    swap sg486<->sg487 -> 30534 (best 30503)",
+  "    move sg486->c0 -> 30589 (best 30503)",
+  "    swap sg485<->sg486 -> 30534 (best 30503)",
+  "    move sg485->c0 -> 30702 (best 30503)",
+  "    swap sg484<->sg485 -> 30534 (best 30503)",
+  "    interval[12:28] -> 32726 (best 30503)",
+  "    time-feedback -> 32886 (best 30503)",
+  "    [invalid] dependency order violation on core 0: 6 -> 476",
+  "    order core2[6:18] -> 30503 (best 30503)",
+  "    move sg484->c0 -> 30744 (best 30503)",
+  "    swap sg483<->sg484 -> 30503 (best 30503)",
+  "    move sg483->c0 -> 30744 (best 30503)",
+  "    swap sg482<->sg483 -> 30503 (best 30503)",
+  "    move sg479->c0 -> 30681 (best 30503)",
+  "    swap sg478<->sg479 -> 30503 (best 30503)",
+  "    move sg482->c0 -> 30724 (best 30503)",
+  "    swap sg481<->sg482 -> 30503 (best 30503)",
+  "    move sg481->c0 -> 30739 (best 30503)",
+  "    swap sg480<->sg481 -> 30503 (best 30503)",
+  "    move sg480->c0 -> 30770 (best 30503)",
+  "    swap sg479<->sg480 -> 30503 (best 30503)",
+  "    [invalid] dependency order violation on core 0: 4 -> 477",
+  "    time-feedback -> 32886 (best 30503)",
+  "    [invalid] dependency order violation on core 0: 4 -> 476",
+  "    move sg472->c0 -> 30785 (best 30503)",
+  "    swap sg471<->sg472 -> 30520 (best 30503)",
+  "    move sg478->c0 -> 31468 (best 30503)",
+  "    swap sg477<->sg478 -> 30503 (best 30503)",
+  "    move sg477->c0 -> 30988 (best 30503)",
+  "    swap sg476<->sg477 -> 30503 (best 30503)",
+  "    move sg476->c0 -> 30860 (best 30503)",
+  "    swap sg475<->sg476 -> 30503 (best 30503)",
+  "    move sg475->c0 -> 30762 (best 30503)",
+  "    swap sg474<->sg475 -> 30503 (best 30503)",
+  "    move sg471->c0 -> 30673 (best 30503)",
+  "    swap sg470<->sg471 -> 30569 (best 30503)",
+  "    interval[28:44] -> 32680 (best 30503)",
+  "    time-feedback -> 32886 (best 30503)",
+  "    interval[24:40] -> 32123 (best 30503)",
+  "final: T_C=30503 added=715796 hit_rate=0.186 subgraphs=491 time=5.8s"
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "makespan": 3226735,
+ "num_cores": 2,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 1689734,
+  "scheduled_copy_bytes": 17886826,
+  "added_copy_bytes": 16197092,
+  "partition_added_copy_bytes": 15763366,
+  "spill_added_copy_bytes": 433726
+ },
+ "num_subgraphs": 263,
+ "cross_core_transfers": 6793,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 132864,
+   "UB": 131040
+  },
+  "1": {
+   "L1": 125056,
+   "UB": 131056
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=17886826, physical_ddr_bytes=17886826\nOK: problem 2 makespan=3226735; result=/tmp/tmpci4axlt_/res.json",
+ "eval_seconds": 9.06
+}

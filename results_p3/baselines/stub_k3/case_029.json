@@ -1,0 +1,26 @@
+{
+ "makespan": 34805,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 430164,
+  "scheduled_copy_bytes": 1303536,
+  "added_copy_bytes": 873372,
+  "partition_added_copy_bytes": 873372,
+  "spill_added_copy_bytes": 0
+ },
+ "cache_stats": {
+  "hits": 141,
+  "accesses": 680,
+  "hit_bytes": 243756,
+  "miss_bytes": 573958,
+  "hit_rate": 0.29809444377863165,
+  "copy_in_hits": 141,
+  "copy_in_misses": 539
+ },
+ "cache_inserts": 538,
+ "cache_evictions": 0,
+ "num_subgraphs": 12,
+ "cross_core_transfers": 376,
+ "stdout": "data movement: scheduled_copy_bytes=1303536, physical_ddr_bytes=1303536, cache_hits=141/680, cache_hit_bytes=243756\nOK: problem 3 makespan=34805; result=/tmp/tmpl321vhwd/res.json",
+ "eval_seconds": 0.21
+}

@@ -1,0 +1,72 @@
+{
+ "summary": {
+  "case": "case_091",
+  "cores": 2,
+  "makespan_eval": 4576301,
+  "added_copy_bytes_eval": 38449120,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 6577656,
+   "scheduled_copy_bytes": 45026776,
+   "added_copy_bytes": 38449120,
+   "partition_added_copy_bytes": 5409280,
+   "spill_added_copy_bytes": 33039840
+  },
+  "cache": {
+   "hits": 2815,
+   "accesses": 12348,
+   "hit_bytes": 9695712,
+   "miss_bytes": 35286016,
+   "hit_rate": 0.21554778864875979
+  },
+  "init_makespan_TC_PB": 4576301,
+  "init_added_bytes": 38449120,
+  "init_cache": {
+   "hits": 2815,
+   "accesses": 12348,
+   "hit_bytes": 9695712,
+   "miss_bytes": 35286016,
+   "hit_rate": 0.21554778864875979
+  },
+  "num_subgraphs": 46,
+  "improve_stats": {
+   "evals": 19,
+   "assign_OPTIMAL": 1,
+   "order_OPTIMAL": 1,
+   "rounds": 5,
+   "subgraphs_start": 46
+  },
+  "reuse_windows": [
+   {
+    "candidates": 25,
+    "evaluated": 13,
+    "exhausted": false,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 4490680.0,
+  "total_seconds": 189.66
+ },
+ "log": [
+  "case_091 K=2 P_B: T_C=4576301 added=38449120 hit_rate=0.216",
+  "    cache-cluster t=None -> 4600117 hit=0.231 (best 4576301)",
+  "    cache-gather t=1000000055 -> 4603053 hit=0.230 (best 4576301)",
+  "    cache-colocate t=1000000055 -> 4895257 hit=0.237 (best 4576301)",
+  "    cache-gather t=1000000053 -> 4603053 hit=0.230 (best 4576301)",
+  "    cache-colocate t=1000000053 -> 4895257 hit=0.237 (best 4576301)",
+  "    cache-gather t=1000000051 -> 4603053 hit=0.230 (best 4576301)",
+  "    cache-colocate t=1000000051 -> 4895257 hit=0.237 (best 4576301)",
+  "    cache-gather t=1000000049 -> 4603053 hit=0.230 (best 4576301)",
+  "    cache-colocate t=1000000049 -> 4895257 hit=0.237 (best 4576301)",
+  "    cache-gather t=1000000047 -> 4603053 hit=0.230 (best 4576301)",
+  "    cache-colocate t=1000000047 -> 4895257 hit=0.237 (best 4576301)",
+  "    cache-gather t=1000000059 -> 4603053 hit=0.230 (best 4576301)",
+  "    cache-colocate t=1000000059 -> 4895257 hit=0.237 (best 4576301)",
+  "    time-feedback -> 4576301 (best 4576301)",
+  "    assign[0:24] moved=2 -> 4583563 (best 4576301)",
+  "    order core1[0:12] -> 4585146 (best 4576301)",
+  "    move sg45->c0 -> 4614895 (best 4576301)",
+  "    swap sg44<->sg45 -> 4576782 (best 4576301)",
+  "    move sg44->c0 -> 4723279 (best 4576301)",
+  "final: T_C=4576301 added=38449120 hit_rate=0.216 subgraphs=46 time=189.7s"
+ ]
+}

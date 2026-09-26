@@ -1,0 +1,37 @@
+{
+ "makespan": 21601,
+ "num_cores": 5,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 625810,
+  "scheduled_copy_bytes": 799378,
+  "added_copy_bytes": 173568,
+  "partition_added_copy_bytes": 173568,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 24,
+ "cross_core_transfers": 0,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 40960,
+   "UB": 36868
+  },
+  "1": {
+   "L1": 40960,
+   "UB": 36868
+  },
+  "2": {
+   "L1": 32768,
+   "UB": 16388
+  },
+  "3": {
+   "L1": 82432,
+   "UB": 36868
+  },
+  "4": {
+   "L1": 40960,
+   "UB": 36868
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=799378, physical_ddr_bytes=799378\nOK: problem 2 makespan=21601; result=/tmp/tmpa_2g7cic/res.json",
+ "eval_seconds": 0.18
+}

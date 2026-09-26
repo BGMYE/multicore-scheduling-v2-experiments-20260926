@@ -1,0 +1,25 @@
+{
+ "makespan": 43233,
+ "num_cores": 2,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 526692,
+  "scheduled_copy_bytes": 1262232,
+  "added_copy_bytes": 735540,
+  "partition_added_copy_bytes": 616756,
+  "spill_added_copy_bytes": 118784
+ },
+ "num_subgraphs": 437,
+ "cross_core_transfers": 66,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 223744,
+   "UB": 128000
+  },
+  "1": {
+   "L1": 222720,
+   "UB": 127488
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=1262232, physical_ddr_bytes=1262232\nOK: problem 2 makespan=43233; result=/tmp/tmpn8088wi7/res.json",
+ "eval_seconds": 0.13
+}

@@ -1,0 +1,110 @@
+{
+ "summary": {
+  "case": "case_055",
+  "cores": 2,
+  "makespan_eval": 56378,
+  "added_copy_bytes_eval": 389272,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 625810,
+   "scheduled_copy_bytes": 1015082,
+   "added_copy_bytes": 389272,
+   "partition_added_copy_bytes": 389272,
+   "spill_added_copy_bytes": 0
+  },
+  "cache": {
+   "hits": 48,
+   "accesses": 279,
+   "hit_bytes": 225280,
+   "miss_bytes": 709736,
+   "hit_rate": 0.24093705348357675
+  },
+  "init_makespan_TC_PB": 56378,
+  "init_added_bytes": 389272,
+  "init_cache": {
+   "hits": 48,
+   "accesses": 279,
+   "hit_bytes": 225280,
+   "miss_bytes": 709736,
+   "hit_rate": 0.24093705348357675
+  },
+  "num_subgraphs": 70,
+  "improve_stats": {
+   "evals": 43,
+   "decode_cycle": 3,
+   "interval_FEASIBLE": 5,
+   "assign_OPTIMAL": 3,
+   "order_OPTIMAL": 2,
+   "rounds": 15,
+   "subgraphs_start": 70
+  },
+  "reuse_windows": [
+   {
+    "candidates": 4,
+    "evaluated": 4,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   },
+   {
+    "candidates": 1,
+    "evaluated": 1,
+    "exhausted": true,
+    "improved": false
+   }
+  ],
+  "lower_bound_LB0": 34524.5,
+  "total_seconds": 22.04
+ },
+ "log": [
+  "case_055 K=2 P_B: T_C=56378 added=389272 hit_rate=0.241",
+  "    cache-cluster t=None -> 56595 hit=0.245 (best 56378)",
+  "    cache-stagger t=715 -> 58691 hit=0.245 (best 56378)",
+  "    cache-stagger2 t=715 -> 58691 hit=0.245 (best 56378)",
+  "    cache-colocate t=715 -> 56669 hit=0.245 (best 56378)",
+  "    cache-cluster t=None -> 56595 hit=0.245 (best 56378)",
+  "    cache-cluster t=None -> 56595 hit=0.245 (best 56378)",
+  "    time-feedback -> 56422 (best 56378)",
+  "    interval[0:16] -> 56807 (best 56378)",
+  "    assign[0:24] moved=10 -> 69294 (best 56378)",
+  "    order core1[0:12] -> 62333 (best 56378)",
+  "    move sg69->c0 -> 56880 (best 56378)",
+  "    swap sg68<->sg69 -> 56378 (best 56378)",
+  "    move sg68->c0 -> 57688 (best 56378)",
+  "    swap sg67<->sg68 -> 56378 (best 56378)",
+  "    move sg67->c0 -> 57847 (best 56378)",
+  "    swap sg66<->sg67 -> 56378 (best 56378)",
+  "    move sg66->c0 -> 57829 (best 56378)",
+  "    swap sg65<->sg66 -> 58212 (best 56378)",
+  "    move sg65->c0 -> 57259 (best 56378)",
+  "    swap sg64<->sg65 -> 57570 (best 56378)",
+  "    move sg64->c0 -> 65023 (best 56378)",
+  "    swap sg63<->sg64 -> 63442 (best 56378)",
+  "    interval[12:28] -> 58489 (best 56378)",
+  "    time-feedback -> 56422 (best 56378)",
+  "    interval[8:24] -> 59455 (best 56378)",
+  "    assign[12:36] moved=13 -> 75798 (best 56378)",
+  "    order core1[6:18] -> 59878 (best 56378)",
+  "    move sg63->c0 -> 56938 (best 56378)",
+  "    swap sg62<->sg63 -> 56938 (best 56378)",
+  "    move sg62->c0 -> 61056 (best 56378)",
+  "    swap sg61<->sg62 -> 56935 (best 56378)",
+  "    move sg61->c0 -> 57900 (best 56378)",
+  "    swap sg60<->sg61 -> 57341 (best 56378)",
+  "    move sg60->c0 -> 56429 (best 56378)",
+  "    swap sg59<->sg60 -> 56378 (best 56378)",
+  "    move sg59->c0 -> 57429 (best 56378)",
+  "    swap sg58<->sg59 -> 56378 (best 56378)",
+  "    move sg58->c0 -> 56520 (best 56378)",
+  "    swap sg57<->sg58 -> 56378 (best 56378)",
+  "    interval[20:36] -> 59581 (best 56378)",
+  "    time-feedback -> 56422 (best 56378)",
+  "    interval[16:32] -> 58336 (best 56378)",
+  "    assign[24:48] moved=6 -> 59523 (best 56378)",
+  "final: T_C=56378 added=389272 hit_rate=0.241 subgraphs=70 time=22.0s"
+ ]
+}

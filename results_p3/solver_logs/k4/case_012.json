@@ -1,0 +1,72 @@
+{
+ "summary": {
+  "case": "case_012",
+  "cores": 4,
+  "makespan_eval": 14530,
+  "added_copy_bytes_eval": 28800,
+  "data_movement_bytes": {
+   "original_graph_copy_bytes": 554898,
+   "scheduled_copy_bytes": 583698,
+   "added_copy_bytes": 28800,
+   "partition_added_copy_bytes": 28800,
+   "spill_added_copy_bytes": 0
+  },
+  "cache": {
+   "hits": 13,
+   "accesses": 264,
+   "hit_bytes": 28800,
+   "miss_bytes": 484096,
+   "hit_rate": 0.0561517344646868
+  },
+  "init_makespan_TC_PB": 14530,
+  "init_added_bytes": 28800,
+  "init_cache": {
+   "hits": 13,
+   "accesses": 264,
+   "hit_bytes": 28800,
+   "miss_bytes": 484096,
+   "hit_rate": 0.0561517344646868
+  },
+  "num_subgraphs": 17,
+  "improve_stats": {
+   "evals": 26,
+   "interval_FEASIBLE": 5,
+   "assign_OPTIMAL": 3,
+   "rounds": 15,
+   "subgraphs_start": 17
+  },
+  "reuse_windows": [],
+  "lower_bound_LB0": 8893.0,
+  "total_seconds": 18.97
+ },
+ "log": [
+  "case_012 K=4 P_B: T_C=14530 added=28800 hit_rate=0.056",
+  "    time-feedback -> 14530 (best 14530)",
+  "    merge -> 18164 (best 14530)",
+  "    interval[0:16] -> 16654 (best 14530)",
+  "    assign[0:17] moved=1 -> 15992 (best 14530)",
+  "    move sg0->c1 -> 27095 (best 14530)",
+  "    move sg0->c1 -> 27095 (best 14530)",
+  "    move sg0->c1 -> 27095 (best 14530)",
+  "    move sg0->c1 -> 27095 (best 14530)",
+  "    move sg0->c1 -> 27095 (best 14530)",
+  "    move sg0->c1 -> 27095 (best 14530)",
+  "    interval[12:28] -> 16150 (best 14530)",
+  "    time-feedback -> 14530 (best 14530)",
+  "    merge -> 18164 (best 14530)",
+  "    interval[8:24] -> 16150 (best 14530)",
+  "    assign[0:17] moved=1 -> 15992 (best 14530)",
+  "    move sg0->c1 -> 27095 (best 14530)",
+  "    move sg0->c1 -> 27095 (best 14530)",
+  "    move sg0->c1 -> 27095 (best 14530)",
+  "    move sg0->c1 -> 27095 (best 14530)",
+  "    move sg0->c1 -> 27095 (best 14530)",
+  "    move sg0->c1 -> 27095 (best 14530)",
+  "    interval[3:19] -> 16150 (best 14530)",
+  "    time-feedback -> 14530 (best 14530)",
+  "    merge -> 18164 (best 14530)",
+  "    interval[16:32] -> 16150 (best 14530)",
+  "    assign[0:17] moved=1 -> 15992 (best 14530)",
+  "final: T_C=14530 added=28800 hit_rate=0.056 subgraphs=17 time=19.0s"
+ ]
+}

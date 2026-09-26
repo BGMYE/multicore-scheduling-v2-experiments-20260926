@@ -1,0 +1,26 @@
+{
+ "makespan": 1003110,
+ "num_cores": 1,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 1592848,
+  "scheduled_copy_bytes": 3563024,
+  "added_copy_bytes": 1970176,
+  "partition_added_copy_bytes": 0,
+  "spill_added_copy_bytes": 1970176
+ },
+ "cache_stats": {
+  "hits": 225,
+  "accesses": 774,
+  "hit_bytes": 1224704,
+  "miss_bytes": 2338068,
+  "hit_rate": 0.34375031576536474,
+  "copy_in_hits": 225,
+  "copy_in_misses": 549
+ },
+ "cache_inserts": 549,
+ "cache_evictions": 216,
+ "num_subgraphs": 1,
+ "cross_core_transfers": 0,
+ "stdout": "data movement: scheduled_copy_bytes=3563024, physical_ddr_bytes=3563024, cache_hits=225/774, cache_hit_bytes=1224704\nOK: problem 3 makespan=1003110; result=/tmp/tmp_evkidty/res.json",
+ "eval_seconds": 0.37
+}

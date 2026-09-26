@@ -1,0 +1,29 @@
+{
+ "makespan": 289730,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 1978368,
+  "scheduled_copy_bytes": 10125312,
+  "added_copy_bytes": 8146944,
+  "partition_added_copy_bytes": 5877760,
+  "spill_added_copy_bytes": 2269184
+ },
+ "num_subgraphs": 15,
+ "cross_core_transfers": 541,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 151552,
+   "UB": 0
+  },
+  "1": {
+   "L1": 200704,
+   "UB": 0
+  },
+  "2": {
+   "L1": 524288,
+   "UB": 0
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=10125312, physical_ddr_bytes=10125312\nOK: problem 2 makespan=289730; result=/tmp/tmpegtl0_t7/res.json",
+ "eval_seconds": 0.42
+}

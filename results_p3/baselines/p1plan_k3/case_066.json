@@ -1,0 +1,26 @@
+{
+ "makespan": 148165,
+ "num_cores": 3,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 1107034,
+  "scheduled_copy_bytes": 2764354,
+  "added_copy_bytes": 1657320,
+  "partition_added_copy_bytes": 1657320,
+  "spill_added_copy_bytes": 0
+ },
+ "cache_stats": {
+  "hits": 198,
+  "accesses": 721,
+  "hit_bytes": 689398,
+  "miss_bytes": 1452150,
+  "hit_rate": 0.32191573572014265,
+  "copy_in_hits": 198,
+  "copy_in_misses": 523
+ },
+ "cache_inserts": 513,
+ "cache_evictions": 254,
+ "num_subgraphs": 193,
+ "cross_core_transfers": 417,
+ "stdout": "data movement: scheduled_copy_bytes=2764354, physical_ddr_bytes=2764354, cache_hits=198/721, cache_hit_bytes=689398\nOK: problem 3 makespan=148165; result=/tmp/tmp231mao3a/res.json",
+ "eval_seconds": 0.92
+}

@@ -1,0 +1,23 @@
+{
+ "makespan": 53511,
+ "num_cores": 2,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 316202,
+  "scheduled_copy_bytes": 1446648,
+  "added_copy_bytes": 1130446,
+  "partition_added_copy_bytes": 1130446,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 9,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 36864,
+   "UB": 31744
+  },
+  "1": {
+   "L1": 18432,
+   "UB": 22662
+  }
+ },
+ "eval_seconds": 0.22
+}

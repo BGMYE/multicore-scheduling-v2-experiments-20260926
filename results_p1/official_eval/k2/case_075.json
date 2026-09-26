@@ -1,0 +1,24 @@
+{
+ "makespan": 910797,
+ "num_cores": 2,
+ "data_movement_bytes": {
+  "original_graph_copy_bytes": 1837190,
+  "scheduled_copy_bytes": 8520946,
+  "added_copy_bytes": 6683756,
+  "partition_added_copy_bytes": 6683756,
+  "spill_added_copy_bytes": 0
+ },
+ "num_subgraphs": 308,
+ "memory_peak_by_core": {
+  "0": {
+   "L1": 24704,
+   "UB": 20612
+  },
+  "1": {
+   "L1": 24832,
+   "UB": 20610
+  }
+ },
+ "stdout": "data movement: scheduled_copy_bytes=8520946, physical_ddr_bytes=8520946\nOK: problem 1 makespan=910797; result=/tmp/tmpdawg64hd/res.json",
+ "eval_seconds": 1.98
+}
