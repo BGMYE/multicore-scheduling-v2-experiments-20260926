@@ -1,4 +1,4 @@
 # 求解器依赖（solution_p1/p2/p3 仅此一个第三方包；缺失时 CP-SAT 窗口阶段自动跳过）
 ortools==9.15.6755
-# 可选：仅 对比_V1vsV2/make_figures.py 作图需要
+# 作图：solution_p3/make_report_p3.py（SVG + 300 dpi PNG）与 对比_V1vsV2/make_figures.py 需要；求解本身不依赖
 matplotlib
