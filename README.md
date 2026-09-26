@@ -2,9 +2,7 @@
 
 本仓库公开 **第二版（V2，“超图划分 + 局部数学规划”，由 Claude Code 驱动完成）** 的全部求解代码、实验结果、官方评估器复核输出与设计文档，对应题目“通用神经网络处理器下的多核切图与调度”的问题一、二、三。
 
-- 第一版（V1）仓库，供对比：<https://github.com/BGMYE/multicore-scheduling-v1-experiments-20260926>
-- 两版逐例对比报告：[`对比_V1vsV2/README_两版对比.md`](对比_V1vsV2/README_两版对比.md)
-- 完整归档（含解压后的数据包、两版对比的合并方案集与官方复评缓存）：见本仓库 Release [`v2.1.0`](https://github.com/BGMYE/multicore-scheduling-v2-experiments-20260926/releases/tag/v2.1.0)（最新，补齐问题三结果说明、图与建模/实验文档）；旧版 `v2.0.0` 保留
+- 完整归档（含解压后的官方数据包及第二版代码、结果与文档）：见本仓库 Release [`v2.1.0`](https://github.com/BGMYE/multicore-scheduling-v2-experiments-20260926/releases/tag/v2.1.0)（最新，补齐问题三结果说明、图与建模/实验文档）；旧版 `v2.0.0` 保留
 - 建模文档：[`数学模型与公式.md`](数学模型与公式.md)（符号、决策变量、目标、约束、Cache 模型、下界、求解流程）；实验文档：[`实验方案设计.md`](实验方案设计.md)（设置、基线、指标、验证、时间与随机性、结果总表）
 - 各问结果说明：[`问题一`](results_p1/README_问题一结果.md) · [`问题二`](results_p2/README_问题二结果.md) · [`问题三`](results_p3/README_问题三结果.md)
 
@@ -19,7 +17,6 @@
 约为：问题一 1.94 / 2.67 / 3.32 / 3.88，问题二 2.09 / 2.92 / 3.66 / 4.30，问题三 2.10 / 2.95 / 3.71 / 4.37。
 三问共 1,200 个最终方案全部通过官方评估器合法性检查（`all_valid = True`）。加速比分母统一为官方 `singlecore_evaluate.py` 的无 Cache 整图单核 Makespan。
 
-与第一版对比（见 `对比_V1vsV2/README_两版对比.md`）：K=5 时第一版为 问题一 2.458、问题二 3.399、问题三 3.504，第二版分别领先 +58.0%、+26.4%、+24.8%。
 
 ## 问题三结果（场景 B + 只读 L2 FIFO Cache）
 
@@ -86,7 +83,6 @@ K=1 行：无 L2 为单核基准本身（=1）；只读 Cache 为同一单核方
 ├── 2026研数模A题.docx                  官方题目
 ├── A题数据包.zip                       官方数据包（100 个算例 + 官方评估器 + 文档），需解压到 数据包/
 ├── 版本二_超图划分与局部数学规划方案.md   V2 设计方案
-├── 三版本完整方案_文档对比.md            三个版本方案的文档对比
 ├── 数学模型与公式.md                    三问统一的数学模型（符号、变量、目标、约束、下界、算法流程）
 ├── 实验方案设计.md                      实验设置、基线、指标、验证、时间与随机性、结果总表
 ├── tools/                             三问总表生成脚本 make_overview_tables.py
@@ -100,7 +96,6 @@ K=1 行：无 L2 为单核基准本身（=1）；只读 Cache 为同一单核方
 │   ├── solver_logs/ logs/ validation/ 求解日志与验证记录
 │   ├── summary.csv, summary_by_k.csv  汇总表
 │   └── README_问题*结果.md / report_tables.md / *.svg（问题三另有 300 dpi *.png）  结果说明与图表
-├── 对比_V1vsV2/                        第一版 vs 第二版对比：报告、脚本、汇总表、图、完整性核验、合并集汇总
 └── prompts/                           驱动 Claude Code 完成本工作所用的提示词
 ```
 
@@ -157,11 +152,7 @@ python3 tools/make_overview_tables.py                             # 三问总表
 
 8 核机器上问题一、问题二全量求解各约 2.5 小时，问题三约 2 小时。详细方法、验证与结果分析见 `results_p1/README_问题一结果.md`、`results_p2/README_问题二结果.md`、`results_p3/README_问题三结果.md`、`数学模型与公式.md`、`实验方案设计.md` 和 `版本二_超图划分与局部数学规划方案.md`。
 
-### 两版对比
-`对比_V1vsV2/` 中的脚本（`eval_official.py`、`compare.py`、`analysis.py`、`build_merged.py`、`make_figures.py`）需要第一版的重生成方案（`v1_regen/`，约 5.6 GB，未收录）和官方复评缓存（`official_eval/`）。本仓库只收录对比报告、汇总表（`tables/`）、图（`figures/`）、完整性核验（`integrity/`）和合并集汇总（`merged/*.csv`）；合并方案文件与 `official_eval/` 在 Release 归档中。
 
 ## 未收录内容
 - `数据包/`（解压后的数据，约 242 MB）：请自行解压 `A题数据包.zip`；Release 归档中也包含解压版。
 - `.venv/`、`__pycache__/`：运行环境产物。
-- 第一版仓库：已在 [V1 仓库](https://github.com/BGMYE/multicore-scheduling-v1-experiments-20260926) 公开。
-- `对比_V1vsV2/v1_regen/`（第一版方案重生成原始数据，约 5.6 GB）。
